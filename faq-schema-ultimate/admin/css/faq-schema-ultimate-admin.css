@@ -1,0 +1,18 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .wpgp--shortcode-field .faqsu--shortcode-field-wrap code {
+    font-size: 15px;
+    color: #ed143d;
+    -webkit-touch-callout: all;
+    -webkit-user-select: all;
+    -khtml-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+}
+
+.wpfaqsu-field-text input {
+    width: 100%;
+}

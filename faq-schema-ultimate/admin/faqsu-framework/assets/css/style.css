@@ -1,0 +1,4234 @@
+/**
+ *
+ * ---------------------------------------------------------
+ * FAQSU FRAMEWORK CSS MAP
+ * ---------------------------------------------------------
+ *
+ * 01. Base
+ *     01. 01. Header
+ *     01. 02. Sticky
+ *     01. 03. Header Buttons
+ *     01. 04. Navigation
+ *     01. 05. Wrapper
+ *     01. 06. Content
+ *     01. 07. Section
+ *     01. 08. Footer
+ *     01. 09. Copyright
+ *     01. 10. Show All Settings
+ *     01. 11. Search Input
+ *     01. 12. Metabox
+ *     01. 13. Comment Metabox
+ *     01. 14. Help Tooltip
+ * 02. Themes
+ *     02. 01. Theme Dark
+ *     02. 02. Theme Light
+ * 03. Fields
+ *     03. 01. Field
+ *     03. 02. Field: accordion
+ *     03. 03. Field: background
+ *     03. 04. Field: backup
+ *     03. 05. Field: border, spacing, dimensions
+ *     03. 06. Field: button_set
+ *     03. 07. Field: checkbox, radio
+ *     03. 08. Field: code_editor
+ *     03. 09. Field: color
+ *     03. 10. Field: color_group
+ *     03. 11. Field: fieldset
+ *     03. 12. Field: date
+ *     03. 13. Field: gallery
+ *     03. 14. Field: group
+ *     03. 15. Field: icon
+ *     03. 16. Field: image_select
+ *     03. 17. Field: link_color
+ *     03. 18. Field: map
+ *     03. 19. Field: media
+ *     03. 20. Field: palette
+ *     03. 21. Field: repeater
+ *     03. 22. Field: select
+ *     03. 23. Field: slider
+ *     03. 24. Field: sortable
+ *     03. 25. Field: sorter
+ *     03. 26. Field: spinner
+ *     03. 27. Field: switcher
+ *     03. 28. Field: tabbed
+ *     03. 29. Field: text
+ *     03. 30. Field: textarea
+ *     03. 31. Field: typography
+ *     03. 32. Field: upload
+ *     03. 33. Field: wp_editor
+ *     03. 34. Field: heading
+ *     03. 35. Field: subheading
+ *     03. 36. Field: submessage
+ *     03. 37. Field: notice
+ *     03. 38. Field: number
+ *     03. 39. Field: link
+ *     03. 40. Field: others
+ * 04. Widget
+ * 05. Customizer
+ * 06. Taxonomy
+ * 07. Profile
+ * 08. Nav Menu
+ * 09. Modal
+ *     09. 01. Shortcode Modal
+ *     09. 02. Gutenberg Modal
+ *     09. 03. Icon Modal
+ * 10. Helper
+ * 11. Welcome Page
+ * 12. Responsive
+ * 13. Others
+ *
+ * ---------------------------------------------------------
+ *
+ */
+/**
+ * 01. Base
+ */
+.wpfaqsu {
+  position: relative;
+}
+.wpfaqsu label {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.wpfaqsu-ab-icon {
+  top: 2px;
+}
+
+#screen-meta-links + .wpfaqsu-options {
+  margin-top: 40px;
+}
+
+.wpfaqsu-options {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/**
+ * 01. 01. Header
+ */
+.wpfaqsu-header {
+  position: relative;
+}
+
+.wpfaqsu-header-inner {
+  padding: 25px;
+  transition: box-shadow .3s ease;
+}
+.wpfaqsu-header-inner h1 {
+  float: left;
+  font-size: 1.5em;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+}
+.wpfaqsu-header-inner h1 small {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/**
+ * 01. 02. Sticky
+ */
+.wpfaqsu-sticky .wpfaqsu-header-inner {
+  position: fixed;
+  z-index: 99;
+  top: 32px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/**
+ * 01. 03. Header Buttons
+ */
+.wpfaqsu-buttons {
+  float: right;
+}
+.wpfaqsu-buttons .button {
+  margin: 0 2px;
+  line-height: 26px;
+}
+.wpfaqsu-buttons .button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.wpfaqsu-buttons .wpfaqsu-save {
+  min-width: 72px;
+}
+
+.wpfaqsu-header-left {
+  float: left;
+}
+
+.wpfaqsu-header-right {
+  float: right;
+}
+
+/**
+ * 01. 04. Navigation
+ */
+.wpfaqsu-nav {
+  display: block;
+  position: relative;
+  z-index: 10;
+  float: left;
+}
+.wpfaqsu-nav ul {
+  clear: left;
+  margin: 0;
+  list-style-type: none;
+}
+.wpfaqsu-nav ul li {
+  margin-bottom: 0;
+}
+.wpfaqsu-nav ul li a {
+  font-size: 13px;
+  position: relative;
+  display: block;
+  padding: 14px 12px;
+  text-decoration: none;
+  transition-property: color, background;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+.wpfaqsu-nav ul li a:focus {
+  outline: none;
+  box-shadow: none;
+}
+.wpfaqsu-nav ul li .wpfaqsu-arrow:after {
+  content: "\f054";
+  display: inline-block;
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+  font-weight: 900;
+  font-size: 9px;
+  line-height: 1;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -4px;
+}
+.wpfaqsu-nav ul li.wpfaqsu-tab-expanded .wpfaqsu-arrow:after {
+  transform: rotate(90deg);
+}
+.wpfaqsu-nav ul li.wpfaqsu-tab-expanded ul {
+  display: block;
+}
+.wpfaqsu-nav ul ul {
+  display: none;
+  position: relative;
+}
+.wpfaqsu-nav ul ul li a {
+  font-size: 12px;
+  padding: 12px 14px 12px 24px;
+}
+.wpfaqsu-nav .wpfaqsu-tab-icon {
+  width: 20px;
+  margin-right: 5px;
+  font-size: 13px;
+  text-align: center;
+}
+.wpfaqsu-nav .wpfaqsu-label-error {
+  margin-left: 4px;
+  vertical-align: top;
+}
+
+.wpfaqsu-nav-normal {
+  width: 225px;
+}
+.wpfaqsu-nav-normal + .wpfaqsu-content {
+  margin-left: 225px;
+}
+
+.wpfaqsu-nav-inline {
+  width: 100%;
+}
+.wpfaqsu-nav-inline ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.wpfaqsu-nav-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+  width: 225px;
+}
+
+/**
+ * 01. 05. Wrapper
+ */
+.wpfaqsu-wrapper {
+  position: relative;
+}
+
+/**
+ * 01. 06. Content
+ */
+.wpfaqsu-content {
+  position: relative;
+  background-color: #fff;
+}
+
+/**
+ * 01. 07. Section
+ */
+.wpfaqsu-sections {
+  float: left;
+  width: 100%;
+}
+
+.wpfaqsu-section-title {
+  display: none;
+  padding: 20px 30px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.wpfaqsu-section-title h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.wpfaqsu-section-title .wpfaqsu-section-icon {
+  margin-right: 5px;
+}
+
+/**
+ * 01. 08. Footer
+ */
+.wpfaqsu-footer {
+  padding: 20px;
+  font-size: 11px;
+}
+
+/**
+ * 01. 09. Copyright
+ */
+.wpfaqsu-copyright {
+  float: left;
+  margin-top: 5px;
+}
+
+/**
+ * 01. 10. Show All Settings
+ */
+.wpfaqsu-search-all .wpfaqsu-nav-background,
+.wpfaqsu-search-all .wpfaqsu-nav,
+.wpfaqsu-show-all .wpfaqsu-nav-background,
+.wpfaqsu-show-all .wpfaqsu-nav {
+  display: none;
+}
+.wpfaqsu-search-all .wpfaqsu-content,
+.wpfaqsu-show-all .wpfaqsu-content {
+  margin-left: 0;
+}
+.wpfaqsu-search-all .wpfaqsu-section-title,
+.wpfaqsu-search-all .wpfaqsu-section,
+.wpfaqsu-show-all .wpfaqsu-section-title,
+.wpfaqsu-show-all .wpfaqsu-section {
+  display: block !important;
+}
+
+.wpfaqsu-search-all .wpfaqsu-section-title {
+  display: none !important;
+}
+
+.wpfaqsu-expand-all {
+  float: left;
+  padding: 0 8px;
+  margin-right: 4px;
+  z-index: 1;
+  font-size: 13px;
+  line-height: 30px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 2px;
+  transition: all .2s;
+}
+.wpfaqsu-expand-all span {
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+/**
+ * 01. 11. Search Input
+ */
+.wpfaqsu-search {
+  float: left;
+}
+.wpfaqsu-search input {
+  margin: 0 2px 0 0;
+  border: none;
+  font-size: 12px;
+  line-height: 30px;
+  min-height: 30px;
+  text-align: inherit;
+  padding: 0 10px;
+  border-radius: 2px;
+  box-shadow: none;
+}
+.wpfaqsu-search input:focus {
+  box-shadow: none;
+}
+
+.wpfaqsu-saving .wpfaqsu-buttons,
+.wpfaqsu-saving .wpfaqsu-content {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/**
+ * 01. 12. Metabox
+ */
+.wpfaqsu-metabox {
+  margin: -6px -12px -12px -12px;
+}
+.wpfaqsu-metabox .wpfaqsu-field {
+  padding: 20px;
+}
+.wpfaqsu-metabox .wpfaqsu-section-title {
+  padding: 20px;
+}
+
+.block-editor-page .wpfaqsu-metabox {
+  margin: -6px -14px -14px -14px;
+}
+
+.block-editor-editor-skeleton__content .wpfaqsu-metabox {
+  border-left: 1px solid #e2e4e7;
+  border-right: 1px solid #e2e4e7;
+}
+
+.wpfaqsu-sections-reset {
+  float: left;
+  width: 100%;
+  text-align: right;
+  border-top: 1px solid #eee;
+}
+.wpfaqsu-sections-reset .wpfaqsu-button-cancel,
+.wpfaqsu-sections-reset input {
+  display: none;
+}
+.wpfaqsu-sections-reset label {
+  padding: 10px;
+}
+.wpfaqsu-sections-reset span {
+  -webkit-user-select: none;
+  user-select: none;
+}
+.wpfaqsu-sections-reset input:checked ~ .wpfaqsu-button-reset {
+  display: none;
+}
+.wpfaqsu-sections-reset input:checked ~ .wpfaqsu-button-cancel {
+  display: inline-block;
+}
+
+#side-sortables .wpfaqsu-section-title {
+  padding: 12px;
+}
+#side-sortables .wpfaqsu-field {
+  padding: 10px 15px;
+}
+#side-sortables .wpfaqsu-field .wpfaqsu-title {
+  float: none;
+  width: 100%;
+  margin-bottom: 6px;
+}
+#side-sortables .wpfaqsu-field .wpfaqsu-fieldset {
+  float: none;
+  width: 100%;
+}
+#side-sortables .wpfaqsu-field-text input {
+  width: 100%;
+}
+#side-sortables .wpfaqsu-notice {
+  padding: 10px 15px;
+}
+
+/**
+ * 01. 13. Comment Metabox
+ */
+.wpfaqsu-comment-metabox {
+  margin: -6px -12px -12px -12px;
+}
+.wpfaqsu-comment-metabox .wpfaqsu-field {
+  padding: 20px;
+}
+.wpfaqsu-comment-metabox .wpfaqsu-section-title {
+  padding: 20px;
+}
+
+/**
+ * 01. 14. Help Tooltip
+ */
+.wpfaqsu-tooltip {
+  position: absolute;
+  z-index: 5000001;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  padding: 6px 12px;
+  max-width: 200px;
+  color: #fff;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 4px;
+}
+
+/**
+ * 02. Themes
+ */
+/**
+ * 02. 01. Theme Dark
+ */
+.wpfaqsu-theme-dark .wpfaqsu-header-inner {
+  background-color: #050505;
+}
+.wpfaqsu-theme-dark .wpfaqsu-header-inner h1 {
+  color: #fff;
+}
+.wpfaqsu-theme-dark .wpfaqsu-header-inner h1 small {
+  color: #555;
+}
+.wpfaqsu-theme-dark .wpfaqsu-expand-all {
+  color: #999;
+  background-color: #222;
+}
+.wpfaqsu-theme-dark .wpfaqsu-expand-all:hover {
+  color: #fff;
+  background-color: #333;
+}
+.wpfaqsu-theme-dark .wpfaqsu-search input {
+  color: #fff;
+  background-color: #222;
+}
+.wpfaqsu-theme-dark .wpfaqsu-search:focus {
+  background-color: #444;
+}
+.wpfaqsu-theme-dark .wpfaqsu-search::-webkit-input-placeholder {
+  color: #666;
+}
+.wpfaqsu-theme-dark .wpfaqsu-nav ul li a {
+  color: #999;
+  border-color: #2f2f2f;
+  background-color: #222;
+}
+.wpfaqsu-theme-dark .wpfaqsu-nav ul li a:hover {
+  color: #fff;
+}
+.wpfaqsu-theme-dark .wpfaqsu-nav ul li .wpfaqsu-active {
+  color: #fff;
+  background-color: #111;
+}
+.wpfaqsu-theme-dark .wpfaqsu-nav ul ul li a {
+  border-color: #2f2f2f;
+  background-color: #191919;
+}
+.wpfaqsu-theme-dark .wpfaqsu-nav ul ul li .wpfaqsu-active {
+  background-color: #101010;
+}
+.wpfaqsu-theme-dark .wpfaqsu-nav ul ul:before {
+  background-color: rgba(34, 34, 34, 0.75);
+}
+.wpfaqsu-theme-dark .wpfaqsu-nav > ul > li:last-child > a {
+  border: none;
+}
+.wpfaqsu-theme-dark .wpfaqsu-nav-normal ul li a {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.wpfaqsu-theme-dark .wpfaqsu-nav-normal ul li .wpfaqsu-active:after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  border: solid transparent;
+  border-right-color: #fff;
+  border-width: 4px;
+  margin-top: -4px;
+}
+.wpfaqsu-theme-dark .wpfaqsu-nav-inline {
+  background-color: #222;
+}
+.wpfaqsu-theme-dark .wpfaqsu-nav-inline ul li a {
+  text-align: center;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+.wpfaqsu-theme-dark .wpfaqsu-nav-inline ul li .wpfaqsu-active:after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  border: solid transparent;
+  border-bottom-color: #fff;
+  border-width: 4px;
+  margin-left: -4px;
+}
+.wpfaqsu-theme-dark .wpfaqsu-nav-background {
+  background-color: #222;
+}
+.wpfaqsu-theme-dark .wpfaqsu-footer {
+  color: #555;
+  background-color: #050505;
+}
+
+/**
+ * 02. 02. Theme Light
+ */
+.wpfaqsu-theme-light .wpfaqsu-container {
+  border: 1px solid #ccd0d4;
+  box-shadow: 0 0 15 rgba(0, 0, 0, 0.04);
+}
+.wpfaqsu-theme-light .wpfaqsu-header-inner {
+  border-bottom: 1px solid #ccd0d4;
+  background-color: #f5f5f5;
+  background: linear-gradient(#fefefe, #f5f5f5);
+}
+.wpfaqsu-theme-light .wpfaqsu-header-inner h1 small {
+  color: #999;
+}
+.wpfaqsu-theme-light .wpfaqsu-expand-all {
+  color: #999;
+  background-color: #eee;
+}
+.wpfaqsu-theme-light .wpfaqsu-expand-all:hover {
+  color: #555;
+}
+.wpfaqsu-theme-light .wpfaqsu-search input {
+  color: #555;
+  background-color: #eee;
+}
+.wpfaqsu-theme-light .wpfaqsu-search input::-webkit-input-placeholder {
+  color: #999;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav ul li a {
+  font-weight: 500;
+  color: #444;
+  background-color: #f5f5f5;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav ul li a:hover {
+  color: #111;
+  background-color: #fff;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav ul li .wpfaqsu-active {
+  color: #111;
+  background-color: #fff;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav ul ul li a {
+  background-color: #eee;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav-normal > ul {
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav-normal > ul li a {
+  border-bottom: 1px solid #ccd0d4;
+  border-right: 1px solid #ccd0d4;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav-normal > ul li .wpfaqsu-active {
+  border-right-color: #fff;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav-inline {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccd0d4;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav-inline > ul {
+  margin-bottom: -1px;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav-inline > ul li a {
+  text-align: center;
+  border-right: 1px solid #ccd0d4;
+  border-bottom: 1px solid #ccd0d4;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav-inline > ul li .wpfaqsu-active {
+  border-bottom-color: #fff;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav-inline > ul ul {
+  display: none !important;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav-inline .wpfaqsu-arrow:after {
+  display: none;
+}
+.wpfaqsu-theme-light .wpfaqsu-nav-background {
+  background-color: #f5f5f5;
+  border-right: 1px solid #ccd0d4;
+}
+.wpfaqsu-theme-light .wpfaqsu-footer {
+  color: #555;
+  border-top: 1px solid #ccd0d4;
+  background-color: #f5f5f5;
+  background: linear-gradient(#fafafa, #f5f5f5);
+}
+
+/**
+ * 03. Fields
+ */
+.wpfaqsu-field {
+  position: relative;
+  padding: 30px;
+}
+.wpfaqsu-field + .wpfaqsu-field {
+  border-top: 1px solid #eee;
+}
+.wpfaqsu-field p:first-child {
+  margin-top: 0;
+}
+.wpfaqsu-field p:last-child {
+  margin-bottom: 0;
+}
+.wpfaqsu-field:after, .wpfaqsu-field:before {
+  content: " ";
+  display: table;
+}
+.wpfaqsu-field:after {
+  clear: both;
+}
+.wpfaqsu-field h4 {
+  margin-top: 0;
+}
+.wpfaqsu-field .wpfaqsu-title {
+  position: relative;
+  width: 20%;
+  float: left;
+}
+.wpfaqsu-field .wpfaqsu-title h4 {
+  margin: 0;
+  color: #23282d;
+}
+.wpfaqsu-field .wpfaqsu-fieldset {
+  float: right;
+  width: calc(80% - 20px);
+}
+
+.wpfaqsu-pseudo-field {
+  padding: 0 5px 0 0 !important;
+  display: inline-block;
+}
+.wpfaqsu-pseudo-field + .wpfaqsu-pseudo-field {
+  border: 0;
+}
+.wpfaqsu-pseudo-field pre {
+  display: none;
+}
+
+/**
+ * 03. 02. Field: accordion
+ */
+.wpfaqsu-field-accordion .wpfaqsu-accordion-item {
+  position: relative;
+  margin-bottom: 5px;
+}
+.wpfaqsu-field-accordion .wpfaqsu-accordion-item:last-child {
+  margin-bottom: 0;
+}
+.wpfaqsu-field-accordion .wpfaqsu-accordion-item h4 {
+  font-size: 1em;
+}
+.wpfaqsu-field-accordion .wpfaqsu-accordion-title {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  padding: 15px;
+  min-height: 0;
+  font-size: 100%;
+  user-select: none;
+  border: 1px solid #ccd0d4;
+  background-color: #fafafa;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  transition: border-color .15s;
+}
+.wpfaqsu-field-accordion .wpfaqsu-accordion-title:active, .wpfaqsu-field-accordion .wpfaqsu-accordion-title:hover, .wpfaqsu-field-accordion .wpfaqsu-accordion-title:focus {
+  outline: none;
+  border-color: #999;
+}
+.wpfaqsu-field-accordion .wpfaqsu-accordion-title .wpfaqsu--icon {
+  width: 20px;
+  text-align: center;
+  margin-right: 2px;
+}
+.wpfaqsu-field-accordion .wpfaqsu-accordion-icon {
+  width: 16px;
+  text-align: center;
+}
+.wpfaqsu-field-accordion .wpfaqsu-accordion-content {
+  display: none;
+  padding: 0;
+  border: 1px solid #ccd0d4;
+  border-top: none;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+.wpfaqsu-field-accordion .wpfaqsu-accordion-content > .wpfaqsu-field {
+  padding: 15px;
+}
+.wpfaqsu-field-accordion .wpfaqsu-accordion-open {
+  display: block;
+}
+
+/**
+ * 03. 03. Field: background
+ */
+.wpfaqsu-field-background .wpfaqsu-field {
+  border: 0 !important;
+  padding: 0;
+  margin-bottom: 6px;
+  margin-right: 6px;
+}
+.wpfaqsu-field-background .wpfaqsu--title {
+  color: #777;
+  font-size: 12px;
+}
+.wpfaqsu-field-background .wpfaqsu--background-colors {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wpfaqsu-field-background .wpfaqsu--background-attributes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wpfaqsu-field-background .wpfaqsu--background-attributes select {
+  min-width: 100%;
+  margin: 0;
+}
+.wpfaqsu-field-background .wpfaqsu--background-attributes .wpfaqsu-field {
+  flex: 1;
+}
+.wpfaqsu-field-background .wpfaqsu--attributes-hidden {
+  display: none;
+}
+
+/**
+ * 03. 04. Field: backup
+ */
+.wpfaqsu-field-backup textarea {
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 5px;
+}
+.wpfaqsu-field-backup small {
+  display: inline-block;
+  margin: 5px;
+}
+.wpfaqsu-field-backup hr {
+  margin: 20px 0;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/**
+ * 03. 05. Field: border, spacing, dimensions
+ */
+.wpfaqsu-field-border .wpfaqsu--inputs,
+.wpfaqsu-field-spacing .wpfaqsu--inputs,
+.wpfaqsu-field-dimensions .wpfaqsu--inputs {
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wpfaqsu-field-border .wpfaqsu--input,
+.wpfaqsu-field-spacing .wpfaqsu--input,
+.wpfaqsu-field-dimensions .wpfaqsu--input {
+  display: flex;
+  padding-right: 6px;
+  padding-bottom: 4px;
+  box-sizing: border-box;
+}
+.wpfaqsu-field-border .wpfaqsu--input select,
+.wpfaqsu-field-spacing .wpfaqsu--input select,
+.wpfaqsu-field-dimensions .wpfaqsu--input select {
+  margin: 0;
+}
+.wpfaqsu-field-border .wpfaqsu--input input,
+.wpfaqsu-field-spacing .wpfaqsu--input input,
+.wpfaqsu-field-dimensions .wpfaqsu--input input {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  width: 65px;
+  max-width: 100%;
+  text-align: center;
+}
+.wpfaqsu-field-border .wpfaqsu--color,
+.wpfaqsu-field-spacing .wpfaqsu--color,
+.wpfaqsu-field-dimensions .wpfaqsu--color {
+  float: left;
+}
+.wpfaqsu-field-border .wpfaqsu--label,
+.wpfaqsu-field-spacing .wpfaqsu--label,
+.wpfaqsu-field-dimensions .wpfaqsu--label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  user-select: none;
+  min-width: 20px;
+  max-width: 100%;
+  padding: 0 4px;
+  font-size: 12px;
+  text-align: center;
+  color: #555;
+  border: 1px solid #7B776C;
+  background-color: #f5f5f5;
+}
+.wpfaqsu-field-border .wpfaqsu--icon,
+.wpfaqsu-field-spacing .wpfaqsu--icon,
+.wpfaqsu-field-dimensions .wpfaqsu--icon {
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+}
+.wpfaqsu-field-border .wpfaqsu--icon + input,
+.wpfaqsu-field-spacing .wpfaqsu--icon + input,
+.wpfaqsu-field-dimensions .wpfaqsu--icon + input {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.wpfaqsu-field-border .wpfaqsu--unit,
+.wpfaqsu-field-spacing .wpfaqsu--unit,
+.wpfaqsu-field-dimensions .wpfaqsu--unit {
+  border-left: 0;
+  border-radius: 0 4px 4px 0;
+}
+.wpfaqsu-field-border .wpfaqsu--is-unit,
+.wpfaqsu-field-spacing .wpfaqsu--is-unit,
+.wpfaqsu-field-dimensions .wpfaqsu--is-unit {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+/**
+ * 03. 06. Field: button_set
+ */
+.wpfaqsu-field-button_set .wpfaqsu--buttons {
+  display: inline-block;
+}
+.wpfaqsu-field-button_set .wpfaqsu--button {
+  position: relative;
+  z-index: 1;
+  float: left;
+  cursor: pointer;
+  padding: 7px 14px;
+  min-width: 16px;
+  text-align: center;
+  color: #555;
+  border: 1px solid #cccccc;
+  background-color: #f7f7f7;
+  user-select: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.wpfaqsu-field-button_set .wpfaqsu--button:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.wpfaqsu-field-button_set .wpfaqsu--button:last-child {
+  border-radius: 0 4px 4px 0;
+}
+.wpfaqsu-field-button_set .wpfaqsu--button:not(:first-child) {
+  margin-left: -1px;
+}
+.wpfaqsu-field-button_set .wpfaqsu--button:hover {
+  background-color: #eee;
+}
+.wpfaqsu-field-button_set .wpfaqsu--active:hover,
+.wpfaqsu-field-button_set .wpfaqsu--active {
+  z-index: 2;
+  color: #fff;
+  border-color: #006799;
+  background-color: #0085ba;
+}
+.wpfaqsu-field-button_set input {
+  display: none;
+}
+
+/**
+ * 03. 07. Field: checkbox, radio
+ */
+.wpfaqsu-field-checkbox ul,
+.wpfaqsu-field-radio ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow-y: auto;
+  max-height: 305px;
+}
+.wpfaqsu-field-checkbox ul li,
+.wpfaqsu-field-radio ul li {
+  margin-bottom: 6px;
+}
+.wpfaqsu-field-checkbox ul ul,
+.wpfaqsu-field-radio ul ul {
+  max-height: none;
+}
+.wpfaqsu-field-checkbox ul ul li,
+.wpfaqsu-field-radio ul ul li {
+  margin-left: 8px;
+}
+.wpfaqsu-field-checkbox ul ul li:first-child,
+.wpfaqsu-field-radio ul ul li:first-child {
+  margin-left: 0;
+}
+.wpfaqsu-field-checkbox input,
+.wpfaqsu-field-radio input {
+  margin: 0 1px;
+}
+.wpfaqsu-field-checkbox .wpfaqsu--inline-list li,
+.wpfaqsu-field-radio .wpfaqsu--inline-list li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.wpfaqsu-field-checkbox .wpfaqsu--text,
+.wpfaqsu-field-radio .wpfaqsu--text {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.wpfaqsu-field-checkbox .wpfaqsu-checker,
+.wpfaqsu-field-radio .wpfaqsu-checker {
+  cursor: pointer;
+}
+
+/**
+ * 03. 08. Field: code_editor
+ */
+.wpfaqsu-field-code_editor .CodeMirror {
+  width: 100%;
+  height: 400px;
+}
+.wpfaqsu-field-code_editor .cm-s-default {
+  border: 1px solid #ccd0d4;
+}
+.wpfaqsu-field-code_editor textarea {
+  width: 100%;
+  height: 400px;
+}
+
+/**
+ * 03. 09. Field: color
+ */
+.wpfaqsu-field-color > input {
+  opacity: 0.75;
+  width: 115px;
+  max-width: 100%;
+}
+.wpfaqsu-field-color .button.wp-picker-clear {
+  padding: 0 8px;
+  margin-left: 6px;
+  line-height: 2.54545455;
+  min-height: 30px;
+}
+
+/**
+ * 03. 10. Field: color_group
+ */
+.wpfaqsu-field-color_group .wpfaqsu--left {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.wpfaqsu-field-color_group .wpfaqsu--title {
+  color: #999;
+  margin-bottom: 5px;
+}
+
+/**
+ * 03. 11. Field: fieldset
+ */
+.wpfaqsu-field-fieldset .wpfaqsu-fieldset-content {
+  border: 1px solid #ccd0d4;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+.wpfaqsu-field-fieldset .wpfaqsu-fieldset-content > .wpfaqsu-field {
+  padding: 15px;
+}
+.wpfaqsu-field-fieldset .wpfaqsu-field-subheading {
+  font-size: 13px;
+}
+
+/**
+ * 03. 12. Field: date
+ */
+.wpfaqsu-field-date input {
+  margin: 0;
+}
+.wpfaqsu-field-date .wpfaqsu--to {
+  margin-left: 7px;
+}
+
+.wpfaqsu-datepicker-wrapper {
+  margin-top: 5px;
+  width: auto;
+  background-color: #fff;
+  z-index: 9999999 !important;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+.wpfaqsu-datepicker-wrapper * {
+  float: none;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.wpfaqsu-datepicker-wrapper .ui-widget-header,
+.wpfaqsu-datepicker-wrapper .ui-datepicker-header {
+  color: #fff;
+  background: #00a0d2;
+}
+.wpfaqsu-datepicker-wrapper .ui-datepicker-header .ui-state-hover {
+  cursor: pointer;
+}
+.wpfaqsu-datepicker-wrapper .ui-datepicker-title {
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+}
+.wpfaqsu-datepicker-wrapper .ui-datepicker-prev,
+.wpfaqsu-datepicker-wrapper .ui-datepicker-next {
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+  font-weight: 900;
+  font-size: 12px;
+  text-align: center;
+  width: 41px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wpfaqsu-datepicker-wrapper .ui-datepicker-next span,
+.wpfaqsu-datepicker-wrapper .ui-datepicker-prev span {
+  display: none;
+}
+.wpfaqsu-datepicker-wrapper .ui-datepicker-prev {
+  float: left;
+}
+.wpfaqsu-datepicker-wrapper .ui-datepicker-next {
+  float: right;
+}
+.wpfaqsu-datepicker-wrapper .ui-datepicker-prev:before {
+  content: '\f053';
+}
+.wpfaqsu-datepicker-wrapper .ui-datepicker-next:before {
+  content: '\f054';
+}
+.wpfaqsu-datepicker-wrapper .ui-datepicker-prev-hover,
+.wpfaqsu-datepicker-wrapper .ui-datepicker-next-hover {
+  opacity: 0.75;
+}
+.wpfaqsu-datepicker-wrapper tbody .ui-datepicker-week-col {
+  background-color: #f7f7f7;
+}
+.wpfaqsu-datepicker-wrapper .ui-datepicker-buttonpane {
+  padding: 10px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+.wpfaqsu-datepicker-wrapper .ui-datepicker-buttonpane button {
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 7px 14px;
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+.wpfaqsu-datepicker-wrapper select {
+  margin: 0 4px;
+}
+.wpfaqsu-datepicker-wrapper select option {
+  color: #555;
+}
+.wpfaqsu-datepicker-wrapper table {
+  font-size: 13px;
+  border-collapse: collapse;
+  width: 100%;
+}
+.wpfaqsu-datepicker-wrapper thead {
+  color: #fff;
+  background: #32373c;
+}
+.wpfaqsu-datepicker-wrapper th {
+  text-align: center;
+  padding: 7px;
+  border: 1px solid #444;
+}
+.wpfaqsu-datepicker-wrapper td {
+  text-align: center;
+  border: 1px solid #f4f4f4;
+}
+.wpfaqsu-datepicker-wrapper td.ui-datepicker-other-month {
+  border: transparent;
+}
+.wpfaqsu-datepicker-wrapper td .ui-state-default {
+  color: #555;
+  width: auto;
+  display: block;
+  padding: 6px 12px;
+}
+.wpfaqsu-datepicker-wrapper td .ui-state-active,
+.wpfaqsu-datepicker-wrapper td .ui-state-hover {
+  color: #fff;
+  background-color: #0073aa;
+}
+.wpfaqsu-datepicker-wrapper td.ui-state-disabled .ui-state-default {
+  opacity: 0.5;
+}
+
+/**
+ * 03. 13. Field: gallery
+ */
+.wpfaqsu-field-gallery ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.wpfaqsu-field-gallery ul li {
+  display: inline-block;
+  position: relative;
+  padding: 4px;
+  margin: 0 5px 10px 0;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+.wpfaqsu-field-gallery ul li img {
+  max-height: 60px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.wpfaqsu-field-gallery .button {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/**
+ * 03. 14. Field: group
+ */
+.wpfaqsu-field-group .wpfaqsu-cloneable-hidden {
+  display: none !important;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-wrapper {
+  position: relative;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-item {
+  display: none;
+  position: relative;
+  margin-bottom: 5px;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-item h4 {
+  font-size: 1em;
+}
+.wpfaqsu-field-group .ui-accordion .wpfaqsu-cloneable-item {
+  display: block;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-content {
+  border: 1px solid #ccd0d4;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-content > .wpfaqsu-field {
+  padding: 15px;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-title {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  margin: 0;
+  padding: 15px 65px 15px 10px;
+  min-height: 0;
+  font-size: 100%;
+  border: 1px solid #ccd0d4;
+  background-color: #fafafa;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  transition: border-color .15s;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-title:active, .wpfaqsu-field-group .wpfaqsu-cloneable-title:hover, .wpfaqsu-field-group .wpfaqsu-cloneable-title:focus {
+  border-color: #999;
+  outline: none;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-helper {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  z-index: 1;
+  font-size: 14px;
+  line-height: 1em;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-helper i {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  color: #999;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-helper i:hover {
+  color: #555;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-content {
+  padding: 0;
+  border-top: 0;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-title-prefix,
+.wpfaqsu-field-group .wpfaqsu-cloneable-title-number {
+  margin-right: 5px;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-alert {
+  display: none;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  color: #a94442;
+  border: 1px solid #ebccd1;
+  background-color: #f2dede;
+}
+.wpfaqsu-field-group .widget-placeholder {
+  margin-bottom: 10px;
+  border: 1px dashed #f1c40f;
+  background-color: #fffae4;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-header-icon {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  width: 17px;
+  text-indent: 0;
+  vertical-align: text-top;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-placeholder {
+  background-color: #ddd;
+  margin-top: 4px;
+  width: 100px;
+  height: 10px;
+  font-size: 10px;
+  line-height: 10px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 2px;
+}
+
+/**
+ * 03. 15. Field: icon
+ */
+.wpfaqsu-field-icon .button {
+  margin-right: 5px;
+}
+.wpfaqsu-field-icon .wpfaqsu-icon-select {
+  display: flex;
+}
+.wpfaqsu-field-icon .wpfaqsu-icon-preview:not(.hidden) {
+  display: flex;
+}
+.wpfaqsu-field-icon .wpfaqsu-icon-preview i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  font-size: 14px;
+  margin-right: 5px;
+  text-align: center;
+  vertical-align: top;
+  color: #555;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+/**
+ * 03. 16. Field: image_select
+ */
+.wpfaqsu-field-image_select .wpfaqsu--image {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+}
+.wpfaqsu-field-image_select .wpfaqsu--inline-list .wpfaqsu--image {
+  display: block;
+}
+.wpfaqsu-field-image_select figure {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  vertical-align: bottom;
+  border: 2px solid transparent;
+  background-color: #fff;
+  user-select: none;
+  transition: all .2s;
+}
+.wpfaqsu-field-image_select figure:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+  font-weight: 900;
+  content: "\f00c";
+  width: 16px;
+  height: 16px;
+  line-height: 14px;
+  opacity: 0;
+  color: #fff;
+  background-color: #222;
+  transition: opacity .2s;
+}
+.wpfaqsu-field-image_select .wpfaqsu--active figure {
+  border-color: #222;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.wpfaqsu-field-image_select .wpfaqsu--active figure:before {
+  opacity: 1;
+}
+.wpfaqsu-field-image_select img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+.wpfaqsu-field-image_select input {
+  display: none;
+}
+
+/**
+ * 03. 17. Field: link_color
+ */
+.wpfaqsu-field-link_color .wpfaqsu--left {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.wpfaqsu-field-link_color .wpfaqsu--title {
+  color: #777;
+  margin-bottom: 5px;
+}
+
+/**
+ * 03. 18. Field: map
+ */
+.wpfaqsu-field-map input {
+  width: 100%;
+}
+.wpfaqsu-field-map input[type="text"].ui-autocomplete-loading {
+  background-position-x: calc(100% - 5px);
+}
+.wpfaqsu-field-map .wpfaqsu--map-search + .wpfaqsu--map-osm-wrap {
+  margin-top: 10px;
+}
+.wpfaqsu-field-map .wpfaqsu--map-osm-wrap {
+  position: relative;
+  padding: 5px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+.wpfaqsu-field-map .wpfaqsu--map-osm {
+  position: relative;
+  z-index: 1;
+  min-height: 250px;
+}
+.wpfaqsu-field-map .wpfaqsu--map-inputs {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.wpfaqsu-field-map .wpfaqsu--map-input {
+  flex: 1;
+}
+.wpfaqsu-field-map .wpfaqsu--map-input:last-child {
+  padding-left: 10px;
+}
+.wpfaqsu-field-map label {
+  display: block;
+  color: #777;
+  font-size: 12px;
+  margin: 0 0 2px 0;
+}
+
+.wpfaqsu-map-ui-autocomplate {
+  z-index: 999999;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/**
+ * 03. 19. Field: media
+ */
+.wpfaqsu-field-media .wpfaqsu--placeholder {
+  display: flex;
+  align-items: flex-start;
+}
+.wpfaqsu-field-media .wpfaqsu--placeholder input {
+  width: 100%;
+  margin: 0;
+}
+.wpfaqsu-field-media .button {
+  margin-left: 5px;
+}
+.wpfaqsu-field-media .hidden + .button {
+  margin-left: 0;
+}
+.wpfaqsu-field-media .wpfaqsu--preview {
+  position: relative;
+}
+
+/**
+ * 03. 20. Field: palette
+ */
+.wpfaqsu-field-palette .wpfaqsu--palette {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: all .2s;
+}
+.wpfaqsu-field-palette .wpfaqsu--palette span {
+  vertical-align: middle;
+  display: inline-block;
+  width: 22px;
+  height: 60px;
+  line-height: 60px;
+  overflow: hidden;
+  text-indent: -999px;
+}
+.wpfaqsu-field-palette .wpfaqsu--palette:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+  font-weight: 900;
+  content: "\f00c";
+  width: 16px;
+  height: 16px;
+  line-height: 14px;
+  opacity: 0;
+  color: #fff;
+  background-color: #222;
+  transition: opacity .2s;
+}
+.wpfaqsu-field-palette .wpfaqsu--active {
+  border-color: #222;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.wpfaqsu-field-palette .wpfaqsu--active:before {
+  opacity: 1;
+}
+.wpfaqsu-field-palette input {
+  display: none;
+}
+
+/**
+ * 03. 21. Field: repeater
+ */
+.wpfaqsu-field-repeater .wpfaqsu-field-text input {
+  width: 100%;
+}
+.wpfaqsu-field-repeater .wpfaqsu-repeater-hidden {
+  display: none !important;
+}
+.wpfaqsu-field-repeater .wpfaqsu-repeater-wrapper .wpfaqsu-repeater-item {
+  display: table;
+  width: 100%;
+  margin-bottom: 5px;
+  border: 1px solid #eee;
+}
+.wpfaqsu-field-repeater .wpfaqsu-repeater-wrapper .wpfaqsu-repeater-item h4 {
+  font-size: 1em;
+}
+.wpfaqsu-field-repeater .wpfaqsu-repeater-content {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #fff;
+}
+.wpfaqsu-field-repeater .wpfaqsu-repeater-content > .wpfaqsu-field {
+  padding: 15px;
+}
+.wpfaqsu-field-repeater .wpfaqsu-repeater-helper {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1em;
+  border-left: 1px solid #eee;
+  background-color: #f7f7f7;
+}
+.wpfaqsu-field-repeater .wpfaqsu-repeater-helper i {
+  display: inline-block;
+  cursor: pointer;
+  color: #999;
+  padding: 5px;
+}
+.wpfaqsu-field-repeater .wpfaqsu-repeater-helper i:hover {
+  color: #555;
+}
+.wpfaqsu-field-repeater .wpfaqsu-repeater-helper-inner {
+  width: 75px;
+}
+.wpfaqsu-field-repeater .wpfaqsu-repeater-alert {
+  display: none;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  color: #a94442;
+  border: 1px solid #ebccd1;
+  background-color: #f2dede;
+}
+.wpfaqsu-field-repeater .widget-placeholder {
+  height: 50px;
+  margin-bottom: 3px;
+  border: 1px dashed #f1c40f;
+  background-color: #fffae4;
+}
+.wpfaqsu-field-repeater .ui-sortable-helper {
+  height: 50px !important;
+  overflow: hidden !important;
+  border-color: #ccc !important;
+  background-color: #eee !important;
+  opacity: 0.5;
+}
+.wpfaqsu-field-repeater .ui-sortable-helper .wpfaqsu-repeater-helper,
+.wpfaqsu-field-repeater .ui-sortable-helper .wpfaqsu-repeater-content {
+  display: none;
+}
+
+/**
+ * 03. 22. Field: select
+ */
+.wpfaqsu-field-select .wpfaqsu-fieldset {
+  min-height: 30px;
+}
+.wpfaqsu-field-select .wpfaqsu-chosen {
+  display: none;
+}
+.wpfaqsu-field-select select {
+  max-width: 100%;
+  margin: 0;
+}
+.wpfaqsu-field-select .wpfaqsu-hide-select {
+  display: none !important;
+}
+
+/**
+ * 03. 23. Field: slider
+ */
+.wpfaqsu-field-slider .wpfaqsu--wrap {
+  display: flex;
+  align-items: center;
+}
+.wpfaqsu-field-slider .wpfaqsu--input {
+  display: flex;
+}
+.wpfaqsu-field-slider .wpfaqsu--unit {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  user-select: none;
+  padding: 0 6px;
+  font-size: 11px;
+  line-height: 1;
+  border-radius: 0 4px 4px 0;
+  color: #555;
+  border: 1px solid #7e8993;
+  border-left: 0;
+  background-color: #f5f5f5;
+}
+.wpfaqsu-field-slider .wpfaqsu-slider-ui {
+  margin-right: 15px;
+}
+.wpfaqsu-field-slider input[type=number] {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  width: 50px;
+  text-align: center;
+}
+.wpfaqsu-field-slider .wpfaqsu--is-unit {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.wpfaqsu-field-slider .ui-slider {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  border: none;
+  background: #ddd;
+  border-radius: 2px;
+}
+.wpfaqsu-field-slider .ui-slider-range {
+  height: 3px;
+  border: none;
+  background: #333;
+  border-radius: 2px;
+}
+.wpfaqsu-field-slider .ui-slider-handle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -7px;
+  margin-left: -8px;
+  border: none;
+  background: #333;
+  border-radius: 2px;
+}
+.wpfaqsu-field-slider .ui-state-active,
+.wpfaqsu-field-slider .ui-slider-handle:hover {
+  cursor: pointer;
+  background: #111;
+}
+
+/**
+ * 03. 24. Field: sortable
+ */
+.wpfaqsu-field-sortable .wpfaqsu-field-text input {
+  width: 100%;
+  max-width: 100%;
+}
+.wpfaqsu-field-sortable .wpfaqsu-sortable .wpfaqsu-sortable-item {
+  display: table;
+  width: 100%;
+  margin-bottom: 5px;
+  border: 1px solid #eee;
+}
+.wpfaqsu-field-sortable .wpfaqsu-sortable .wpfaqsu-sortable-item h4 {
+  font-size: 1em;
+}
+.wpfaqsu-field-sortable .wpfaqsu-sortable-content {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #fff;
+}
+.wpfaqsu-field-sortable .wpfaqsu-sortable-content > .wpfaqsu-field {
+  padding: 15px;
+}
+.wpfaqsu-field-sortable .wpfaqsu-sortable-helper {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1em;
+  border-left: 1px solid #eee;
+  background-color: #f7f7f7;
+}
+.wpfaqsu-field-sortable .wpfaqsu-sortable-helper i {
+  display: inline-block;
+  cursor: pointer;
+  width: 50px;
+  color: #555;
+}
+.wpfaqsu-field-sortable .wpfaqsu-sortable-helper i:hover {
+  opacity: 0.5;
+}
+.wpfaqsu-field-sortable .widget-placeholder {
+  height: 50px;
+  margin-bottom: 3px;
+  border: 1px dashed #f1c40f;
+  background-color: #fffae4;
+}
+.wpfaqsu-field-sortable .ui-sortable-helper {
+  height: 50px !important;
+  overflow: hidden !important;
+  border-color: #ccc !important;
+  background-color: #eee !important;
+  opacity: 0.5;
+}
+.wpfaqsu-field-sortable .ui-sortable-helper .wpfaqsu-sortable-helper,
+.wpfaqsu-field-sortable .ui-sortable-helper .wpfaqsu-sortable-content {
+  display: none;
+}
+
+/**
+ * 03. 25. Field: sorter
+ */
+.wpfaqsu-field-sorter .ui-sortable-placeholder {
+  height: 20px;
+  border: 1px dashed #f1c40f;
+  background-color: #fffae4;
+}
+.wpfaqsu-field-sorter .wpfaqsu-modules {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+.wpfaqsu-field-sorter .wpfaqsu-modules:first-child {
+  padding-right: 15px;
+}
+.wpfaqsu-field-sorter .wpfaqsu-modules:last-child {
+  padding-left: 15px;
+}
+.wpfaqsu-field-sorter .wpfaqsu-disabled,
+.wpfaqsu-field-sorter .wpfaqsu-enabled {
+  padding: 5px 15px;
+  border: 1px dashed #ddd;
+  background-color: #fff;
+}
+.wpfaqsu-field-sorter .wpfaqsu-disabled li {
+  opacity: 0.5;
+  transition: opacity .15s;
+}
+.wpfaqsu-field-sorter .wpfaqsu-disabled .ui-sortable-helper {
+  opacity: 1;
+}
+.wpfaqsu-field-sorter .wpfaqsu-sorter-title {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+  border: 1px dashed #ddd;
+  border-bottom: none;
+  background-color: #f8f8f8;
+  text-transform: uppercase;
+}
+.wpfaqsu-field-sorter ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-height: 62px;
+}
+.wpfaqsu-field-sorter ul li {
+  margin: 10px 0;
+  padding: 10px 15px;
+  cursor: move;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  background-color: #fafafa;
+  transition: border-color .15s;
+}
+.wpfaqsu-field-sorter ul li:hover {
+  border-color: #bbb;
+}
+
+/**
+ * 03. 26. Field: spinner
+ */
+.wpfaqsu-field-spinner .wpfaqsu--spin {
+  display: flex;
+}
+.wpfaqsu-field-spinner .ui-spinner {
+  display: flex;
+}
+.wpfaqsu-field-spinner .ui-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-width: 20px;
+  padding: 0 4px;
+  color: #555;
+  border: 1px solid #7e8993;
+  background-color: #f5f5f5;
+}
+.wpfaqsu-field-spinner .ui-spinner-button {
+  cursor: pointer;
+}
+.wpfaqsu-field-spinner .ui-spinner-button:hover {
+  background-color: #e7e7e7;
+}
+.wpfaqsu-field-spinner .ui-spinner-button:active {
+  background-color: #ddd;
+}
+.wpfaqsu-field-spinner .ui-spinner-button:before {
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 14px;
+}
+.wpfaqsu-field-spinner .ui-spinner-down {
+  order: 1;
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+}
+.wpfaqsu-field-spinner .ui-spinner-down:before {
+  content: "\f0d9";
+}
+.wpfaqsu-field-spinner .ui-spinner-input {
+  order: 2;
+}
+.wpfaqsu-field-spinner .wpfaqsu--unit {
+  order: 3;
+  border-left: 0;
+  user-select: none;
+}
+.wpfaqsu-field-spinner .ui-spinner-up {
+  order: 4;
+  border-left: 0;
+  border-radius: 0 4px 4px 0;
+}
+.wpfaqsu-field-spinner .ui-spinner-up:before {
+  content: "\f0da";
+}
+.wpfaqsu-field-spinner input {
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  text-align: center;
+  margin: 0;
+  padding: 0 8px;
+  border-radius: 0;
+}
+.wpfaqsu-field-spinner .ui-button-text,
+.wpfaqsu-field-spinner .ui-button-icon,
+.wpfaqsu-field-spinner .ui-button-icon-space {
+  display: none;
+}
+
+/**
+ * 03. 27. Field: switcher
+ */
+.wpfaqsu-field-switcher .wpfaqsu--switcher {
+  float: left;
+  cursor: pointer;
+  position: relative;
+  width: 60px;
+  height: 26px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: #ed6f6f;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.wpfaqsu-field-switcher .wpfaqsu--ball {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: all .1s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.wpfaqsu-field-switcher .wpfaqsu--on,
+.wpfaqsu-field-switcher .wpfaqsu--off {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  line-height: 26px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding-right: 28px;
+  opacity: 0;
+  transition: all .1s;
+}
+.wpfaqsu-field-switcher .wpfaqsu--off {
+  padding-right: 0;
+  padding-left: 28px;
+  opacity: 1;
+}
+.wpfaqsu-field-switcher .wpfaqsu--active {
+  background: #4fb845;
+}
+.wpfaqsu-field-switcher .wpfaqsu--active .wpfaqsu--on {
+  opacity: 1;
+}
+.wpfaqsu-field-switcher .wpfaqsu--active .wpfaqsu--off {
+  opacity: 0;
+}
+.wpfaqsu-field-switcher .wpfaqsu--active .wpfaqsu--ball {
+  left: 100%;
+  margin-left: -28px;
+}
+.wpfaqsu-field-switcher .wpfaqsu--label {
+  float: left;
+  margin-top: 4px;
+  margin-left: 8px;
+  font-weight: 400;
+  color: #999;
+}
+
+/**
+ * 03. 28. Field: tabbed
+ */
+.wpfaqsu-field-tabbed .wpfaqsu-tabbed-content {
+  border: 1px solid #ccd0d4;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+.wpfaqsu-field-tabbed .wpfaqsu-tabbed-content > .wpfaqsu-field {
+  padding: 15px;
+}
+.wpfaqsu-field-tabbed .wpfaqsu-tabbed-nav .wpfaqsu--icon {
+  padding-right: 5px;
+}
+.wpfaqsu-field-tabbed .wpfaqsu-tabbed-nav a {
+  display: inline-block;
+  padding: 12px 15px;
+  margin-top: 1px;
+  margin-right: 5px;
+  margin-bottom: -1px;
+  position: relative;
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  border: 1px solid #ccd0d4;
+  background-color: #f3f3f3;
+  transition: all .2s;
+}
+.wpfaqsu-field-tabbed .wpfaqsu-tabbed-nav a:hover {
+  background-color: #f9f9f9;
+}
+.wpfaqsu-field-tabbed .wpfaqsu-tabbed-nav a.wpfaqsu-tabbed-active {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+.wpfaqsu-field-tabbed .wpfaqsu-tabbed-nav a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/**
+ * 03. 29. Field: text
+ */
+.wpfaqsu-field-text input {
+  width: 50%;
+  max-width: 100%;
+  margin: 0;
+}
+
+/**
+ * 03. 30. Field: textarea
+ */
+.wpfaqsu-field-textarea textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 125px;
+}
+.wpfaqsu-field-textarea .wpfaqsu-shortcode-button {
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+/**
+ * 03. 31. Field: typography
+ */
+.wpfaqsu-field-typography textarea,
+.wpfaqsu-field-typography select {
+  margin: 0;
+  min-width: 100%;
+  max-width: 100%;
+}
+.wpfaqsu-field-typography .wpfaqsu--title {
+  color: #777;
+  margin: 0 0 2px 0;
+  font-size: 12px;
+}
+.wpfaqsu-field-typography .wpfaqsu--title small {
+  vertical-align: top;
+}
+.wpfaqsu-field-typography .wpfaqsu--blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wpfaqsu-field-typography .wpfaqsu--block {
+  flex: 1;
+  max-width: 100%;
+  padding-right: 6px;
+  padding-bottom: 6px;
+}
+.wpfaqsu-field-typography .wpfaqsu--input {
+  margin: 0;
+  min-width: 100%;
+}
+.wpfaqsu-field-typography .wpfaqsu--input-wrap {
+  position: relative;
+}
+.wpfaqsu-field-typography .wpfaqsu--unit {
+  position: absolute;
+  z-index: 1;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  padding: 2px 6px;
+  color: #666;
+  font-size: 11px;
+  line-height: 1;
+  border-radius: 2px;
+  background: #eee;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.wpfaqsu-field-typography .wpfaqsu--preview {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 20px;
+  color: #222;
+  border: 1px solid #eee;
+  background-color: #fff;
+  border-radius: 2.5px;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: background-color .2s, border-color .2s;
+}
+.wpfaqsu-field-typography .wpfaqsu--block-preview {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  max-width: 100%;
+}
+.wpfaqsu-field-typography .wpfaqsu--black-background {
+  border-color: #000;
+  background-color: #000;
+}
+.wpfaqsu-field-typography .wpfaqsu--toggle {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #999;
+}
+.wpfaqsu-field-typography .wpfaqsu--block-extra-styles {
+  margin-top: 5px;
+}
+
+/**
+ * 03. 32. Field: upload
+ */
+.wpfaqsu-field-upload input {
+  width: 100%;
+  margin: 0;
+}
+.wpfaqsu-field-upload .wpfaqsu--wrap {
+  display: flex;
+  align-items: flex-start;
+}
+.wpfaqsu-field-upload .button {
+  margin-left: 5px;
+}
+.wpfaqsu-field-upload .wpfaqsu--preview {
+  position: relative;
+}
+
+/**
+ * 03. 33. Field: wp_editor
+ */
+.wpfaqsu-field-wp_editor .wpfaqsu-wp-editor {
+  float: left;
+  width: 100%;
+}
+.wpfaqsu-field-wp_editor .mce-toolbar-grp {
+  border: none;
+}
+.wpfaqsu-field-wp_editor .mce-btn.mce-active button,
+.wpfaqsu-field-wp_editor .mce-btn.mce-active:hover button,
+.wpfaqsu-field-wp_editor .mce-btn.mce-active i,
+.wpfaqsu-field-wp_editor .mce-btn.mce-active:hover i {
+  color: #23282d;
+}
+.wpfaqsu-field-wp_editor .wp-media-buttons {
+  position: relative;
+  z-index: 2;
+}
+.wpfaqsu-field-wp_editor .wp-editor-tabs {
+  position: relative;
+  z-index: 1;
+}
+.wpfaqsu-field-wp_editor .wpfaqsu-no-tinymce {
+  border: 1px solid #e5e5e5;
+}
+.wpfaqsu-field-wp_editor .wpfaqsu-no-quicktags .wp-media-buttons {
+  float: none;
+  display: block;
+}
+.wpfaqsu-field-wp_editor .wpfaqsu-no-quicktags .mce-tinymce {
+  box-shadow: none;
+  border: 1px solid #e5e5e5;
+}
+.wpfaqsu-field-wp_editor textarea {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  box-shadow: none;
+}
+
+/**
+ * 03. 34. Field: heading
+ */
+.wpfaqsu-field-heading {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #23282d;
+  background-color: #f5f5f5;
+}
+
+/**
+ * 03. 35. Field: subheading
+ */
+.wpfaqsu-field-subheading {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  color: #23282d;
+  background-color: #f7f7f7;
+}
+
+/**
+ * 03. 36. Field: submessage
+ */
+.wpfaqsu-field-submessage {
+  padding: 0 !important;
+  border: 0 !important;
+}
+.wpfaqsu-field-submessage + .wpfaqsu-field {
+  border-top: 0 !important;
+}
+
+.wpfaqsu-submessage {
+  font-size: 12px;
+  padding: 17px 30px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.wpfaqsu-submessage-success {
+  color: #3c763d;
+  border-color: #d6e9c6;
+  background-color: #dff0d8;
+}
+
+.wpfaqsu-submessage-info {
+  color: #31708f;
+  border-color: #bce8f1;
+  background-color: #d9edf7;
+}
+
+.wpfaqsu-submessage-warning {
+  color: #8a6d3b;
+  border-color: #faebcc;
+  background-color: #fcf8e3;
+}
+
+.wpfaqsu-submessage-danger {
+  color: #a94442;
+  border-color: #ebccd1;
+  background-color: #f2dede;
+}
+
+.wpfaqsu-submessage-normal {
+  color: #23282d;
+  border-color: #eee;
+  background-color: #f7f7f7;
+}
+
+/**
+ * 03. 37. Field: notice
+ */
+.wpfaqsu-field-notice {
+  background-color: #f7f7f7;
+}
+
+.wpfaqsu-notice {
+  padding: 12px;
+  background-color: #fff;
+  border-left-style: solid;
+  border-left-width: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.wpfaqsu-notice-success {
+  border-color: #46b450;
+}
+
+.wpfaqsu-notice-info {
+  border-color: #339fd4;
+}
+
+.wpfaqsu-notice-warning {
+  border-color: #ffbc00;
+}
+
+.wpfaqsu-notice-danger {
+  border-color: #dc3232;
+}
+
+.wpfaqsu-notice-normal {
+  border-color: #222;
+}
+
+/**
+ * 03. 38. Field: number
+ */
+.wpfaqsu-field-number input {
+  width: 100%;
+  margin: 0;
+}
+.wpfaqsu-field-number .wpfaqsu--wrap {
+  position: relative;
+  float: left;
+  width: 100px;
+}
+.wpfaqsu-field-number .wpfaqsu--unit {
+  position: absolute;
+  z-index: 1;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  padding: 2px 6px;
+  color: #666;
+  font-size: 11px;
+  line-height: 1;
+  border-radius: 2px;
+  background: #eee;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/**
+ * 03. 39. Field: link
+ */
+.wpfaqsu-field-link .wpfaqsu--result {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 7px 10px;
+  margin-bottom: 7px;
+  color: #777;
+  border: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  world-break: break-word;
+}
+.wpfaqsu-field-link .wpfaqsu--wrap {
+  position: relative;
+  float: left;
+  width: 100px;
+}
+.wpfaqsu-field-link .wpfaqsu--unit {
+  position: absolute;
+  z-index: 1;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  padding: 2px 6px;
+  color: #666;
+  font-size: 11px;
+  line-height: 1;
+  border-radius: 2px;
+  background: #eee;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/**
+ * 03. 40. others
+ */
+.wpfaqsu-help {
+  cursor: help;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  font-size: 13px;
+  color: #aaa;
+}
+.wpfaqsu-help .wpfaqsu-help-text {
+  display: none;
+}
+
+.wpfaqsu--preview {
+  max-width: 100%;
+}
+
+.wpfaqsu-image-preview {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 6px;
+  max-width: 120px;
+  max-height: 120px;
+  min-width: 40px;
+  min-height: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+.wpfaqsu-image-preview i {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  right: 4px;
+  top: 4px;
+  font-size: 14px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #dd3333;
+  opacity: 0.75;
+  border-radius: 2px;
+  transition: all .2s;
+}
+.wpfaqsu-image-preview i:hover {
+  opacity: 1;
+}
+.wpfaqsu-image-preview i:focus {
+  box-shadow: none;
+}
+.wpfaqsu-image-preview span {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.wpfaqsu-image-preview img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.wpfaqsu-field-custom .wpfaqsu-field {
+  padding: 0;
+}
+
+.wpfaqsu-field .chosen-container-single .chosen-single {
+  height: 28px;
+  line-height: 26px;
+}
+.wpfaqsu-field .chosen-container-single .chosen-single abbr {
+  top: 0;
+  right: 20px;
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+  font-weight: 900;
+  font-size: 12px;
+  height: 100%;
+  width: 18px;
+  color: #aaa;
+  text-align: center;
+  background: none;
+}
+.wpfaqsu-field .chosen-container-single .chosen-single abbr:before {
+  content: "\f00d";
+}
+.wpfaqsu-field .chosen-container-single .chosen-single abbr:hover {
+  color: #555;
+}
+.wpfaqsu-field .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+  font-weight: 900;
+  font-size: 12px;
+  height: 100%;
+  width: 18px;
+  color: #aaa;
+  text-align: center;
+  background: none;
+}
+.wpfaqsu-field .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:before {
+  content: "\f00d";
+  display: inline-block;
+  padding-top: 3px;
+}
+.wpfaqsu-field .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+  color: #555;
+}
+.wpfaqsu-field .chosen-container-single .chosen-single div b {
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+  font-weight: 900;
+  font-size: 14px;
+  color: #aaa;
+  background: none;
+}
+.wpfaqsu-field .chosen-container-single .chosen-single div b:before {
+  content: "\f107";
+}
+.wpfaqsu-field .chosen-container-single .chosen-single div b:hover {
+  color: #555;
+}
+.wpfaqsu-field .chosen-container-multi .chosen-choices li.search-choice-placeholder {
+  border: 1px dashed #aaa;
+  margin: 3px 5px 3px 0;
+}
+.wpfaqsu-field .chosen-container-multi .ui-sortable li.search-choice span {
+  cursor: move;
+}
+.wpfaqsu-field .chosen-container-active.chosen-with-drop .chosen-single div b:before {
+  content: "\f106";
+}
+.wpfaqsu-field .chosen-container-single .chosen-single-with-deselect span {
+  margin-right: 40px;
+}
+.wpfaqsu-field .chosen-container-single .chosen-search input[type="text"] {
+  background: none;
+}
+.wpfaqsu-field .chosen-container-single .chosen-search:before {
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free", "FontAwesome";
+  font-weight: 900;
+  font-size: 11px;
+  content: "\f002";
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  color: #aaa;
+}
+.wpfaqsu-field .wp-picker-container {
+  display: inline-block;
+}
+.wpfaqsu-field .wp-picker-container .wp-color-result.button {
+  margin-bottom: 0;
+}
+.wpfaqsu-field .wpfaqsu--transparent-wrap {
+  display: none;
+  position: relative;
+  top: -1px;
+  width: 235px;
+  padding: 9px 10px;
+  border: 1px solid #dfdfdf;
+  border-top: none;
+  background-color: #fff;
+}
+.wpfaqsu-field .wp-picker-active .wpfaqsu--transparent-wrap {
+  display: block;
+}
+.wpfaqsu-field .wpfaqsu--transparent-slider {
+  position: absolute;
+  width: 190px;
+  margin-left: 2px;
+  height: 18px;
+}
+.wpfaqsu-field .wpfaqsu--transparent-slider .ui-slider-handle {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  z-index: 5;
+  border-color: #aaa;
+  border-style: solid;
+  border-width: 4px 3px;
+  width: 10px;
+  height: 16px;
+  margin: 0 -5px;
+  background: none;
+  cursor: ew-resize;
+  opacity: 0.9;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.wpfaqsu-field .wpfaqsu--transparent-slider .ui-slider-handle:before {
+  content: " ";
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: -3px;
+  bottom: -3px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+.wpfaqsu-field .wpfaqsu--transparent-offset {
+  height: 18px;
+  width: 200px;
+  background: url(../images/checkerboard.png) repeat-y center left scroll #fff;
+  border-radius: 2px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.wpfaqsu-field .wpfaqsu--transparent-text {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  width: 30px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #999;
+}
+.wpfaqsu-field .wpfaqsu--transparent-button {
+  cursor: pointer;
+  user-select: none;
+  margin-top: 10px;
+  font-size: 11px;
+  text-align: center;
+  border-radius: 2px;
+  padding: 3px 7px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.2px;
+  color: #777;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  transition: background-color .2s, border-color .2s, color .2s;
+}
+.wpfaqsu-field .wpfaqsu--transparent-active .wp-color-result {
+  background-image: url(../images/checkerboard.png);
+  background-size: 135px;
+  background-position: center left;
+  background-color: transparent !important;
+}
+.wpfaqsu-field .wpfaqsu--transparent-active .wpfaqsu--transparent-button {
+  color: #fff;
+  border-color: #3ea032;
+  background-color: #4fb845;
+}
+.wpfaqsu-field .wpfaqsu--transparent-active .fa:before {
+  content: "\f205";
+}
+
+/**
+ * 04. Widget
+ */
+.wpfaqsu-widgets > .wpfaqsu-field {
+  position: relative;
+  top: -1px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 12px 15px;
+}
+.wpfaqsu-widgets > .wpfaqsu-field .wpfaqsu-title {
+  float: none;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.wpfaqsu-widgets > .wpfaqsu-field .wpfaqsu-fieldset {
+  float: none;
+  width: 100%;
+}
+.wpfaqsu-widgets .wpfaqsu-field-text input {
+  width: 100%;
+}
+.wpfaqsu-widgets .wpfaqsu-field-notice .wpfaqsu-notice {
+  padding: 15px;
+}
+
+.control-section .wpfaqsu-widgets > .wpfaqsu-field {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 10px 12px;
+}
+
+.wp-block .wpfaqsu-widgets {
+  font-size: 13px;
+}
+.wp-block .wpfaqsu-widgets > .wpfaqsu-field {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.wp-block .wpfaqsu-widgets > .wpfaqsu-field .button-primary {
+  color: #fff;
+}
+.wp-block .wpfaqsu-widgets > .wpfaqsu-field > .wpfaqsu-title > h4 {
+  font-size: 13px;
+}
+
+/**
+ * 05. Widget
+ */
+.control-section .wpfaqsu-field {
+  padding: 0;
+}
+.control-section .wpfaqsu-field .wpfaqsu-title {
+  float: none;
+  width: 100%;
+  margin-bottom: 6px;
+}
+.control-section .wpfaqsu-field .wpfaqsu-title h4 {
+  display: block;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 600;
+  color: inherit;
+}
+.control-section .wpfaqsu-field .wpfaqsu-fieldset {
+  float: none;
+  width: 100%;
+}
+.control-section .wpfaqsu-help {
+  top: -5px;
+  right: -5px;
+}
+.control-section .wpfaqsu-field-select select {
+  width: 100%;
+}
+.control-section .wpfaqsu-field-heading {
+  color: inherit;
+  font-size: 14px;
+  line-height: 1em;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 15px;
+}
+.control-section .wpfaqsu-field-subheading {
+  color: inherit;
+  font-size: 11px;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 10px 15px;
+}
+.control-section .wpfaqsu-subtitle-text {
+  margin-top: 4px;
+  font-size: 12px;
+}
+.control-section .wpfaqsu-field-submessage .wpfaqsu-submessage {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 15px;
+}
+.control-section .wpfaqsu-fieldset .wpfaqsu-field-submessage .wpfaqsu-submessage,
+.control-section .wpfaqsu-fieldset .wpfaqsu-field-heading,
+.control-section .wpfaqsu-fieldset .wpfaqsu-field-subheading {
+  margin-left: 0;
+  margin-right: 0;
+}
+.control-section .wpfaqsu-field-date .wpfaqsu--to {
+  margin-left: 0;
+}
+.control-section .wpfaqsu-field-sorter ul li {
+  padding: 5px;
+}
+.control-section .wpfaqsu-field-sorter .wpfaqsu-modules {
+  float: none;
+  width: 100%;
+}
+.control-section .wpfaqsu-field-sorter .wpfaqsu-modules:first-child {
+  padding-right: 0;
+  padding-bottom: 15px;
+}
+.control-section .wpfaqsu-field-background .wpfaqsu--background-attributes {
+  flex-direction: column;
+}
+.control-section .wpfaqsu-field-spacing input {
+  width: 90px;
+}
+.control-section .wpfaqsu-field-border .wpfaqsu--input {
+  flex: 1 50%;
+}
+.control-section .wpfaqsu-field-border input,
+.control-section .wpfaqsu-field-border select {
+  width: 100%;
+}
+.control-section .wpfaqsu-field-spinner input {
+  width: 50px;
+}
+.control-section .wpfaqsu-field-number .wpfaqsu--wrap {
+  width: 100%;
+}
+.control-section .wpfaqsu-field-backup .wpfaqsu-export-data {
+  display: none;
+}
+.control-section .wpfaqsu-field-fieldset .wpfaqsu-fieldset-content {
+  border-color: #e5e5e5;
+}
+.control-section .wpfaqsu-tabbed-content > .wpfaqsu-field,
+.control-section .wpfaqsu-sortable-content > .wpfaqsu-field,
+.control-section .wpfaqsu-repeater-content > .wpfaqsu-field,
+.control-section .wpfaqsu-fieldset-content > .wpfaqsu-field,
+.control-section .wpfaqsu-cloneable-content > .wpfaqsu-field,
+.control-section .wpfaqsu-accordion-content > .wpfaqsu-field {
+  padding: 10px;
+}
+.control-section .wpfaqsu-tabbed-content > .wpfaqsu-field .wpfaqsu-title,
+.control-section .wpfaqsu-sortable-content > .wpfaqsu-field .wpfaqsu-title,
+.control-section .wpfaqsu-repeater-content > .wpfaqsu-field .wpfaqsu-title,
+.control-section .wpfaqsu-fieldset-content > .wpfaqsu-field .wpfaqsu-title,
+.control-section .wpfaqsu-cloneable-content > .wpfaqsu-field .wpfaqsu-title,
+.control-section .wpfaqsu-accordion-content > .wpfaqsu-field .wpfaqsu-title {
+  margin-bottom: 5px;
+}
+.control-section .wpfaqsu-tabbed-content > .wpfaqsu-field h4,
+.control-section .wpfaqsu-sortable-content > .wpfaqsu-field h4,
+.control-section .wpfaqsu-repeater-content > .wpfaqsu-field h4,
+.control-section .wpfaqsu-fieldset-content > .wpfaqsu-field h4,
+.control-section .wpfaqsu-cloneable-content > .wpfaqsu-field h4,
+.control-section .wpfaqsu-accordion-content > .wpfaqsu-field h4 {
+  font-size: 12px;
+}
+.control-section .wpfaqsu-depend-hidden.wpfaqsu-depend-on {
+  display: none !important;
+}
+.control-section .wpfaqsu-depend-visible.wpfaqsu-depend-on {
+  border-top: 0 !important;
+}
+
+/**
+ * 06. Taxonomy
+ */
+.wpfaqsu-taxonomy {
+  max-width: 95%;
+}
+.wpfaqsu-taxonomy > .wpfaqsu-field {
+  border-top: none !important;
+}
+.wpfaqsu-taxonomy > .wpfaqsu-field-heading {
+  font-size: 1.1em;
+  padding: 20px !important;
+  border: 1px solid #ddd;
+}
+.wpfaqsu-taxonomy > .wpfaqsu-field-subheading {
+  font-size: 12px;
+  padding: 15px !important;
+  border: 1px solid #ddd;
+}
+.wpfaqsu-taxonomy > .wpfaqsu-field-submessage .wpfaqsu-submessage {
+  padding: 15px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+.wpfaqsu-taxonomy > .wpfaqsu-field-notice {
+  background-color: transparent;
+}
+.wpfaqsu-taxonomy .wpfaqsu-section-title {
+  display: block;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.wpfaqsu-taxonomy-add-fields > .wpfaqsu-field {
+  padding: 8px 0;
+}
+.wpfaqsu-taxonomy-add-fields > .wpfaqsu-field > .wpfaqsu-title {
+  float: none;
+  width: 100%;
+  padding: 2px 2px 4px 0;
+}
+.wpfaqsu-taxonomy-add-fields > .wpfaqsu-field > .wpfaqsu-title h4 {
+  font-size: 12px;
+  font-weight: normal;
+}
+.wpfaqsu-taxonomy-add-fields > .wpfaqsu-field > .wpfaqsu-fieldset {
+  float: none;
+  width: 100%;
+}
+.wpfaqsu-taxonomy-add-fields > .wpfaqsu-field > .wpfaqsu-fieldset > .wpfaqsu-help {
+  right: -5px;
+}
+.wpfaqsu-taxonomy-add-fields + p.submit {
+  margin-top: 0;
+}
+
+.wpfaqsu-taxonomy-edit-fields > .wpfaqsu-field {
+  padding: 20px 0;
+}
+.wpfaqsu-taxonomy-edit-fields > .wpfaqsu-field > .wpfaqsu-title {
+  width: 200px;
+}
+.wpfaqsu-taxonomy-edit-fields > .wpfaqsu-field > .wpfaqsu-title h4 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  display: inline-block;
+  vertical-align: middle;
+}
+.wpfaqsu-taxonomy-edit-fields > .wpfaqsu-field > .wpfaqsu-fieldset {
+  width: calc(100% - 220px);
+}
+.wpfaqsu-taxonomy-edit-fields > .wpfaqsu-field > .wpfaqsu-fieldset > .wpfaqsu-help {
+  top: -5px;
+  right: -5px;
+}
+.wpfaqsu-taxonomy-edit-fields > .wpfaqsu-field-submessage {
+  margin: 20px 0;
+}
+.wpfaqsu-taxonomy-edit-fields > .wpfaqsu-field-subheading,
+.wpfaqsu-taxonomy-edit-fields > .wpfaqsu-field-heading {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+}
+
+/**
+ * 08. Nav Menu
+ */
+.wpfaqsu-nav-menu-options {
+  clear: both;
+  float: left;
+  width: 100%;
+}
+.wpfaqsu-nav-menu-options > .wpfaqsu-fields {
+  margin-left: -10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.wpfaqsu-nav-menu-options > .wpfaqsu-fields > .wpfaqsu-field {
+  padding: 12px 14px 12px 12px;
+}
+.wpfaqsu-nav-menu-options > .wpfaqsu-fields > .wpfaqsu-field .wpfaqsu-title {
+  float: none;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.wpfaqsu-nav-menu-options > .wpfaqsu-fields > .wpfaqsu-field .wpfaqsu-fieldset {
+  float: none;
+  width: 100%;
+}
+.wpfaqsu-nav-menu-options .wpfaqsu-field-text input {
+  width: 100%;
+}
+.wpfaqsu-nav-menu-options .wpfaqsu-field-notice .wpfaqsu-notice {
+  padding: 15px;
+}
+
+.wpfaqsu-nav-menu-title {
+  padding: 12px 14px 12px 12px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.wpfaqsu-nav-menu-title:first-child {
+  border-top: 0;
+}
+.wpfaqsu-nav-menu-title h4 {
+  margin: 0;
+  padding: 0;
+  color: #23282d;
+}
+
+.wpfaqsu-nav-menu-icon {
+  margin-right: 5px;
+}
+
+/**
+ * 06. Profile
+ */
+.wpfaqsu-profile-options > h2 > .fa {
+  padding-right: 7px;
+}
+.wpfaqsu-profile-options > .wpfaqsu-field {
+  max-width: 750px;
+  padding: 15px 0;
+  border-top: none !important;
+}
+.wpfaqsu-profile-options > .wpfaqsu-field > .wpfaqsu-title {
+  width: 200px;
+}
+.wpfaqsu-profile-options > .wpfaqsu-field > .wpfaqsu-title h4 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+  display: inline-block;
+  vertical-align: middle;
+}
+.wpfaqsu-profile-options > .wpfaqsu-field > .wpfaqsu-fieldset {
+  width: calc(100% - 220px);
+}
+.wpfaqsu-profile-options > .wpfaqsu-field > .wpfaqsu-fieldset > .wpfaqsu-help {
+  top: -15px;
+  right: -5px;
+}
+.wpfaqsu-profile-options > .wpfaqsu-field-heading {
+  font-size: 1.1em;
+}
+.wpfaqsu-profile-options > .wpfaqsu-field-subheading {
+  font-size: 12px;
+}
+.wpfaqsu-profile-options > .wpfaqsu-field-subheading,
+.wpfaqsu-profile-options > .wpfaqsu-field-heading {
+  margin: 10px 0;
+  padding: 15px !important;
+  border: 1px solid #ddd;
+}
+.wpfaqsu-profile-options > .wpfaqsu-field-submessage {
+  margin: 20px 0;
+}
+.wpfaqsu-profile-options > .wpfaqsu-field-submessage .wpfaqsu-submessage {
+  padding: 10px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
+}
+.wpfaqsu-profile-options > .wpfaqsu-field-notice {
+  background-color: transparent;
+}
+
+/**
+ * 09. Modal
+ */
+.wpfaqsu-modal {
+  position: fixed;
+  z-index: 100101;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.wpfaqsu-modal.hidden {
+  display: none;
+}
+
+.wpfaqsu-modal-icon {
+  z-index: 100102;
+}
+
+.wpfaqsu-modal-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.wpfaqsu-modal-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 100px 0;
+}
+
+.wpfaqsu-modal-inner {
+  position: relative;
+  z-index: 10;
+  width: 760px;
+  height: 750px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.wpfaqsu-modal-content {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 595px;
+}
+.wpfaqsu-modal-content .wpfaqsu-shortcode-button {
+  display: none;
+}
+.wpfaqsu-modal-content .wpfaqsu-field {
+  padding: 15px 30px 15px 15px;
+}
+.wpfaqsu-modal-content a:active, .wpfaqsu-modal-content a:focus {
+  outline: none;
+  box-shadow: none;
+}
+.wpfaqsu-modal-content h4 {
+  font-size: 13px;
+}
+.wpfaqsu-modal-content h4 small {
+  font-style: italic;
+  font-weight: 400;
+  color: #aaa;
+}
+
+.wpfaqsu-modal-title {
+  position: relative;
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #ddd;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  margin: 0;
+  padding: 0 36px 0 16px;
+}
+
+.wpfaqsu-modal-header {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+.wpfaqsu-modal-header select {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  font-size: 13px;
+  line-height: 1;
+  height: 30px;
+  min-height: 30px;
+  background-color: #fff;
+}
+
+.wpfaqsu-modal-close {
+  color: #666;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.wpfaqsu-modal-close:before {
+  font: normal 20px/36px dashicons;
+  content: "\f158";
+  vertical-align: top;
+  width: 36px;
+  height: 36px;
+}
+.wpfaqsu-modal-close:hover {
+  opacity: 0.5;
+}
+
+.wpfaqsu-modal-insert-wrapper {
+  text-align: center;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+}
+
+.wpfaqsu-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+/**
+ * 09. 01. Shortcode Modal
+ */
+.wpfaqsu--repeatable {
+  padding: 15px 15px 0 15px;
+}
+
+.wpfaqsu--repeat-button-block {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.wpfaqsu--repeat-shortcode {
+  position: relative;
+  margin-bottom: 15px;
+  border: 1px dashed #ddd;
+}
+.wpfaqsu--repeat-shortcode:first-child .wpfaqsu-repeat-remove {
+  display: none;
+}
+.wpfaqsu--repeat-shortcode .wpfaqsu-repeat-remove {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #e14d43;
+  opacity: 0.5;
+}
+.wpfaqsu--repeat-shortcode .wpfaqsu-repeat-remove:hover {
+  opacity: 0.5;
+}
+
+.wpfaqsu-shortcode-single .wpfaqsu-modal-inner {
+  height: 750px;
+}
+.wpfaqsu-shortcode-single .wpfaqsu-modal-content {
+  height: 652px;
+}
+
+.elementor-editor-active .wpfaqsu-shortcode-button {
+  margin-left: 5px;
+}
+.elementor-editor-active .wpfaqsu-modal .hidden {
+  display: none !important;
+}
+
+/**
+ * 09. 02. Gutenberg Modal
+ */
+.wpfaqsu-shortcode-block {
+  text-align: center;
+  padding: 14px;
+  font-size: 13px;
+  background-color: #f5f5f5;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+.wpfaqsu-shortcode-block .components-button {
+  margin-bottom: 10px;
+}
+
+/**
+ * 09. 03. Icon Modal
+ */
+.wpfaqsu-modal-icon .wpfaqsu-icon-title {
+  padding: 15px 0;
+  margin: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #eee;
+  background-color: #f7f7f7;
+}
+.wpfaqsu-modal-icon .wpfaqsu-modal-header {
+  text-align: center;
+}
+.wpfaqsu-modal-icon .wpfaqsu-icon-search {
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+}
+.wpfaqsu-modal-icon i {
+  cursor: pointer;
+  display: inline-block;
+  margin: 4px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 2px;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+.wpfaqsu-modal-icon i:hover {
+  color: #fff;
+  border-color: #222;
+  background-color: #222;
+}
+.wpfaqsu-modal-icon .wpfaqsu-modal-content {
+  padding: 10px;
+  height: 618px;
+}
+.wpfaqsu-modal-icon .wpfaqsu-error-text {
+  padding: 10px;
+}
+
+.wpfaqsu-modal-loading {
+  display: none;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.wpfaqsu-loading {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+}
+.wpfaqsu-loading:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  content: "";
+  margin-top: -2px;
+  margin-left: -2px;
+  background-color: white;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: wpfaqsuLoader;
+  border-radius: 4px;
+}
+
+@keyframes wpfaqsuLoader {
+  0% {
+    transform: rotate(0deg) translateX(-6px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(-6px) rotate(-360deg);
+  }
+}
+/**
+ * 10. Helper
+ */
+.wpfaqsu-subtitle-text {
+  margin-top: 6px;
+  font-weight: 400;
+  color: #999;
+}
+
+.wpfaqsu-desc-text {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+  font-weight: 400;
+  color: #999;
+}
+
+.wpfaqsu-error-text {
+  margin-top: 6px;
+  color: #d02c21;
+}
+
+.wpfaqsu-before-text {
+  margin-bottom: 6px;
+}
+
+.wpfaqsu-after-text {
+  margin-top: 6px;
+}
+
+.wpfaqsu-metabox-hide {
+  display: none !important;
+}
+
+.wpfaqsu-metabox-show {
+  display: block !important;
+}
+
+.wpfaqsu-depend-hidden.wpfaqsu-depend-on {
+  display: none;
+}
+
+.wpfaqsu-depend-visible.wpfaqsu-depend-on {
+  display: block;
+  opacity: 0.75;
+  filter: grayscale(1);
+  user-select: none;
+  border-top: 1px solid #eee;
+}
+.wpfaqsu-depend-visible.wpfaqsu-depend-on .clear:before {
+  content: "";
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #eee;
+  opacity: 0.25;
+  z-index: 10;
+}
+
+.wpfaqsu-warning-primary {
+  color: #fff !important;
+  border-color: #dc3545 !important;
+  background: #dc3545 !important;
+}
+.wpfaqsu-warning-primary:hover, .wpfaqsu-warning-primary:focus {
+  border-color: #bd2130 !important;
+  background: #bd2130 !important;
+}
+.wpfaqsu-warning-primary:focus {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #bd2130 !important;
+}
+.wpfaqsu-warning-primary:active {
+  border-color: #bd2130 !important;
+  background: #bd2130 !important;
+}
+
+.wpfaqsu-form-result {
+  display: none;
+  float: left;
+  padding: 0 8px;
+  margin-right: 4px;
+  font-size: 11px;
+  line-height: 30px;
+  user-select: none;
+  border-radius: 2px;
+}
+
+.wpfaqsu-form-show {
+  display: block;
+}
+
+.wpfaqsu-form-success {
+  color: #fff;
+  background-color: #46b450;
+}
+
+.wpfaqsu-form-warning {
+  color: #8a6d3b;
+  background-color: #faebcc;
+}
+
+.wpfaqsu-label-error {
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  font-size: 10px;
+  line-height: 10px;
+  height: 10px;
+  width: 10px;
+  padding: 1px;
+  font-style: normal;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+  background-color: #e10000;
+  border-radius: 2px;
+}
+
+.wpfaqsu-no-option {
+  padding: 30px;
+}
+
+.wpfaqsu-input-number {
+  -moz-appearance: textfield;
+}
+
+.wpfaqsu-input-number::-webkit-inner-spin-button,
+.wpfaqsu-input-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.wpfaqsu-fa5-shims .wpfaqsu .fas,
+.wpfaqsu-fa5-shims .wpfaqsu .far,
+.wpfaqsu-fa5-shims .wpfaqsu .fab {
+  font-family: "FontAwesome";
+  font-style: normal;
+}
+
+/**
+ * 11. Welcome Page
+ */
+.wpfaqsu-welcome-wrap {
+  position: relative;
+  margin: 25px 40px 0 20px;
+  font-size: 15px;
+  max-width: 1200px;
+}
+.wpfaqsu-welcome-wrap p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.wpfaqsu-welcome-wrap h1 {
+  margin: 0.2em 200px 0 0;
+  padding: 0;
+  color: #32373c;
+  line-height: 1.2em;
+  font-size: 2.8em;
+  font-weight: 400;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu-logo {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  height: 160px;
+  width: 140px;
+  background-image: linear-gradient(45deg, #2d67cb, #ad19f3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), inset 0 0 0 4px rgba(0, 0, 0, 0.25);
+}
+.wpfaqsu-welcome-wrap .wpfaqsu-logo .wpfaqsu--effects i {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.15);
+  transform: rotate(-45deg);
+}
+.wpfaqsu-welcome-wrap .wpfaqsu-logo .wpfaqsu--effects i:nth-child(1) {
+  bottom: -20px;
+  right: -70px;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu-logo .wpfaqsu--effects i:nth-child(2) {
+  bottom: -35px;
+  right: -80px;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu-logo .wpfaqsu--effects i:nth-child(3) {
+  bottom: -50px;
+  right: -90px;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu-logo .wpfaqsu--effects i:nth-child(4) {
+  bottom: -65px;
+  right: -100px;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu-logo .wpfaqsu--wp-logos {
+  position: relative;
+  padding-top: 25px;
+  text-align: center;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu-logo .wpfaqsu--wp-logo {
+  position: absolute;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/wp-logo.svg);
+}
+.wpfaqsu-welcome-wrap .wpfaqsu-logo .wpfaqsu--wp-plugin-logo {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fff;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/wp-plugin-logo.svg);
+  border-radius: 100%;
+  vertical-align: middle;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu-logo .wpfaqsu--text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 90px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+.wpfaqsu-welcome-wrap .wpfaqsu-logo .wpfaqsu--version {
+  top: auto;
+  left: auto;
+  right: 8px;
+  bottom: 4px;
+  font-size: 11px;
+  text-transform: lowercase;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu-about-text {
+  font-weight: 400;
+  line-height: 1.6em;
+  font-size: 19px;
+  margin: 1em 200px 1em 0;
+  color: #555d66;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu-demo-button {
+  margin: 1em 200px 2em 0;
+}
+.wpfaqsu-welcome-wrap .nav-tab-wrapper {
+  margin-bottom: 20px;
+}
+.wpfaqsu-welcome-wrap ul {
+  list-style-type: disc;
+  padding-left: 15px;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu--col {
+  float: left;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu--col-2 {
+  width: 50%;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu--col-3 {
+  width: 33.333%;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu--col-4 {
+  width: 25%;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu--col-5 {
+  width: 20%;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu--col-last {
+  padding-right: 0;
+}
+.wpfaqsu-welcome-wrap .wpfaqsu--col-upgrade {
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.wpfaqsu--table-compare thead td,
+.wpfaqsu--table-compare tfoot td {
+  text-align: center;
+}
+.wpfaqsu--table-compare td {
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+.wpfaqsu--table-compare td:first-child {
+  text-align: left;
+}
+.wpfaqsu--table-compare tfoot td {
+  padding: 15px 0;
+}
+.wpfaqsu--table-compare .fa {
+  font-size: 18px;
+}
+.wpfaqsu--table-compare .fa-check-circle {
+  color: #46b450;
+}
+.wpfaqsu--table-compare .fa-times-circle {
+  color: #dc3232;
+}
+
+.wpfaqsu-welcome-cols {
+  clear: both;
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 0 0;
+  border-radius: 2px;
+  border: 1px solid #e5e5e5;
+}
+.wpfaqsu-welcome-cols .wpfaqsu--col {
+  width: 33.333%;
+  float: left;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: 200px;
+  border-right: 1px solid #e5e5e5;
+}
+.wpfaqsu-welcome-cols .wpfaqsu--left,
+.wpfaqsu-welcome-cols .wpfaqsu--block {
+  float: left;
+  width: 20%;
+  padding: 0 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.wpfaqsu-welcome-cols .wpfaqsu--block {
+  width: 80%;
+}
+.wpfaqsu-welcome-cols .wpfaqsu--col-first {
+  border-bottom: 1px solid #e5e5e5;
+}
+.wpfaqsu-welcome-cols .wpfaqsu--last {
+  border-right: none;
+}
+.wpfaqsu-welcome-cols .wpfaqsu--space {
+  height: 20px;
+}
+.wpfaqsu-welcome-cols .wpfaqsu--icon {
+  display: inline-block;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+  background-color: #555;
+  border-radius: 30px;
+}
+.wpfaqsu-welcome-cols .wpfaqsu--active {
+  background-color: #5cb85c;
+}
+.wpfaqsu-welcome-cols .wpfaqsu--deactive {
+  background-color: #e14d43;
+}
+.wpfaqsu-welcome-cols .wpfaqsu--title {
+  font-weight: bold;
+  display: block;
+}
+.wpfaqsu-welcome-cols p:last-child {
+  margin-bottom: 0;
+}
+
+.wpfaqsu-features-cols .wpfaqsu--key-features {
+  width: 30%;
+}
+.wpfaqsu-features-cols .wpfaqsu--available-fields {
+  width: 70%;
+}
+
+.wpfaqsu-code-block {
+  margin: 20px 0;
+  padding: 5px 20px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+.wpfaqsu-code-block pre {
+  font-size: 13px;
+  color: #0073aa;
+}
+.wpfaqsu-code-block pre span {
+  color: #999;
+}
+
+.wpfaqsu--table-fields td {
+  font-size: 14px;
+}
+
+.wpfaqsu--upgrade a {
+  color: #5cb85c;
+  font-weight: bold;
+}
+.wpfaqsu--upgrade a:focus, .wpfaqsu--upgrade a:hover {
+  color: #4aa14a;
+  outline: none;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 782px) {
+  .wpfaqsu-welcome-cols .wpfaqsu--col {
+    width: 100%;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .wpfaqsu-features-cols .wpfaqsu--key-features {
+    width: 100%;
+  }
+  .wpfaqsu-features-cols .wpfaqsu--available-fields {
+    width: 100%;
+  }
+}
+/**
+ * 12. Responsive
+ */
+@media only screen and (max-width: 1200px) {
+  .wpfaqsu-metabox .wpfaqsu-field .wpfaqsu-title {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .wpfaqsu-metabox .wpfaqsu-field .wpfaqsu-fieldset {
+    float: none;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 782px) {
+  .wpfaqsu-header-inner {
+    text-align: center;
+  }
+  .wpfaqsu-header-inner h1 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .wpfaqsu-form-result {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .wpfaqsu-search,
+  .wpfaqsu-header-right,
+  .wpfaqsu-header-left {
+    width: 100%;
+  }
+
+  .wpfaqsu-search {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .wpfaqsu-footer {
+    text-align: center;
+  }
+
+  .wpfaqsu-buttons {
+    float: none;
+  }
+
+  .wpfaqsu-copyright {
+    float: none;
+    margin-top: 10px;
+  }
+
+  .wpfaqsu-nav,
+  .wpfaqsu-expand-all,
+  .wpfaqsu-reset-section,
+  .wpfaqsu-nav-background {
+    display: none !important;
+  }
+
+  .wpfaqsu-nav-normal + .wpfaqsu-content {
+    margin-left: 0;
+  }
+
+  .wpfaqsu-section-title,
+  .wpfaqsu-section {
+    display: block !important;
+  }
+
+  .wpfaqsu-field .wpfaqsu-title {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .wpfaqsu-field .wpfaqsu-fieldset {
+    float: none;
+    width: 100%;
+  }
+
+  .wpfaqsu-field-color .button.wp-picker-clear {
+    padding: 0 8px;
+    line-height: 2.14285714;
+    min-height: 32px;
+  }
+
+  .wpfaqsu-modal-inner {
+    width: 350px;
+    height: 400px;
+  }
+
+  .wpfaqsu-modal-content {
+    height: 237px;
+  }
+
+  .wpfaqsu-icon-dialog .wpfaqsu-modal-inner {
+    width: 305px;
+    height: 380px;
+  }
+  .wpfaqsu-icon-dialog .wpfaqsu-modal-content {
+    height: 267px;
+  }
+
+  .wpfaqsu-modal-icon .wpfaqsu-modal-inner {
+    width: 330px;
+    height: 385px;
+  }
+  .wpfaqsu-modal-icon .wpfaqsu-modal-content {
+    height: 252px;
+  }
+
+  .wpfaqsu-profile-options > .wpfaqsu-field > .wpfaqsu-title,
+  .wpfaqsu-taxonomy-edit-fields > .wpfaqsu-field > .wpfaqsu-title {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .wpfaqsu-profile-options > .wpfaqsu-field > .wpfaqsu-fieldset,
+  .wpfaqsu-taxonomy-edit-fields > .wpfaqsu-field > .wpfaqsu-fieldset {
+    float: none;
+    width: 100%;
+  }
+
+  .wpfaqsu-nav-menu-options > .wpfaqsu-fields {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .wpfaqsu-nav-menu-options > .wpfaqsu-fields > .wpfaqsu-field {
+    padding: 10px;
+  }
+}
+/**
+ * Chosen JS Styles
+ */
+.chosen-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  user-select: none;
+}
+
+.chosen-container * {
+  box-sizing: border-box;
+}
+
+.chosen-container .chosen-drop {
+  position: absolute;
+  top: 100%;
+  z-index: 1010;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-top: 0;
+  background: #fff;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100% 100%);
+}
+
+.chosen-container.chosen-with-drop .chosen-drop {
+  clip: auto;
+  clip-path: none;
+}
+
+.chosen-container a {
+  cursor: pointer;
+}
+
+.chosen-container .search-choice .group-name, .chosen-container .chosen-single .group-name {
+  margin-right: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  color: #999999;
+}
+
+.chosen-container .search-choice .group-name:after, .chosen-container .chosen-single .group-name:after {
+  content: ":";
+  padding-left: 2px;
+  vertical-align: top;
+}
+
+.chosen-container-single .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 0 0 8px;
+  height: 25px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+  background: linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+  background-clip: padding-box;
+  box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 24px;
+}
+
+.chosen-container-single .chosen-default {
+  color: #999;
+}
+
+.chosen-container-single .chosen-single span {
+  display: block;
+  overflow: hidden;
+  margin-right: 26px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chosen-container-single .chosen-single-with-deselect span {
+  margin-right: 38px;
+}
+
+.chosen-container-single .chosen-single abbr {
+  position: absolute;
+  top: 6px;
+  right: 26px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  font-size: 1px;
+}
+
+.chosen-container-single .chosen-single div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 18px;
+  height: 100%;
+}
+
+.chosen-container-single .chosen-single div b {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.chosen-container-single .chosen-search {
+  position: relative;
+  z-index: 1010;
+  margin: 0;
+  padding: 3px 4px;
+  white-space: nowrap;
+}
+
+.chosen-container-single .chosen-search input[type="text"] {
+  margin: 1px 0;
+  padding: 4px 20px 4px 5px;
+  width: 100%;
+  height: auto;
+  outline: 0;
+  border: 1px solid #aaa;
+  font-size: 1em;
+  font-family: sans-serif;
+  line-height: normal;
+  border-radius: 0;
+}
+
+.chosen-container-single .chosen-drop {
+  margin-top: -1px;
+  border-radius: 0 0 4px 4px;
+  background-clip: padding-box;
+}
+
+.chosen-container-single.chosen-container-single-nosearch .chosen-search {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100% 100%);
+}
+
+.chosen-container .chosen-results {
+  color: #444;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 4px 4px 0;
+  padding: 0 0 0 4px;
+  max-height: 240px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.chosen-container .chosen-results li {
+  display: none;
+  margin: 0;
+  padding: 5px 6px;
+  list-style: none;
+  line-height: 15px;
+  word-wrap: break-word;
+  -webkit-touch-callout: none;
+}
+
+.chosen-container .chosen-results li.active-result {
+  display: list-item;
+  cursor: pointer;
+}
+
+.chosen-container .chosen-results li.disabled-result {
+  display: list-item;
+  color: #ccc;
+  cursor: default;
+}
+
+.chosen-container .chosen-results li.highlighted {
+  background-color: #3875d7;
+  background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+  color: #fff;
+}
+
+.chosen-container .chosen-results li.no-results {
+  color: #777;
+  display: list-item;
+  background: #f4f4f4;
+}
+
+.chosen-container .chosen-results li.group-result {
+  display: list-item;
+  font-weight: bold;
+  cursor: default;
+}
+
+.chosen-container .chosen-results li.group-option {
+  padding-left: 15px;
+}
+
+.chosen-container .chosen-results li em {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.chosen-container-multi .chosen-choices {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 5px;
+  width: 100%;
+  height: auto;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  background-image: linear-gradient(#eee 1%, #fff 15%);
+  cursor: text;
+}
+
+.chosen-container-multi .chosen-choices li {
+  float: left;
+  list-style: none;
+}
+
+.chosen-container-multi .chosen-choices li.search-field {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+  margin: 1px 0;
+  padding: 0;
+  outline: 0;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none;
+  color: #999;
+  font-size: 100%;
+  font-family: sans-serif;
+  line-height: normal;
+  border-radius: 0;
+  width: 25px;
+  height: 25px;
+  min-height: 25px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice {
+  position: relative;
+  margin: 3px 5px 3px 0;
+  padding: 3px 20px 3px 6px;
+  border: 1px solid #aaa;
+  max-width: 100%;
+  border-radius: 3px;
+  background-color: #eeeeee;
+  background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+  background-size: 100% 19px;
+  background-repeat: repeat-x;
+  background-clip: padding-box;
+  box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+  color: #333;
+  line-height: 13px;
+  cursor: default;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice span {
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
+  font-size: 1px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice-disabled {
+  padding-right: 5px;
+  border: 1px solid #ccc;
+  background-color: #e4e4e4;
+  background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+  color: #666;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice-focus {
+  background: #d4d4d4;
+}
+
+.chosen-container-multi .chosen-results {
+  margin: 0;
+  padding: 0;
+}
+
+.chosen-container-multi .chosen-drop .result-selected {
+  display: list-item;
+  color: #ccc;
+  cursor: default;
+}
+
+.chosen-container-active .chosen-single {
+  border: 1px solid #5897fb;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: 1px solid #aaa;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-image: linear-gradient(#eee 20%, #fff 80%);
+  box-shadow: 0 1px 0 #fff inset;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single div {
+  border-left: none;
+  background: transparent;
+}
+
+.chosen-container-active .chosen-choices {
+  border: 1px solid #5897fb;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.chosen-container-active .chosen-choices li.search-field input[type="text"] {
+  color: #222 !important;
+}
+
+.chosen-disabled {
+  opacity: 0.5 !important;
+  cursor: default;
+}
+
+.chosen-disabled .chosen-single {
+  cursor: default;
+}
+
+.chosen-disabled .chosen-choices .search-choice .search-choice-close {
+  cursor: default;
+}
+
+.chosen-rtl {
+  text-align: right;
+}
+
+.chosen-rtl .chosen-single {
+  overflow: visible;
+  padding: 0 8px 0 0;
+}
+
+.chosen-rtl .chosen-single span {
+  margin-right: 0;
+  margin-left: 26px;
+  direction: rtl;
+}
+
+.chosen-rtl .chosen-single-with-deselect span {
+  margin-left: 38px;
+}
+
+.chosen-rtl .chosen-single div {
+  right: auto;
+  left: 3px;
+}
+
+.chosen-rtl .chosen-single abbr {
+  right: auto;
+  left: 26px;
+}
+
+.chosen-rtl .chosen-choices li {
+  float: right;
+}
+
+.chosen-rtl .chosen-choices li.search-field input[type="text"] {
+  direction: rtl;
+}
+
+.chosen-rtl .chosen-choices li.search-choice {
+  margin: 3px 5px 3px 0;
+  padding: 3px 5px 3px 19px;
+}
+
+.chosen-rtl .chosen-choices li.search-choice .search-choice-close {
+  right: auto;
+  left: 4px;
+}
+
+.chosen-rtl.chosen-container-single .chosen-results {
+  margin: 0 0 4px 4px;
+  padding: 0 4px 0 0;
+}
+
+.chosen-rtl .chosen-results li.group-option {
+  padding-right: 15px;
+  padding-left: 0;
+}
+
+.chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div {
+  border-right: none;
+}
+
+.chosen-rtl .chosen-search input[type="text"] {
+  padding: 4px 5px 4px 20px;
+  direction: rtl;
+}

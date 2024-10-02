@@ -1,0 +1,590 @@
+/**
+ *
+ * ---------------------------------------------------------
+ * FAQSU FRAMEWORK RTL CSS MAP
+ * ---------------------------------------------------------
+ *
+ * 01. Base
+ *     01. 01. Header
+ *     01. 02. Header Buttons
+ *     01. 03. Navigation
+ *     01. 04. Content
+ *     01. 05. Section
+ *     01. 06. Show All Settings
+ *     01. 07. Search Input
+ *     01. 08. Copyright
+ *     01. 09. Metabox
+ * 02. Fields
+ *     02. 01. Field: typography
+ *     02. 02. Field: checkbox, radio
+ *     02. 03. Field: switcher
+ *     02. 04. Field: upload
+ *     02. 05. Field: group
+ *     02. 06. Field: repeater
+ *     02. 07. Field: help
+ *     02. 08. Field: icon
+ *     02. 09. Field: gallery
+ *     02. 10. Field: sorter
+ *     02. 11. Field: tabbed
+ *     02. 12. Field: media
+ *     02. 13. Field: notice
+ *     02. 14. Field: border, spacing, dimensions
+ *     02. 15. Field: background
+ *     02. 16. Field: spinner
+ *     02. 17. Field: slider
+ *     02. 18. Field: button_set
+ *     02. 19. Field: link_color
+ *     02. 20. Field: color_group
+ *     02. 21. Field: palette
+ *     02. 22. Field: accordion
+ *     02. 23. Field: date
+ *     02. 24. Field: map
+ *     02. 25. Field: sortable
+ *     02. 26. Field: number
+ * 03. Taxonomy
+ * 04. Profile
+ * 05. Nav Menu
+ * 06. Modal
+ * 07. Customizer
+ * 08. Responsive
+ * 09. Others
+ *
+ * ---------------------------------------------------------
+ *
+ */
+/**
+ * 01. Base
+ */
+.wpfaqsu-options {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+/**
+ * 01. 01. Header
+ */
+.wpfaqsu-header h1 {
+  float: right;
+}
+.wpfaqsu-header fieldset {
+  float: left;
+}
+
+/**
+ * 01. 02. Header Buttons
+ */
+.wpfaqsu-buttons {
+  float: left;
+  direction: ltr;
+}
+
+.wpfaqsu-header-left {
+  float: right;
+}
+
+.wpfaqsu-header-right {
+  float: left;
+}
+
+/**
+ * 01. 03. Navigation
+ */
+.wpfaqsu-nav {
+  float: right;
+}
+.wpfaqsu-nav ul {
+  clear: right;
+}
+.wpfaqsu-nav ul li .wpfaqsu-active:after {
+  right: auto;
+  left: 0;
+  border-left-color: #fff;
+  border-right-color: transparent;
+}
+.wpfaqsu-nav ul li .wpfaqsu-arrow:after {
+  content: "\f053";
+  right: auto;
+  left: 10px;
+}
+.wpfaqsu-nav ul li.wpfaqsu-tab-expanded .wpfaqsu-arrow:after {
+  transform: rotate(-90deg);
+}
+.wpfaqsu-nav ul ul li a {
+  padding-right: 25px;
+  padding-left: 15px;
+}
+.wpfaqsu-nav ul ul:before {
+  left: auto;
+  right: 15px;
+}
+.wpfaqsu-nav .wpfaqsu-tab-icon {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+.wpfaqsu-nav-background {
+  left: auto;
+  right: 0;
+}
+
+/**
+ * 01. 04. Content
+ */
+.wpfaqsu-content {
+  margin-left: 0;
+  margin-right: 225px;
+}
+
+/**
+ * 01. 05. Section
+ */
+.wpfaqsu-sections {
+  float: right;
+}
+
+/**
+ * 01. 06. Show all options
+ */
+.wpfaqsu-show-all .wpfaqsu-content {
+  margin-right: 0;
+  overflow: hidden;
+}
+
+.wpfaqsu-expand-all {
+  float: right;
+  right: auto;
+  left: 40px;
+  margin-right: 0;
+  margin-left: 4px;
+}
+
+/**
+ * 01. 07. Search Input
+ */
+.wpfaqsu-search {
+  float: right;
+}
+.wpfaqsu-search input {
+  margin: 0 0 0 5px;
+}
+
+/**
+ * 01. 08. Copyright
+ */
+.wpfaqsu-copyright {
+  float: right;
+}
+
+/**
+ * 01. 09. Metabox
+ */
+.wpfaqsu-metabox {
+  margin: -6px -12px -12px -12px;
+}
+.wpfaqsu-metabox .wpfaqsu-section-title {
+  padding: 20px;
+}
+
+.wpfaqsu-section-title .wpfaqsu-section-icon {
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+/**
+ * 02. Fields
+ */
+.wpfaqsu-field .wpfaqsu-title {
+  float: right;
+}
+.wpfaqsu-field .wpfaqsu-fieldset {
+  float: left;
+}
+
+.wpfaqsu-pseudo-field {
+  padding: 0 0 0 5px !important;
+}
+
+/**
+ * 02. 01. Field: typography
+ */
+.wpfaqsu-field-typography select {
+  margin: 0;
+  width: 100%;
+}
+.wpfaqsu-field-typography .wpfaqsu--blocks-inputs .wpfaqsu--blocks {
+  flex-direction: row-reverse;
+}
+.wpfaqsu-field-typography .wpfaqsu--unit {
+  left: 4px;
+  right: auto;
+}
+
+/**
+ * 02. 02. Field: checkbox, radio
+ */
+.wpfaqsu-field-checkbox ul ul li,
+.wpfaqsu-field-radio ul ul li {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.wpfaqsu-field-checkbox ul ul li:first-child,
+.wpfaqsu-field-radio ul ul li:first-child {
+  margin-right: 0;
+}
+.wpfaqsu-field-checkbox .wpfaqsu--inline-list li,
+.wpfaqsu-field-radio .wpfaqsu--inline-list li {
+  margin-right: 0;
+  margin-left: 15px;
+}
+.wpfaqsu-field-checkbox .wpfaqsu--text,
+.wpfaqsu-field-radio .wpfaqsu--text {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+/**
+ * 02. 03. Field: switcher
+ */
+.wpfaqsu-field-switcher .wpfaqsu--switcher {
+  float: right;
+}
+.wpfaqsu-field-switcher .wpfaqsu--label {
+  float: right;
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+/**
+ * 02. 04. Field: upload
+ */
+.wpfaqsu-field-upload .wpfaqsu--remove,
+.wpfaqsu-field-upload .wpfaqsu--button {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+/**
+ * 02. 05. Field: group
+ */
+.wpfaqsu-field-group .wpfaqsu-cloneable-title {
+  padding: 15px 10px 15px 65px;
+}
+.wpfaqsu-field-group .wpfaqsu-cloneable-helper {
+  right: auto;
+  left: 10px;
+}
+
+/**
+ * 02. 06. Field: repeater
+ */
+.wpfaqsu-field-repeater .wpfaqsu-repeater-helper {
+  border-left: 0;
+  border-right: 1px solid #eee;
+}
+
+/**
+ * 02. 07. Field: help
+ */
+.wpfaqsu-help {
+  right: auto;
+  left: 5px;
+}
+
+/**
+ * 02. 08. Field: icon
+ */
+.wpfaqsu-field-icon .button {
+  margin-right: 0;
+  margin-left: 5px;
+}
+.wpfaqsu-field-icon .wpfaqsu-icon-preview i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+/**
+ * 02. 09. Field: gallery
+ */
+.wpfaqsu-field-gallery ul li {
+  margin-right: 0;
+  margin-left: 5px;
+}
+.wpfaqsu-field-gallery .button {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+/**
+ * 02. 11. Field: tabbed
+ */
+.wpfaqsu-field-tabbed .wpfaqsu-tabbed-nav .wpfaqsu--icon {
+  padding-right: 0;
+  padding-left: 5px;
+}
+.wpfaqsu-field-tabbed .wpfaqsu-tabbed-nav a {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+/**
+ * 02. 12. Field: media
+ */
+.wpfaqsu-field-media .button {
+  margin-left: 0;
+  margin-right: 7px;
+}
+.wpfaqsu-field-media .hidden + .button {
+  margin-right: 0;
+}
+
+/**
+ * 02. 13. Field: notice
+ */
+.wpfaqsu-notice {
+  border-left: none;
+  border-right-style: solid;
+  border-right-width: 4px;
+}
+
+/**
+ * 02. 14. Field: border, spacing, dimensions
+ */
+.wpfaqsu-field-dimensions .wpfaqsu--input,
+.wpfaqsu-field-dimensions .wpfaqsu-fieldset,
+.wpfaqsu-field-spacing .wpfaqsu--input,
+.wpfaqsu-field-spacing .wpfaqsu-fieldset,
+.wpfaqsu-field-border .wpfaqsu--input,
+.wpfaqsu-field-border .wpfaqsu-fieldset {
+  direction: ltr;
+}
+.wpfaqsu-field-dimensions .wpfaqsu--inputs,
+.wpfaqsu-field-dimensions .wpfaqsu--color,
+.wpfaqsu-field-spacing .wpfaqsu--inputs,
+.wpfaqsu-field-spacing .wpfaqsu--color,
+.wpfaqsu-field-border .wpfaqsu--inputs,
+.wpfaqsu-field-border .wpfaqsu--color {
+  float: right;
+}
+.wpfaqsu-field-dimensions .wpfaqsu--color,
+.wpfaqsu-field-spacing .wpfaqsu--color,
+.wpfaqsu-field-border .wpfaqsu--color {
+  margin-right: 4px;
+  direction: rtl;
+}
+
+/**
+ * 02. 15. Field: background
+ */
+.wpfaqsu-field-background .wpfaqsu--block {
+  float: right;
+}
+.wpfaqsu-field-background .wpfaqsu--select,
+.wpfaqsu-field-background .wpfaqsu--media {
+  padding-right: 0;
+}
+.wpfaqsu-field-background .wpfaqsu--title {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+/**
+ * 02. 16. Field: spinner
+ */
+.wpfaqsu-field-spinner .wpfaqsu--spin {
+  float: right;
+  direction: ltr;
+}
+
+/**
+ * 02. 17. Field: slider
+ */
+.wpfaqsu-field-slider .wpfaqsu-slider-ui {
+  direction: ltr;
+  margin-right: 0;
+  margin-left: 15px;
+}
+.wpfaqsu-field-slider .wpfaqsu--input {
+  direction: ltr;
+}
+
+/**
+ * 02. 18. Field: button_set
+ */
+.wpfaqsu-field-button_set .wpfaqsu--button-group {
+  float: right;
+}
+
+/**
+ * 02. 19. Field: link_color
+ */
+.wpfaqsu-field-link_color .wpfaqsu--left {
+  float: right;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/**
+ * 02. 20. Field: color_group
+ */
+.wpfaqsu-field-color_group .wpfaqsu--left {
+  float: right;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/**
+ * 02. 21. Field: palette
+ */
+.wpfaqsu-field-palette .wpfaqsu--palette {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/**
+ * 02. 22. Field: accordion
+ */
+.wpfaqsu-field-accordion .wpfaqsu--icon {
+  margin-right: 0;
+  margin-left: 2px;
+}
+
+/**
+ * 02. 23. Field: date
+ */
+.wpfaqsu-field-date .wpfaqsu--to {
+  margin-left: 0;
+  margin-right: 7px;
+}
+
+/**
+ * 02. 24. Field: map
+ */
+.wpfaqsu-field-map .wpfaqsu--map-input:last-child {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+/**
+ * 02. 25. Field: sortable
+ */
+.wpfaqsu-field-sortable .wpfaqsu-sortable-helper {
+  border-left: none;
+  border-right: 1px solid #eee;
+}
+
+/**
+ * 02. 26. Field: number
+ */
+.wpfaqsu-field-number .wpfaqsu--wrap {
+  float: right;
+}
+.wpfaqsu-field-number .wpfaqsu--unit {
+  left: 4px;
+  right: auto;
+}
+
+/**
+ * 03. Taxonomy
+ */
+.wpfaqsu-taxonomy-add-fields {
+  margin-right: 0;
+  margin-left: 30px;
+}
+.wpfaqsu-taxonomy-add-fields .wpfaqsu-field > .wpfaqsu-fieldset > .wpfaqsu-help {
+  left: -5px;
+  right: auto;
+}
+
+.wpfaqsu-taxonomy-edit-fields {
+  margin-right: 0;
+  margin-left: 35px;
+}
+.wpfaqsu-taxonomy-edit-fields .wpfaqsu-field > .wpfaqsu-fieldset > .wpfaqsu-help {
+  right: auto;
+  left: -5px;
+}
+
+/**
+ * 04. Profile
+ */
+.wpfaqsu-profile-options > h2 > .fa {
+  padding-right: 0;
+  padding-left: 7px;
+}
+.wpfaqsu-profile-options > .wpfaqsu-field > .wpfaqsu-fieldset > .wpfaqsu-help {
+  left: -5px;
+  right: auto;
+}
+
+/**
+ * 05. Nav Menu
+ */
+.wpfaqsu-nav-menu-options > .wpfaqsu-fields {
+  margin-left: 0;
+  margin-right: -10px;
+}
+
+.wpfaqsu-nav-menu-title {
+  padding-left: 14px;
+  padding-right: 12px;
+}
+
+.wpfaqsu-nav-menu-icon {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+/**
+ * 06. Modal
+ */
+.wpfaqsu-modal-content .wpfaqsu-field {
+  padding: 15px 15px 15px 30px;
+}
+
+.wpfaqsu-modal-title {
+  padding: 0 16px 0 36px;
+}
+
+.wpfaqsu-modal-close {
+  right: auto;
+  left: 0;
+}
+
+/**
+ * 07. Customizer
+ */
+.control-section .wpfaqsu-field .wpfaqsu-fieldset {
+  margin-right: 0;
+}
+
+/**
+ * 08. Responsive
+ */
+@media only screen and (max-width: 1200px) {
+  .wpfaqsu-metabox .wpfaqsu-field .wpfaqsu-fieldset {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 782px) {
+  .wpfaqsu .wpfaqsu-fieldset,
+  .wpfaqsu .wpfaqsu-content {
+    margin-right: 0;
+  }
+}
+/**
+ * 09. Others
+ */
+.wpfaqsu-field .wpfaqsu--transparent-slider {
+  margin-left: 0;
+  margin-right: 2px;
+}
+.wpfaqsu-field .wpfaqsu--transparent-slider .ui-slider-handle {
+  margin: 0 -11px;
+}
+.wpfaqsu-field .wpfaqsu--transparent-offset {
+  background-position: center right;
+}
+.wpfaqsu-field .wpfaqsu--transparent-text {
+  right: auto;
+  left: 10px;
+}
