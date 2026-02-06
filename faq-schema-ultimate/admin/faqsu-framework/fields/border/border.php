@@ -22,11 +22,11 @@ if ( ! class_exists( 'WPFAQSU_Field_border' ) ) {
         'bottom_icon'        => '<i class="fas fa-long-arrow-alt-down"></i>',
         'right_icon'         => '<i class="fas fa-long-arrow-alt-right"></i>',
         'all_icon'           => '<i class="fas fa-arrows-alt"></i>',
-        'top_placeholder'    => esc_html__( 'top', 'wpfaqsu' ),
-        'right_placeholder'  => esc_html__( 'right', 'wpfaqsu' ),
-        'bottom_placeholder' => esc_html__( 'bottom', 'wpfaqsu' ),
-        'left_placeholder'   => esc_html__( 'left', 'wpfaqsu' ),
-        'all_placeholder'    => esc_html__( 'all', 'wpfaqsu' ),
+        'top_placeholder'    => esc_html__( 'top', 'faq-schema-ultimate' ),
+        'right_placeholder'  => esc_html__( 'right', 'faq-schema-ultimate' ),
+        'bottom_placeholder' => esc_html__( 'bottom', 'faq-schema-ultimate' ),
+        'left_placeholder'   => esc_html__( 'left', 'faq-schema-ultimate' ),
+        'all_placeholder'    => esc_html__( 'all', 'faq-schema-ultimate' ),
         'top'                => true,
         'left'               => true,
         'bottom'             => true,
@@ -48,15 +48,15 @@ if ( ! class_exists( 'WPFAQSU_Field_border' ) ) {
       );
 
       $border_props = array(
-        'solid'     => esc_html__( 'Solid', 'wpfaqsu' ),
-        'dashed'    => esc_html__( 'Dashed', 'wpfaqsu' ),
-        'dotted'    => esc_html__( 'Dotted', 'wpfaqsu' ),
-        'double'    => esc_html__( 'Double', 'wpfaqsu' ),
-        'inset'     => esc_html__( 'Inset', 'wpfaqsu' ),
-        'outset'    => esc_html__( 'Outset', 'wpfaqsu' ),
-        'groove'    => esc_html__( 'Groove', 'wpfaqsu' ),
-        'ridge'     => esc_html__( 'ridge', 'wpfaqsu' ),
-        'none'      => esc_html__( 'None', 'wpfaqsu' )
+        'solid'     => esc_html__( 'Solid', 'faq-schema-ultimate' ),
+        'dashed'    => esc_html__( 'Dashed', 'faq-schema-ultimate' ),
+        'dotted'    => esc_html__( 'Dotted', 'faq-schema-ultimate' ),
+        'double'    => esc_html__( 'Double', 'faq-schema-ultimate' ),
+        'inset'     => esc_html__( 'Inset', 'faq-schema-ultimate' ),
+        'outset'    => esc_html__( 'Outset', 'faq-schema-ultimate' ),
+        'groove'    => esc_html__( 'Groove', 'faq-schema-ultimate' ),
+        'ridge'     => esc_html__( 'ridge', 'faq-schema-ultimate' ),
+        'none'      => esc_html__( 'None', 'faq-schema-ultimate' )
       );
 
       $default_value = ( ! empty( $this->field['default'] ) ) ? wp_parse_args( $this->field['default'], $default_value ) : $default_value;

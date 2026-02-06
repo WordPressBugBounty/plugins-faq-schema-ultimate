@@ -11,7 +11,7 @@ if ( ! function_exists( 'wpfaqsu_validate_email' ) ) {
   function wpfaqsu_validate_email( $value ) {
 
     if ( ! filter_var( $value, FILTER_VALIDATE_EMAIL ) ) {
-      return esc_html__( 'Please enter a valid email address.', 'wpfaqsu' );
+      return esc_html__( 'Please enter a valid email address.', 'faq-schema-ultimate' );
     }
 
   }
@@ -29,7 +29,7 @@ if ( ! function_exists( 'wpfaqsu_validate_numeric' ) ) {
   function wpfaqsu_validate_numeric( $value ) {
 
     if ( ! is_numeric( $value ) ) {
-      return esc_html__( 'Please enter a valid number.', 'wpfaqsu' );
+      return esc_html__( 'Please enter a valid number.', 'faq-schema-ultimate' );
     }
 
   }
@@ -47,7 +47,7 @@ if ( ! function_exists( 'wpfaqsu_validate_required' ) ) {
   function wpfaqsu_validate_required( $value ) {
 
     if ( empty( $value ) ) {
-      return esc_html__( 'This field is required.', 'wpfaqsu' );
+      return esc_html__( 'This field is required.', 'faq-schema-ultimate' );
     }
 
   }
@@ -65,7 +65,7 @@ if ( ! function_exists( 'wpfaqsu_validate_url' ) ) {
   function wpfaqsu_validate_url( $value ) {
 
     if ( ! filter_var( $value, FILTER_VALIDATE_URL ) ) {
-      return esc_html__( 'Please enter a valid URL.', 'wpfaqsu' );
+      return esc_html__( 'Please enter a valid URL.', 'faq-schema-ultimate' );
     }
 
   }
@@ -83,7 +83,7 @@ if ( ! function_exists( 'wpfaqsu_customize_validate_email' ) ) {
   function wpfaqsu_customize_validate_email( $validity, $value, $wp_customize ) {
 
     if ( ! sanitize_email( $value ) ) {
-      $validity->add( 'required', esc_html__( 'Please enter a valid email address.', 'wpfaqsu' ) );
+      $validity->add( 'required', esc_html__( 'Please enter a valid email address.', 'faq-schema-ultimate' ) );
     }
 
     return $validity;
@@ -103,7 +103,7 @@ if ( ! function_exists( 'wpfaqsu_customize_validate_numeric' ) ) {
   function wpfaqsu_customize_validate_numeric( $validity, $value, $wp_customize ) {
 
     if ( ! is_numeric( $value ) ) {
-      $validity->add( 'required', esc_html__( 'Please enter a valid number.', 'wpfaqsu' ) );
+      $validity->add( 'required', esc_html__( 'Please enter a valid number.', 'faq-schema-ultimate' ) );
     }
 
     return $validity;
@@ -123,7 +123,7 @@ if ( ! function_exists( 'wpfaqsu_customize_validate_required' ) ) {
   function wpfaqsu_customize_validate_required( $validity, $value, $wp_customize ) {
 
     if ( empty( $value ) ) {
-      $validity->add( 'required', esc_html__( 'This field is required.', 'wpfaqsu' ) );
+      $validity->add( 'required', esc_html__( 'This field is required.', 'faq-schema-ultimate' ) );
     }
 
     return $validity;
@@ -143,7 +143,7 @@ if ( ! function_exists( 'wpfaqsu_customize_validate_url' ) ) {
   function wpfaqsu_customize_validate_url( $validity, $value, $wp_customize ) {
 
     if ( ! filter_var( $value, FILTER_VALIDATE_URL ) ) {
-      $validity->add( 'required', esc_html__( 'Please enter a valid URL.', 'wpfaqsu' ) );
+      $validity->add( 'required', esc_html__( 'Please enter a valid URL.', 'faq-schema-ultimate' ) );
     }
 
     return $validity;

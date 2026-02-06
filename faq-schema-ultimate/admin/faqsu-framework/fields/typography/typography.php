@@ -93,8 +93,8 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
           // Font Family
           if ( ! empty( $args['font_family'] ) ) {
             echo '<div class="wpfaqsu--block">';
-            echo '<div class="wpfaqsu--title">'. esc_html__( 'Font Family', 'wpfaqsu' ) .'</div>';
-            echo $this->create_select( array( $this->value['font-family'] => $this->value['font-family'] ), 'font-family', esc_html__( 'Select a font', 'wpfaqsu' ) );
+            echo '<div class="wpfaqsu--title">'. esc_html__( 'Font Family', 'faq-schema-ultimate' ) .'</div>';
+            echo $this->create_select( array( $this->value['font-family'] => $this->value['font-family'] ), 'font-family', esc_html__( 'Select a font', 'faq-schema-ultimate' ) );
             echo '</div>';
           }
 
@@ -102,7 +102,7 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
           // Backup Font Family
           if ( ! empty( $args['backup_font_family'] ) ) {
             echo '<div class="wpfaqsu--block wpfaqsu--block-backup-font-family hidden">';
-            echo '<div class="wpfaqsu--title">'. esc_html__( 'Backup Font Family', 'wpfaqsu' ) .'</div>';
+            echo '<div class="wpfaqsu--title">'. esc_html__( 'Backup Font Family', 'faq-schema-ultimate' ) .'</div>';
             echo $this->create_select( apply_filters( 'wpfaqsu_field_typography_backup_font_family', array(
               'Arial, Helvetica, sans-serif',
               "'Arial Black', Gadget, sans-serif",
@@ -116,7 +116,7 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
               "'Lucida Console', Monaco, monospace",
               'Georgia, serif',
               'Palatino Linotype'
-            ) ), 'backup-font-family', esc_html__( 'Default', 'wpfaqsu' ) );
+            ) ), 'backup-font-family', esc_html__( 'Default', 'faq-schema-ultimate' ) );
             echo '</div>';
           }
 
@@ -127,9 +127,9 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
             //
             // Font Style Select
             echo '<div class="wpfaqsu--block wpfaqsu--block-font-style hidden">';
-            echo '<div class="wpfaqsu--title">'. esc_html__( 'Font Style', 'wpfaqsu') .'</div>';
+            echo '<div class="wpfaqsu--title">'. esc_html__( 'Font Style', 'faq-schema-ultimate') .'</div>';
             echo '<select class="wpfaqsu--font-style-select" data-placeholder="Default">';
-            echo '<option value="">'. ( ! $this->chosen ? esc_html__( 'Default', 'wpfaqsu' ) : '' ) .'</option>';
+            echo '<option value="">'. ( ! $this->chosen ? esc_html__( 'Default', 'faq-schema-ultimate' ) : '' ) .'</option>';
             if ( ! empty( $this->value['font-weight'] ) || ! empty( $this->value['font-style'] ) ) {
               echo '<option value="'. esc_attr( strtolower( $this->value['font-weight'] . $this->value['font-style'] ) ) .'" selected></option>';
             }
@@ -141,8 +141,8 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
             // Extra Font Style Select
             if ( ! empty( $args['extra_styles'] ) ) {
               echo '<div class="wpfaqsu--block-extra-styles hidden">';
-              echo ( ! $this->chosen ) ? '<div class="wpfaqsu--title">'. esc_html__( 'Load Extra Styles', 'wpfaqsu' ) .'</div>' : '';
-              $placeholder = ( $this->chosen ) ? esc_html__( 'Load Extra Styles', 'wpfaqsu' ) : esc_html__( 'Default', 'wpfaqsu' );
+              echo ( ! $this->chosen ) ? '<div class="wpfaqsu--title">'. esc_html__( 'Load Extra Styles', 'faq-schema-ultimate' ) .'</div>' : '';
+              $placeholder = ( $this->chosen ) ? esc_html__( 'Load Extra Styles', 'faq-schema-ultimate' ) : esc_html__( 'Default', 'faq-schema-ultimate' );
               echo $this->create_select( $this->value['extra-styles'], 'extra-styles', $placeholder, true );
               echo '</div>';
             }
@@ -155,9 +155,9 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
           // Subset
           if ( ! empty( $args['subset'] ) ) {
             echo '<div class="wpfaqsu--block wpfaqsu--block-subset hidden">';
-            echo '<div class="wpfaqsu--title">'. esc_html__( 'Subset', 'wpfaqsu' ) .'</div>';
+            echo '<div class="wpfaqsu--title">'. esc_html__( 'Subset', 'faq-schema-ultimate' ) .'</div>';
             $subset = ( is_array( $this->value['subset'] ) ) ? $this->value['subset'] : array_filter( (array) $this->value['subset'] );
-            echo $this->create_select( $subset, 'subset', esc_html__( 'Default', 'wpfaqsu' ), $args['multi_subset'] );
+            echo $this->create_select( $subset, 'subset', esc_html__( 'Default', 'faq-schema-ultimate' ), $args['multi_subset'] );
             echo '</div>';
           }
 
@@ -165,15 +165,15 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
           // Text Align
           if ( ! empty( $args['text_align'] ) ) {
             echo '<div class="wpfaqsu--block">';
-            echo '<div class="wpfaqsu--title">'. esc_html__( 'Text Align', 'wpfaqsu' ) .'</div>';
+            echo '<div class="wpfaqsu--title">'. esc_html__( 'Text Align', 'faq-schema-ultimate' ) .'</div>';
             echo $this->create_select( array(
-              'inherit' => esc_html__( 'Inherit', 'wpfaqsu' ),
-              'left'    => esc_html__( 'Left', 'wpfaqsu' ),
-              'center'  => esc_html__( 'Center', 'wpfaqsu' ),
-              'right'   => esc_html__( 'Right', 'wpfaqsu' ),
-              'justify' => esc_html__( 'Justify', 'wpfaqsu' ),
-              'initial' => esc_html__( 'Initial', 'wpfaqsu' )
-            ), 'text-align', esc_html__( 'Default', 'wpfaqsu' ) );
+              'inherit' => esc_html__( 'Inherit', 'faq-schema-ultimate' ),
+              'left'    => esc_html__( 'Left', 'faq-schema-ultimate' ),
+              'center'  => esc_html__( 'Center', 'faq-schema-ultimate' ),
+              'right'   => esc_html__( 'Right', 'faq-schema-ultimate' ),
+              'justify' => esc_html__( 'Justify', 'faq-schema-ultimate' ),
+              'initial' => esc_html__( 'Initial', 'faq-schema-ultimate' )
+            ), 'text-align', esc_html__( 'Default', 'faq-schema-ultimate' ) );
             echo '</div>';
           }
 
@@ -181,12 +181,12 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
           // Font Variant
           if ( ! empty( $args['font_variant'] ) ) {
             echo '<div class="wpfaqsu--block">';
-            echo '<div class="wpfaqsu--title">'. esc_html__( 'Font Variant', 'wpfaqsu' ) .'</div>';
+            echo '<div class="wpfaqsu--title">'. esc_html__( 'Font Variant', 'faq-schema-ultimate' ) .'</div>';
             echo $this->create_select( array(
-              'normal'         => esc_html__( 'Normal', 'wpfaqsu' ),
-              'small-caps'     => esc_html__( 'Small Caps', 'wpfaqsu' ),
-              'all-small-caps' => esc_html__( 'All Small Caps', 'wpfaqsu' )
-            ), 'font-variant', esc_html__( 'Default', 'wpfaqsu' ) );
+              'normal'         => esc_html__( 'Normal', 'faq-schema-ultimate' ),
+              'small-caps'     => esc_html__( 'Small Caps', 'faq-schema-ultimate' ),
+              'all-small-caps' => esc_html__( 'All Small Caps', 'faq-schema-ultimate' )
+            ), 'font-variant', esc_html__( 'Default', 'faq-schema-ultimate' ) );
             echo '</div>';
           }
 
@@ -194,13 +194,13 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
           // Text Transform
           if ( ! empty( $args['text_transform'] ) ) {
             echo '<div class="wpfaqsu--block">';
-            echo '<div class="wpfaqsu--title">'. esc_html__( 'Text Transform', 'wpfaqsu' ) .'</div>';
+            echo '<div class="wpfaqsu--title">'. esc_html__( 'Text Transform', 'faq-schema-ultimate' ) .'</div>';
             echo $this->create_select( array(
-              'none'       => esc_html__( 'None', 'wpfaqsu' ),
-              'capitalize' => esc_html__( 'Capitalize', 'wpfaqsu' ),
-              'uppercase'  => esc_html__( 'Uppercase', 'wpfaqsu' ),
-              'lowercase'  => esc_html__( 'Lowercase', 'wpfaqsu' )
-            ), 'text-transform', esc_html__( 'Default', 'wpfaqsu' ) );
+              'none'       => esc_html__( 'None', 'faq-schema-ultimate' ),
+              'capitalize' => esc_html__( 'Capitalize', 'faq-schema-ultimate' ),
+              'uppercase'  => esc_html__( 'Uppercase', 'faq-schema-ultimate' ),
+              'lowercase'  => esc_html__( 'Lowercase', 'faq-schema-ultimate' )
+            ), 'text-transform', esc_html__( 'Default', 'faq-schema-ultimate' ) );
             echo '</div>';
           }
 
@@ -208,17 +208,17 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
           // Text Decoration
           if ( ! empty( $args['text_decoration'] ) ) {
             echo '<div class="wpfaqsu--block">';
-            echo '<div class="wpfaqsu--title">'. esc_html__( 'Text Decoration', 'wpfaqsu' ) .'</div>';
+            echo '<div class="wpfaqsu--title">'. esc_html__( 'Text Decoration', 'faq-schema-ultimate' ) .'</div>';
             echo $this->create_select( array(
-              'none'               => esc_html__( 'None', 'wpfaqsu' ),
-              'underline'          => esc_html__( 'Solid', 'wpfaqsu' ),
-              'underline double'   => esc_html__( 'Double', 'wpfaqsu' ),
-              'underline dotted'   => esc_html__( 'Dotted', 'wpfaqsu' ),
-              'underline dashed'   => esc_html__( 'Dashed', 'wpfaqsu' ),
-              'underline wavy'     => esc_html__( 'Wavy', 'wpfaqsu' ),
-              'underline overline' => esc_html__( 'Overline', 'wpfaqsu' ),
-              'line-through'       => esc_html__( 'Line-through', 'wpfaqsu' )
-            ), 'text-decoration', esc_html__( 'Default', 'wpfaqsu' ) );
+              'none'               => esc_html__( 'None', 'faq-schema-ultimate' ),
+              'underline'          => esc_html__( 'Solid', 'faq-schema-ultimate' ),
+              'underline double'   => esc_html__( 'Double', 'faq-schema-ultimate' ),
+              'underline dotted'   => esc_html__( 'Dotted', 'faq-schema-ultimate' ),
+              'underline dashed'   => esc_html__( 'Dashed', 'faq-schema-ultimate' ),
+              'underline wavy'     => esc_html__( 'Wavy', 'faq-schema-ultimate' ),
+              'underline overline' => esc_html__( 'Overline', 'faq-schema-ultimate' ),
+              'line-through'       => esc_html__( 'Line-through', 'faq-schema-ultimate' )
+            ), 'text-decoration', esc_html__( 'Default', 'faq-schema-ultimate' ) );
             echo '</div>';
           }
 
@@ -230,7 +230,7 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
           // Font Size
           if ( ! empty( $args['font_size'] ) ) {
             echo '<div class="wpfaqsu--block">';
-            echo '<div class="wpfaqsu--title">'. esc_html__( 'Font Size', 'wpfaqsu' ) .'</div>';
+            echo '<div class="wpfaqsu--title">'. esc_html__( 'Font Size', 'faq-schema-ultimate' ) .'</div>';
             echo '<div class="wpfaqsu--input-wrap">';
             echo '<input type="number" name="'. esc_attr( $this->field_name( '[font-size]' ) ) .'" class="wpfaqsu--font-size wpfaqsu--input wpfaqsu-input-number" value="'. esc_attr( $this->value['font-size'] ) .'" step="any" />';
             echo '<span class="wpfaqsu--unit">'. esc_attr( $args['unit'] ) .'</span>';
@@ -242,7 +242,7 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
           // Line Height
           if ( ! empty( $args['line_height'] ) ) {
             echo '<div class="wpfaqsu--block">';
-            echo '<div class="wpfaqsu--title">'. esc_html__( 'Line Height', 'wpfaqsu' ) .'</div>';
+            echo '<div class="wpfaqsu--title">'. esc_html__( 'Line Height', 'faq-schema-ultimate' ) .'</div>';
             echo '<div class="wpfaqsu--input-wrap">';
             echo '<input type="number" name="'. esc_attr( $this->field_name( '[line-height]' ) ) .'" class="wpfaqsu--line-height wpfaqsu--input wpfaqsu-input-number" value="'. esc_attr( $this->value['line-height'] ) .'" step="any" />';
             echo '<span class="wpfaqsu--unit">'. esc_attr( $line_height_unit ) .'</span>';
@@ -254,7 +254,7 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
           // Letter Spacing
           if ( ! empty( $args['letter_spacing'] ) ) {
             echo '<div class="wpfaqsu--block">';
-            echo '<div class="wpfaqsu--title">'. esc_html__( 'Letter Spacing', 'wpfaqsu' ) .'</div>';
+            echo '<div class="wpfaqsu--title">'. esc_html__( 'Letter Spacing', 'faq-schema-ultimate' ) .'</div>';
             echo '<div class="wpfaqsu--input-wrap">';
             echo '<input type="number" name="'. esc_attr( $this->field_name( '[letter-spacing]' ) ) .'" class="wpfaqsu--letter-spacing wpfaqsu--input wpfaqsu-input-number" value="'. esc_attr( $this->value['letter-spacing'] ) .'" step="any" />';
             echo '<span class="wpfaqsu--unit">'. esc_attr( $args['unit'] ) .'</span>';
@@ -266,7 +266,7 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
           // Word Spacing
           if ( ! empty( $args['word_spacing'] ) ) {
             echo '<div class="wpfaqsu--block">';
-            echo '<div class="wpfaqsu--title">'. esc_html__( 'Word Spacing', 'wpfaqsu' ) .'</div>';
+            echo '<div class="wpfaqsu--title">'. esc_html__( 'Word Spacing', 'faq-schema-ultimate' ) .'</div>';
             echo '<div class="wpfaqsu--input-wrap">';
             echo '<input type="number" name="'. esc_attr( $this->field_name( '[word-spacing]' ) ) .'" class="wpfaqsu--word-spacing wpfaqsu--input wpfaqsu-input-number" value="'. esc_attr( $this->value['word-spacing'] ) .'" step="any" />';
             echo '<span class="wpfaqsu--unit">'. esc_attr( $args['unit'] ) .'</span>';
@@ -281,7 +281,7 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
         if ( ! empty( $args['color'] ) ) {
           $default_color_attr = ( ! empty( $default_value['color'] ) ) ? ' data-default-color="'. esc_attr( $default_value['color'] ) .'"' : '';
           echo '<div class="wpfaqsu--block wpfaqsu--block-font-color">';
-          echo '<div class="wpfaqsu--title">'. esc_html__( 'Font Color', 'wpfaqsu' ) .'</div>';
+          echo '<div class="wpfaqsu--title">'. esc_html__( 'Font Color', 'faq-schema-ultimate' ) .'</div>';
           echo '<div class="wpfaqsu-field-color">';
           echo '<input type="text" name="'. esc_attr( $this->field_name( '[color]' ) ) .'" class="wpfaqsu-color wpfaqsu--color" value="'. esc_attr( $this->value['color'] ) .'"'. $default_color_attr .' />';
           echo '</div>';
@@ -292,7 +292,7 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
         // Custom style
         if ( ! empty( $args['custom_style'] ) ) {
           echo '<div class="wpfaqsu--block wpfaqsu--block-custom-style">';
-          echo '<div class="wpfaqsu--title">'. esc_html__( 'Custom Style', 'wpfaqsu' ) .'</div>';
+          echo '<div class="wpfaqsu--title">'. esc_html__( 'Custom Style', 'faq-schema-ultimate' ) .'</div>';
           echo '<textarea name="'. esc_attr( $this->field_name( '[custom-style]' ) ) .'" class="wpfaqsu--custom-style">'. esc_attr( $this->value['custom-style'] ) .'</textarea>';
           echo '</div>';
         }
@@ -351,7 +351,7 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
 
         WPFAQSU::include_plugin_file( 'fields/typography/google-fonts.php' );
 
-        wp_enqueue_script( 'wpfaqsu-webfontloader', 'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js', array( 'wpfaqsu' ), '1.6.28', true );
+        wp_enqueue_script( 'wpfaqsu-webfontloader', 'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js', array( 'faq-schema-ultimate' ), '1.6.28', true );
 
         $webfonts = array();
 
@@ -359,13 +359,13 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
 
         if ( ! empty( $customwebfonts ) ) {
           $webfonts['custom'] = array(
-            'label' => esc_html__( 'Custom Web Fonts', 'wpfaqsu' ),
+            'label' => esc_html__( 'Custom Web Fonts', 'faq-schema-ultimate' ),
             'fonts' => $customwebfonts
           );
         }
 
         $webfonts['safe'] = array(
-          'label' => esc_html__( 'Safe Web Fonts', 'wpfaqsu' ),
+          'label' => esc_html__( 'Safe Web Fonts', 'faq-schema-ultimate' ),
           'fonts' => apply_filters( 'wpfaqsu_field_typography_safewebfonts', array(
             'Arial',
             'Arial Black',
@@ -385,7 +385,7 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
         ) );
 
         $webfonts['google'] = array(
-          'label' => esc_html__( 'Google Web Fonts', 'wpfaqsu' ),
+          'label' => esc_html__( 'Google Web Fonts', 'faq-schema-ultimate' ),
           'fonts' => apply_filters( 'wpfaqsu_field_typography_googlewebfonts', wpfaqsu_get_google_fonts()
         ) );
 
@@ -414,7 +414,7 @@ if ( ! class_exists( 'WPFAQSU_Field_typography' ) ) {
 
         $webfonts = apply_filters( 'wpfaqsu_field_typography_webfonts', $webfonts );
 
-        wp_localize_script( 'wpfaqsu', 'wpfaqsu_typography_json', array(
+        wp_localize_script( 'faq-schema-ultimate', 'wpfaqsu_typography_json', array(
           'webfonts'      => $webfonts,
           'defaultstyles' => $defaultstyles,
           'googlestyles'  => $googlestyles

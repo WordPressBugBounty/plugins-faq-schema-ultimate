@@ -21,8 +21,8 @@ if ( ! class_exists( 'WPFAQSU_Field_upload' ) ) {
         'preview'        => false,
         'preview_width'  => '',
         'preview_height' => '',
-        'button_title'   => esc_html__( 'Upload', 'wpfaqsu' ),
-        'remove_title'   => esc_html__( 'Remove', 'wpfaqsu' ),
+        'button_title'   => esc_html__( 'Upload', 'faq-schema-ultimate' ),
+        'remove_title'   => esc_html__( 'Remove', 'faq-schema-ultimate' ),
       ) );
 
       echo $this->field_before();

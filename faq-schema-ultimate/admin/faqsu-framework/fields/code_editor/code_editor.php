@@ -44,7 +44,7 @@ if ( ! class_exists( 'WPFAQSU_Field_code_editor' ) ) {
       if ( in_array( $page, array( 'revslider' ) ) ) { return; }
 
       if ( ! wp_script_is( 'wpfaqsu-codemirror' ) ) {
-        wp_enqueue_script( 'wpfaqsu-codemirror', esc_url( $this->cdn_url . $this->version .'/lib/codemirror.min.js' ), array( 'wpfaqsu' ), $this->version, true );
+        wp_enqueue_script( 'wpfaqsu-codemirror', esc_url( $this->cdn_url . $this->version .'/lib/codemirror.min.js' ), array( 'faq-schema-ultimate' ), $this->version, true );
         wp_enqueue_script( 'wpfaqsu-codemirror-loadmode', esc_url( $this->cdn_url . $this->version .'/addon/mode/loadmode.min.js' ), array( 'wpfaqsu-codemirror' ), $this->version, true );
       }
 

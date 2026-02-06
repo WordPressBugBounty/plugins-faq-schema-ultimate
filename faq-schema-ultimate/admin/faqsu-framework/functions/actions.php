@@ -13,7 +13,7 @@ if ( ! function_exists( 'wpfaqsu_get_icons' ) ) {
     $nonce = ( ! empty( $_POST[ 'nonce' ] ) ) ? sanitize_text_field( wp_unslash( $_POST[ 'nonce' ] ) ) : '';
 
     if ( ! wp_verify_nonce( $nonce, 'wpfaqsu_icon_nonce' ) ) {
-      wp_send_json_error( array( 'error' => esc_html__( 'Error: Invalid nonce verification.', 'wpfaqsu' ) ) );
+      wp_send_json_error( array( 'error' => esc_html__( 'Error: Invalid nonce verification.', 'faq-schema-ultimate' ) ) );
     }
 
     ob_start();
@@ -38,7 +38,7 @@ if ( ! function_exists( 'wpfaqsu_get_icons' ) ) {
 
     } else {
 
-      echo '<div class="wpfaqsu-error-text">'. esc_html__( 'No data available.', 'wpfaqsu' ) .'</div>';
+      echo '<div class="wpfaqsu-error-text">'. esc_html__( 'No data available.', 'faq-schema-ultimate' ) .'</div>';
 
     }
 
@@ -65,11 +65,11 @@ if ( ! function_exists( 'wpfaqsu_export' ) ) {
     $unique = ( ! empty( $_GET[ 'unique' ] ) ) ? sanitize_text_field( wp_unslash( $_GET[ 'unique' ] ) ) : '';
 
     if ( ! wp_verify_nonce( $nonce, 'wpfaqsu_backup_nonce' ) ) {
-      die( esc_html__( 'Error: Invalid nonce verification.', 'wpfaqsu' ) );
+      die( esc_html__( 'Error: Invalid nonce verification.', 'faq-schema-ultimate' ) );
     }
 
     if ( empty( $unique ) ) {
-      die( esc_html__( 'Error: Invalid key.', 'wpfaqsu' ) );
+      die( esc_html__( 'Error: Invalid key.', 'faq-schema-ultimate' ) );
     }
 
     // Export
@@ -103,15 +103,15 @@ if ( ! function_exists( 'wpfaqsu_import_ajax' ) ) {
     $data   = ( ! empty( $_POST[ 'data' ] ) ) ? wp_kses_post_deep( json_decode( wp_unslash( trim( $_POST[ 'data' ] ) ), true ) ) : array();
 
     if ( ! wp_verify_nonce( $nonce, 'wpfaqsu_backup_nonce' ) ) {
-      wp_send_json_error( array( 'error' => esc_html__( 'Error: Invalid nonce verification.', 'wpfaqsu' ) ) );
+      wp_send_json_error( array( 'error' => esc_html__( 'Error: Invalid nonce verification.', 'faq-schema-ultimate' ) ) );
     }
 
     if ( empty( $unique ) ) {
-      wp_send_json_error( array( 'error' => esc_html__( 'Error: Invalid key.', 'wpfaqsu' ) ) );
+      wp_send_json_error( array( 'error' => esc_html__( 'Error: Invalid key.', 'faq-schema-ultimate' ) ) );
     }
 
     if ( empty( $data ) || ! is_array( $data ) ) {
-      wp_send_json_error( array( 'error' => esc_html__( 'Error: The response is not a valid JSON response.', 'wpfaqsu' ) ) );
+      wp_send_json_error( array( 'error' => esc_html__( 'Error: The response is not a valid JSON response.', 'faq-schema-ultimate' ) ) );
     }
 
     // Success
@@ -138,7 +138,7 @@ if ( ! function_exists( 'wpfaqsu_reset_ajax' ) ) {
     $unique = ( ! empty( $_POST[ 'unique' ] ) ) ? sanitize_text_field( wp_unslash( $_POST[ 'unique' ] ) ) : '';
 
     if ( ! wp_verify_nonce( $nonce, 'wpfaqsu_backup_nonce' ) ) {
-      wp_send_json_error( array( 'error' => esc_html__( 'Error: Invalid nonce verification.', 'wpfaqsu' ) ) );
+      wp_send_json_error( array( 'error' => esc_html__( 'Error: Invalid nonce verification.', 'faq-schema-ultimate' ) ) );
     }
 
     // Success
@@ -167,17 +167,17 @@ if ( ! function_exists( 'wpfaqsu_chosen_ajax' ) ) {
     $query = ( ! empty( $_POST[ 'query_args' ] ) ) ? wp_kses_post_deep( $_POST[ 'query_args' ] ) : array();
 
     if ( ! wp_verify_nonce( $nonce, 'wpfaqsu_chosen_ajax_nonce' ) ) {
-      wp_send_json_error( array( 'error' => esc_html__( 'Error: Invalid nonce verification.', 'wpfaqsu' ) ) );
+      wp_send_json_error( array( 'error' => esc_html__( 'Error: Invalid nonce verification.', 'faq-schema-ultimate' ) ) );
     }
 
     if ( empty( $type ) || empty( $term ) ) {
-      wp_send_json_error( array( 'error' => esc_html__( 'Error: Invalid term ID.', 'wpfaqsu' ) ) );
+      wp_send_json_error( array( 'error' => esc_html__( 'Error: Invalid term ID.', 'faq-schema-ultimate' ) ) );
     }
 
     $capability = apply_filters( 'wpfaqsu_chosen_ajax_capability', 'manage_options' );
 
     if ( ! current_user_can( $capability ) ) {
-      wp_send_json_error( array( 'error' => esc_html__( 'Error: You do not have permission to do that.', 'wpfaqsu' ) ) );
+      wp_send_json_error( array( 'error' => esc_html__( 'Error: You do not have permission to do that.', 'faq-schema-ultimate' ) ) );
     }
 
     // Success

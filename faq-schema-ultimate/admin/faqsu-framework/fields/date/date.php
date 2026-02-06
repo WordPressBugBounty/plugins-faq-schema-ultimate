@@ -28,8 +28,8 @@ if ( ! class_exists( 'WPFAQSU_Field_date' ) ) {
       if ( ! empty( $this->field['from_to'] ) ) {
 
         $args = wp_parse_args( $this->field, array(
-          'text_from' => esc_html__( 'From', 'wpfaqsu' ),
-          'text_to'   => esc_html__( 'To', 'wpfaqsu' ),
+          'text_from' => esc_html__( 'From', 'faq-schema-ultimate' ),
+          'text_to'   => esc_html__( 'To', 'faq-schema-ultimate' ),
         ) );
 
         $value = wp_parse_args( $this->value, array(

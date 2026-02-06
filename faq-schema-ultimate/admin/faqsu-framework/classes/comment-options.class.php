@@ -196,7 +196,7 @@ if ( ! class_exists( 'WPFAQSU_Comment_Metabox' ) ) {
 
               } else {
 
-                echo '<div class="wpfaqsu-no-option">'. esc_html__( 'No data available.', 'wpfaqsu' ) .'</div>';
+                echo '<div class="wpfaqsu-no-option">'. esc_html__( 'No data available.', 'faq-schema-ultimate' ) .'</div>';
 
               }
 
@@ -213,8 +213,8 @@ if ( ! class_exists( 'WPFAQSU_Comment_Metabox' ) ) {
               echo '<div class="wpfaqsu-sections-reset">';
               echo '<label>';
               echo '<input type="checkbox" name="'. esc_attr( $this->unique ) .'[_reset]" />';
-              echo '<span class="button wpfaqsu-button-reset">'. esc_html__( 'Reset', 'wpfaqsu' ) .'</span>';
-              echo '<span class="button wpfaqsu-button-cancel">'. sprintf( '<small>( %s )</small> %s', esc_html__( 'update post', 'wpfaqsu' ), esc_html__( 'Cancel', 'wpfaqsu' ) ) .'</span>';
+              echo '<span class="button wpfaqsu-button-reset">'. esc_html__( 'Reset', 'faq-schema-ultimate' ) .'</span>';
+              echo '<span class="button wpfaqsu-button-cancel">'. sprintf( '<small>( %s )</small> %s', esc_html__( 'update post', 'faq-schema-ultimate' ), esc_html__( 'Cancel', 'faq-schema-ultimate' ) ) .'</span>';
               echo '</label>';
               echo '</div>';
 

@@ -33,11 +33,11 @@ if ( ! class_exists( 'WPFAQSU_Field_link_color' ) ) {
       );
 
       $color_props = array(
-        'color'    => esc_html__( 'Normal', 'wpfaqsu' ),
-        'hover'    => esc_html__( 'Hover', 'wpfaqsu' ),
-        'active'   => esc_html__( 'Active', 'wpfaqsu' ),
-        'visited'  => esc_html__( 'Visited', 'wpfaqsu' ),
-        'focus'    => esc_html__( 'Focus', 'wpfaqsu' )
+        'color'    => esc_html__( 'Normal', 'faq-schema-ultimate' ),
+        'hover'    => esc_html__( 'Hover', 'faq-schema-ultimate' ),
+        'active'   => esc_html__( 'Active', 'faq-schema-ultimate' ),
+        'visited'  => esc_html__( 'Visited', 'faq-schema-ultimate' ),
+        'focus'    => esc_html__( 'Focus', 'faq-schema-ultimate' )
       );
 
       $value = wp_parse_args( $this->value, $default_values );

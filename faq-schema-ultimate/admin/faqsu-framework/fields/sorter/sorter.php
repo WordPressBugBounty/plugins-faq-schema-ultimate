@@ -18,8 +18,8 @@ if ( ! class_exists( 'WPFAQSU_Field_sorter' ) ) {
 
       $args = wp_parse_args( $this->field, array(
         'disabled'       => true,
-        'enabled_title'  => esc_html__( 'Enabled', 'wpfaqsu' ),
-        'disabled_title' => esc_html__( 'Disabled', 'wpfaqsu' ),
+        'enabled_title'  => esc_html__( 'Enabled', 'faq-schema-ultimate' ),
+        'disabled_title' => esc_html__( 'Disabled', 'faq-schema-ultimate' ),
       ) );
 
       echo $this->field_before();

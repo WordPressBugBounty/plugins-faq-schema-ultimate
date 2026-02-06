@@ -19,8 +19,8 @@ if ( ! class_exists( 'WPFAQSU_Field_dimensions' ) ) {
       $args = wp_parse_args( $this->field, array(
         'width_icon'         => '<i class="fas fa-arrows-alt-h"></i>',
         'height_icon'        => '<i class="fas fa-arrows-alt-v"></i>',
-        'width_placeholder'  => esc_html__( 'width', 'wpfaqsu' ),
-        'height_placeholder' => esc_html__( 'height', 'wpfaqsu' ),
+        'width_placeholder'  => esc_html__( 'width', 'faq-schema-ultimate' ),
+        'height_placeholder' => esc_html__( 'height', 'faq-schema-ultimate' ),
         'width'              => true,
         'height'             => true,
         'unit'               => true,

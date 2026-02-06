@@ -33,7 +33,7 @@ if ( ! class_exists( 'WPFAQSU_Field_background' ) ) {
         'background_auto_attributes'    => false,
         'compact'                       => false,
         'background_image_library'      => 'image',
-        'background_image_placeholder'  => esc_html__( 'Not selected', 'wpfaqsu' ),
+        'background_image_placeholder'  => esc_html__( 'Not selected', 'faq-schema-ultimate' ),
       ) );
 
       if ( $args['compact'] ) {
@@ -69,7 +69,7 @@ if ( ! class_exists( 'WPFAQSU_Field_background' ) ) {
 
         echo '<div class="wpfaqsu--color">';
 
-        echo ( ! empty( $args['background_gradient'] ) ) ? '<div class="wpfaqsu--title">'. esc_html__( 'From', 'wpfaqsu' ) .'</div>' : '';
+        echo ( ! empty( $args['background_gradient'] ) ) ? '<div class="wpfaqsu--title">'. esc_html__( 'From', 'faq-schema-ultimate' ) .'</div>' : '';
 
         WPFAQSU::field( array(
           'id'      => 'background-color',
@@ -87,7 +87,7 @@ if ( ! class_exists( 'WPFAQSU_Field_background' ) ) {
 
         echo '<div class="wpfaqsu--color">';
 
-        echo ( ! empty( $args['background_gradient'] ) ) ? '<div class="wpfaqsu--title">'. esc_html__( 'To', 'wpfaqsu' ) .'</div>' : '';
+        echo ( ! empty( $args['background_gradient'] ) ) ? '<div class="wpfaqsu--title">'. esc_html__( 'To', 'faq-schema-ultimate' ) .'</div>' : '';
 
         WPFAQSU::field( array(
           'id'      => 'background-gradient-color',
@@ -105,17 +105,17 @@ if ( ! class_exists( 'WPFAQSU_Field_background' ) ) {
 
         echo '<div class="wpfaqsu--color">';
 
-        echo ( ! empty( $args['background_gradient'] ) ) ? '<div class="wpfaqsu---title">'. esc_html__( 'Direction', 'wpfaqsu' ) .'</div>' : '';
+        echo ( ! empty( $args['background_gradient'] ) ) ? '<div class="wpfaqsu---title">'. esc_html__( 'Direction', 'faq-schema-ultimate' ) .'</div>' : '';
 
         WPFAQSU::field( array(
           'id'          => 'background-gradient-direction',
           'type'        => 'select',
           'options'     => array(
-            ''          => esc_html__( 'Gradient Direction', 'wpfaqsu' ),
-            'to bottom' => esc_html__( '&#8659; top to bottom', 'wpfaqsu' ),
-            'to right'  => esc_html__( '&#8658; left to right', 'wpfaqsu' ),
-            '135deg'    => esc_html__( '&#8664; corner top to right', 'wpfaqsu' ),
-            '-135deg'   => esc_html__( '&#8665; corner top to left', 'wpfaqsu' ),
+            ''          => esc_html__( 'Gradient Direction', 'faq-schema-ultimate' ),
+            'to bottom' => esc_html__( '&#8659; top to bottom', 'faq-schema-ultimate' ),
+            'to right'  => esc_html__( '&#8658; left to right', 'faq-schema-ultimate' ),
+            '135deg'    => esc_html__( '&#8664; corner top to right', 'faq-schema-ultimate' ),
+            '-135deg'   => esc_html__( '&#8665; corner top to left', 'faq-schema-ultimate' ),
           ),
         ), $this->value['background-gradient-direction'], $this->field_name(), 'field/background' );
 
@@ -158,16 +158,16 @@ if ( ! class_exists( 'WPFAQSU_Field_background' ) ) {
           'id'              => 'background-position',
           'type'            => 'select',
           'options'         => array(
-            ''              => esc_html__( 'Background Position', 'wpfaqsu' ),
-            'left top'      => esc_html__( 'Left Top', 'wpfaqsu' ),
-            'left center'   => esc_html__( 'Left Center', 'wpfaqsu' ),
-            'left bottom'   => esc_html__( 'Left Bottom', 'wpfaqsu' ),
-            'center top'    => esc_html__( 'Center Top', 'wpfaqsu' ),
-            'center center' => esc_html__( 'Center Center', 'wpfaqsu' ),
-            'center bottom' => esc_html__( 'Center Bottom', 'wpfaqsu' ),
-            'right top'     => esc_html__( 'Right Top', 'wpfaqsu' ),
-            'right center'  => esc_html__( 'Right Center', 'wpfaqsu' ),
-            'right bottom'  => esc_html__( 'Right Bottom', 'wpfaqsu' ),
+            ''              => esc_html__( 'Background Position', 'faq-schema-ultimate' ),
+            'left top'      => esc_html__( 'Left Top', 'faq-schema-ultimate' ),
+            'left center'   => esc_html__( 'Left Center', 'faq-schema-ultimate' ),
+            'left bottom'   => esc_html__( 'Left Bottom', 'faq-schema-ultimate' ),
+            'center top'    => esc_html__( 'Center Top', 'faq-schema-ultimate' ),
+            'center center' => esc_html__( 'Center Center', 'faq-schema-ultimate' ),
+            'center bottom' => esc_html__( 'Center Bottom', 'faq-schema-ultimate' ),
+            'right top'     => esc_html__( 'Right Top', 'faq-schema-ultimate' ),
+            'right center'  => esc_html__( 'Right Center', 'faq-schema-ultimate' ),
+            'right bottom'  => esc_html__( 'Right Bottom', 'faq-schema-ultimate' ),
           ),
         ), $this->value['background-position'], $this->field_name(), 'field/background' );
 
@@ -181,11 +181,11 @@ if ( ! class_exists( 'WPFAQSU_Field_background' ) ) {
           'id'          => 'background-repeat',
           'type'        => 'select',
           'options'     => array(
-            ''          => esc_html__( 'Background Repeat', 'wpfaqsu' ),
-            'repeat'    => esc_html__( 'Repeat', 'wpfaqsu' ),
-            'no-repeat' => esc_html__( 'No Repeat', 'wpfaqsu' ),
-            'repeat-x'  => esc_html__( 'Repeat Horizontally', 'wpfaqsu' ),
-            'repeat-y'  => esc_html__( 'Repeat Vertically', 'wpfaqsu' ),
+            ''          => esc_html__( 'Background Repeat', 'faq-schema-ultimate' ),
+            'repeat'    => esc_html__( 'Repeat', 'faq-schema-ultimate' ),
+            'no-repeat' => esc_html__( 'No Repeat', 'faq-schema-ultimate' ),
+            'repeat-x'  => esc_html__( 'Repeat Horizontally', 'faq-schema-ultimate' ),
+            'repeat-y'  => esc_html__( 'Repeat Vertically', 'faq-schema-ultimate' ),
           ),
         ), $this->value['background-repeat'], $this->field_name(), 'field/background' );
 
@@ -199,9 +199,9 @@ if ( ! class_exists( 'WPFAQSU_Field_background' ) ) {
           'id'       => 'background-attachment',
           'type'     => 'select',
           'options'  => array(
-            ''       => esc_html__( 'Background Attachment', 'wpfaqsu' ),
-            'scroll' => esc_html__( 'Scroll', 'wpfaqsu' ),
-            'fixed'  => esc_html__( 'Fixed', 'wpfaqsu' ),
+            ''       => esc_html__( 'Background Attachment', 'faq-schema-ultimate' ),
+            'scroll' => esc_html__( 'Scroll', 'faq-schema-ultimate' ),
+            'fixed'  => esc_html__( 'Fixed', 'faq-schema-ultimate' ),
           ),
         ), $this->value['background-attachment'], $this->field_name(), 'field/background' );
 
@@ -215,10 +215,10 @@ if ( ! class_exists( 'WPFAQSU_Field_background' ) ) {
           'id'        => 'background-size',
           'type'      => 'select',
           'options'   => array(
-            ''        => esc_html__( 'Background Size', 'wpfaqsu' ),
-            'cover'   => esc_html__( 'Cover', 'wpfaqsu' ),
-            'contain' => esc_html__( 'Contain', 'wpfaqsu' ),
-            'auto'    => esc_html__( 'Auto', 'wpfaqsu' ),
+            ''        => esc_html__( 'Background Size', 'faq-schema-ultimate' ),
+            'cover'   => esc_html__( 'Cover', 'faq-schema-ultimate' ),
+            'contain' => esc_html__( 'Contain', 'faq-schema-ultimate' ),
+            'auto'    => esc_html__( 'Auto', 'faq-schema-ultimate' ),
           ),
         ), $this->value['background-size'], $this->field_name(), 'field/background' );
 
@@ -232,10 +232,10 @@ if ( ! class_exists( 'WPFAQSU_Field_background' ) ) {
           'id'            => 'background-origin',
           'type'          => 'select',
           'options'       => array(
-            ''            => esc_html__( 'Background Origin', 'wpfaqsu' ),
-            'padding-box' => esc_html__( 'Padding Box', 'wpfaqsu' ),
-            'border-box'  => esc_html__( 'Border Box', 'wpfaqsu' ),
-            'content-box' => esc_html__( 'Content Box', 'wpfaqsu' ),
+            ''            => esc_html__( 'Background Origin', 'faq-schema-ultimate' ),
+            'padding-box' => esc_html__( 'Padding Box', 'faq-schema-ultimate' ),
+            'border-box'  => esc_html__( 'Border Box', 'faq-schema-ultimate' ),
+            'content-box' => esc_html__( 'Content Box', 'faq-schema-ultimate' ),
           ),
         ), $this->value['background-origin'], $this->field_name(), 'field/background' );
 
@@ -249,10 +249,10 @@ if ( ! class_exists( 'WPFAQSU_Field_background' ) ) {
           'id'            => 'background-clip',
           'type'          => 'select',
           'options'       => array(
-            ''            => esc_html__( 'Background Clip', 'wpfaqsu' ),
-            'border-box'  => esc_html__( 'Border Box', 'wpfaqsu' ),
-            'padding-box' => esc_html__( 'Padding Box', 'wpfaqsu' ),
-            'content-box' => esc_html__( 'Content Box', 'wpfaqsu' ),
+            ''            => esc_html__( 'Background Clip', 'faq-schema-ultimate' ),
+            'border-box'  => esc_html__( 'Border Box', 'faq-schema-ultimate' ),
+            'padding-box' => esc_html__( 'Padding Box', 'faq-schema-ultimate' ),
+            'content-box' => esc_html__( 'Content Box', 'faq-schema-ultimate' ),
           ),
         ), $this->value['background-clip'], $this->field_name(), 'field/background' );
 
@@ -266,17 +266,17 @@ if ( ! class_exists( 'WPFAQSU_Field_background' ) ) {
           'id'            => 'background-blend-mode',
           'type'          => 'select',
           'options'       => array(
-            ''            => esc_html__( 'Background Blend Mode', 'wpfaqsu' ),
-            'normal'      => esc_html__( 'Normal', 'wpfaqsu' ),
-            'multiply'    => esc_html__( 'Multiply', 'wpfaqsu' ),
-            'screen'      => esc_html__( 'Screen', 'wpfaqsu' ),
-            'overlay'     => esc_html__( 'Overlay', 'wpfaqsu' ),
-            'darken'      => esc_html__( 'Darken', 'wpfaqsu' ),
-            'lighten'     => esc_html__( 'Lighten', 'wpfaqsu' ),
-            'color-dodge' => esc_html__( 'Color Dodge', 'wpfaqsu' ),
-            'saturation'  => esc_html__( 'Saturation', 'wpfaqsu' ),
-            'color'       => esc_html__( 'Color', 'wpfaqsu' ),
-            'luminosity'  => esc_html__( 'Luminosity', 'wpfaqsu' ),
+            ''            => esc_html__( 'Background Blend Mode', 'faq-schema-ultimate' ),
+            'normal'      => esc_html__( 'Normal', 'faq-schema-ultimate' ),
+            'multiply'    => esc_html__( 'Multiply', 'faq-schema-ultimate' ),
+            'screen'      => esc_html__( 'Screen', 'faq-schema-ultimate' ),
+            'overlay'     => esc_html__( 'Overlay', 'faq-schema-ultimate' ),
+            'darken'      => esc_html__( 'Darken', 'faq-schema-ultimate' ),
+            'lighten'     => esc_html__( 'Lighten', 'faq-schema-ultimate' ),
+            'color-dodge' => esc_html__( 'Color Dodge', 'faq-schema-ultimate' ),
+            'saturation'  => esc_html__( 'Saturation', 'faq-schema-ultimate' ),
+            'color'       => esc_html__( 'Color', 'faq-schema-ultimate' ),
+            'luminosity'  => esc_html__( 'Luminosity', 'faq-schema-ultimate' ),
           ),
         ), $this->value['background-blend-mode'], $this->field_name(), 'field/background' );
 

@@ -23,12 +23,12 @@ if ( ! class_exists( 'WPFAQSU_Field_backup' ) ) {
       echo $this->field_before();
 
       echo '<textarea name="wpfaqsu_import_data" class="wpfaqsu-import-data"></textarea>';
-      echo '<button type="submit" class="button button-primary wpfaqsu-confirm wpfaqsu-import" data-unique="'. esc_attr( $unique ) .'" data-nonce="'. esc_attr( $nonce ) .'">'. esc_html__( 'Import', 'wpfaqsu' ) .'</button>';
+      echo '<button type="submit" class="button button-primary wpfaqsu-confirm wpfaqsu-import" data-unique="'. esc_attr( $unique ) .'" data-nonce="'. esc_attr( $nonce ) .'">'. esc_html__( 'Import', 'faq-schema-ultimate' ) .'</button>';
       echo '<hr />';
       echo '<textarea readonly="readonly" class="wpfaqsu-export-data">'. esc_attr( json_encode( get_option( $unique ) ) ) .'</textarea>';
-      echo '<a href="'. esc_url( $export ) .'" class="button button-primary wpfaqsu-export" target="_blank">'. esc_html__( 'Export & Download', 'wpfaqsu' ) .'</a>';
+      echo '<a href="'. esc_url( $export ) .'" class="button button-primary wpfaqsu-export" target="_blank">'. esc_html__( 'Export & Download', 'faq-schema-ultimate' ) .'</a>';
       echo '<hr />';
-      echo '<button type="submit" name="wpfaqsu_transient[reset]" value="reset" class="button wpfaqsu-warning-primary wpfaqsu-confirm wpfaqsu-reset" data-unique="'. esc_attr( $unique ) .'" data-nonce="'. esc_attr( $nonce ) .'">'. esc_html__( 'Reset', 'wpfaqsu' ) .'</button>';
+      echo '<button type="submit" name="wpfaqsu_transient[reset]" value="reset" class="button wpfaqsu-warning-primary wpfaqsu-confirm wpfaqsu-reset" data-unique="'. esc_attr( $unique ) .'" data-nonce="'. esc_attr( $nonce ) .'">'. esc_html__( 'Reset', 'faq-schema-ultimate' ) .'</button>';
 
       echo $this->field_after();
 

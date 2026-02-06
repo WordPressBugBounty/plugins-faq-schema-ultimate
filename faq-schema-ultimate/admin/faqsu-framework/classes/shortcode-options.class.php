@@ -30,7 +30,7 @@ if ( ! class_exists( 'WPFAQSU_Shortcoder' ) ) {
         'description'    => 'WPFAQSU Shortcode Block',
         'icon'           => 'screenoptions',
         'category'       => 'widgets',
-        'keywords'       => array( 'shortcode', 'wpfaqsu', 'insert' ),
+        'keywords'       => array( 'shortcode', 'faq-schema-ultimate', 'insert' ),
         'placeholder'    => 'Write shortcode here...',
       ),
     );
@@ -125,7 +125,7 @@ if ( ! class_exists( 'WPFAQSU_Shortcoder' ) ) {
 
     public function add_footer_modal_shortcode() {
 
-      if( ! wp_script_is( 'wpfaqsu' ) ) {
+      if( ! wp_script_is( 'faq-schema-ultimate' ) ) {
         return;
       }
 
@@ -250,7 +250,7 @@ if ( ! class_exists( 'WPFAQSU_Shortcoder' ) ) {
 
           if ( ! empty( $repeatable_fields ) ) {
 
-            $button_title    = ( ! empty( $section['button_title'] ) ) ? ' '. $section['button_title'] : esc_html__( 'Add New', 'wpfaqsu' );
+            $button_title    = ( ! empty( $section['button_title'] ) ) ? ' '. $section['button_title'] : esc_html__( 'Add New', 'faq-schema-ultimate' );
             $inner_shortcode = ( ! empty( $section['group_shortcode'] ) ) ? $section['group_shortcode'] : $shortcode;
 
             echo '<div class="wpfaqsu--repeatable">';
@@ -287,7 +287,7 @@ if ( ! class_exists( 'WPFAQSU_Shortcoder' ) ) {
         }
 
       } else {
-        echo '<div class="wpfaqsu-field wpfaqsu-error-text">'. esc_html__( 'Error: Invalid nonce verification.', 'wpfaqsu' ) .'</div>';
+        echo '<div class="wpfaqsu-field wpfaqsu-error-text">'. esc_html__( 'Error: Invalid nonce verification.', 'faq-schema-ultimate' ) .'</div>';
       }
 
       wp_send_json_success( array( 'content' => ob_get_clean() ) );

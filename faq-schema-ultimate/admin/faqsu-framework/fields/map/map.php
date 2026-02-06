@@ -20,9 +20,9 @@ if ( ! class_exists( 'WPFAQSU_Field_map' ) ) {
     public function render() {
 
       $args              = wp_parse_args( $this->field, array(
-        'placeholder'    => esc_html__( 'Search...', 'wpfaqsu' ),
-        'latitude_text'  => esc_html__( 'Latitude', 'wpfaqsu' ),
-        'longitude_text' => esc_html__( 'Longitude', 'wpfaqsu' ),
+        'placeholder'    => esc_html__( 'Search...', 'faq-schema-ultimate' ),
+        'latitude_text'  => esc_html__( 'Latitude', 'faq-schema-ultimate' ),
+        'longitude_text' => esc_html__( 'Longitude', 'faq-schema-ultimate' ),
         'address_field'  => '',
         'height'         => '',
       ) );
@@ -81,7 +81,7 @@ if ( ! class_exists( 'WPFAQSU_Field_map' ) ) {
     public function enqueue() {
 
       if ( ! wp_script_is( 'wpfaqsu-leaflet' ) ) {
-        wp_enqueue_script( 'wpfaqsu-leaflet', esc_url( $this->cdn_url . $this->version .'/dist/leaflet.js' ), array( 'wpfaqsu' ), $this->version, true );
+        wp_enqueue_script( 'wpfaqsu-leaflet', esc_url( $this->cdn_url . $this->version .'/dist/leaflet.js' ), array( 'faq-schema-ultimate' ), $this->version, true );
       }
 
       if ( ! wp_style_is( 'wpfaqsu-leaflet' ) ) {

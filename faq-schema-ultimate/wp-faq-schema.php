@@ -8,17 +8,17 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://wpqode.com/
+ * @link              https://pluginic.com/
  * @since             1.0.0
  * @package           Faq_Schema_Ultimate
  *
  * @wordpress-plugin
- * Plugin Name:       FAQ Schema Ultimate
- * Plugin URI:        https://wpqode.com/faq-schema-ultimate
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.0
+ * Plugin Name:       FAQ Schema - Accordion, Tab, Slider & Gutenberg Block
+ * Plugin URI:        https://pluginic.com/plugins/faq-schema-ultimate/
+ * Description:       Create responsive FAQs with accordion, tabs, and slider layouts. Includes FAQ Schema markup, Gutenberg blocks, and Elementor widgets for enhanced SEO.
+ * Version:           1.0.1
  * Author:            PLUGINIC
- * Author URI:        https://wpqode.com/
+ * Author URI:        https://pluginic.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       faq-schema-ultimate
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'FAQ_SCHEMA_ULTIMATE_VERSION', '1.0.0' );
+define( 'FAQ_SCHEMA_ULTIMATE_VERSION', '1.0.1' );
 
 /**
  * The code that runs during plugin activation.

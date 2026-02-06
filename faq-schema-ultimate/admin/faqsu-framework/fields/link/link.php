@@ -17,9 +17,9 @@ if ( ! class_exists( 'WPFAQSU_Field_link' ) ) {
     public function render() {
 
       $args = wp_parse_args( $this->field, array(
-        'add_title'    => esc_html__( 'Add Link', 'wpfaqsu' ),
-        'edit_title'   => esc_html__( 'Edit Link', 'wpfaqsu' ),
-        'remove_title' => esc_html__( 'Remove Link', 'wpfaqsu' ),
+        'add_title'    => esc_html__( 'Add Link', 'faq-schema-ultimate' ),
+        'edit_title'   => esc_html__( 'Edit Link', 'faq-schema-ultimate' ),
+        'remove_title' => esc_html__( 'Remove Link', 'faq-schema-ultimate' ),
       ) );
 
       $default_values = array(

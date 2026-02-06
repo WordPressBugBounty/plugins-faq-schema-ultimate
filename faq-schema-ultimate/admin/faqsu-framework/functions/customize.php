@@ -9,7 +9,7 @@
  */
 if ( ! class_exists( 'WP_Customize_Panel_WPFAQSU' ) && class_exists( 'WP_Customize_Panel' ) ) {
   class WP_Customize_Panel_WPFAQSU extends WP_Customize_Panel {
-    public $type = 'wpfaqsu';
+    public $type = 'faq-schema-ultimate';
   }
 }
 
@@ -23,7 +23,7 @@ if ( ! class_exists( 'WP_Customize_Panel_WPFAQSU' ) && class_exists( 'WP_Customi
  */
 if ( ! class_exists( 'WP_Customize_Section_WPFAQSU' ) && class_exists( 'WP_Customize_Section' ) ) {
   class WP_Customize_Section_WPFAQSU extends WP_Customize_Section {
-    public $type = 'wpfaqsu';
+    public $type = 'faq-schema-ultimate';
   }
 }
 
@@ -38,7 +38,7 @@ if ( ! class_exists( 'WP_Customize_Section_WPFAQSU' ) && class_exists( 'WP_Custo
 if ( ! class_exists( 'WP_Customize_Control_WPFAQSU' ) && class_exists( 'WP_Customize_Control' ) ) {
   class WP_Customize_Control_WPFAQSU extends WP_Customize_Control {
 
-    public $type   = 'wpfaqsu';
+    public $type   = 'faq-schema-ultimate';
     public $field  = '';
     public $unique = '';
 

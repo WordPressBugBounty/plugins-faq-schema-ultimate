@@ -17,9 +17,9 @@ if ( ! class_exists( 'WPFAQSU_Field_gallery' ) ) {
     public function render() {
 
       $args = wp_parse_args( $this->field, array(
-        'add_title'   => esc_html__( 'Add Gallery', 'wpfaqsu' ),
-        'edit_title'  => esc_html__( 'Edit Gallery', 'wpfaqsu' ),
-        'clear_title' => esc_html__( 'Clear', 'wpfaqsu' ),
+        'add_title'   => esc_html__( 'Add Gallery', 'faq-schema-ultimate' ),
+        'edit_title'  => esc_html__( 'Edit Gallery', 'faq-schema-ultimate' ),
+        'clear_title' => esc_html__( 'Clear', 'faq-schema-ultimate' ),
       ) );
 
       $hidden = ( empty( $this->value ) ) ? ' hidden' : '';

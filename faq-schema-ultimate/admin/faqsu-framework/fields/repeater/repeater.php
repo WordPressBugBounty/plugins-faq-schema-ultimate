@@ -24,7 +24,7 @@ if ( ! class_exists( 'WPFAQSU_Field_repeater' ) ) {
 
       if ( preg_match( '/'. preg_quote( '['. $this->field['id'] .']' ) .'/', $this->unique ) ) {
 
-        echo '<div class="wpfaqsu-notice wpfaqsu-notice-danger">'. esc_html__( 'Error: Field ID conflict.', 'wpfaqsu' ) .'</div>';
+        echo '<div class="wpfaqsu-notice wpfaqsu-notice-danger">'. esc_html__( 'Error: Field ID conflict.', 'faq-schema-ultimate' ) .'</div>';
 
       } else {
 
@@ -45,7 +45,7 @@ if ( ! class_exists( 'WPFAQSU_Field_repeater' ) ) {
         echo '<div class="wpfaqsu-repeater-helper-inner">';
         echo '<i class="wpfaqsu-repeater-sort fas fa-arrows-alt"></i>';
         echo '<i class="wpfaqsu-repeater-clone far fa-clone"></i>';
-        echo '<i class="wpfaqsu-repeater-remove wpfaqsu-confirm fas fa-times" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'wpfaqsu' ) .'"></i>';
+        echo '<i class="wpfaqsu-repeater-remove wpfaqsu-confirm fas fa-times" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'faq-schema-ultimate' ) .'"></i>';
         echo '</div>';
         echo '</div>';
         echo '</div>';
@@ -73,7 +73,7 @@ if ( ! class_exists( 'WPFAQSU_Field_repeater' ) ) {
             echo '<div class="wpfaqsu-repeater-helper-inner">';
             echo '<i class="wpfaqsu-repeater-sort fas fa-arrows-alt"></i>';
             echo '<i class="wpfaqsu-repeater-clone far fa-clone"></i>';
-            echo '<i class="wpfaqsu-repeater-remove wpfaqsu-confirm fas fa-times" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'wpfaqsu' ) .'"></i>';
+            echo '<i class="wpfaqsu-repeater-remove wpfaqsu-confirm fas fa-times" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'faq-schema-ultimate' ) .'"></i>';
             echo '</div>';
             echo '</div>';
             echo '</div>';
@@ -86,8 +86,8 @@ if ( ! class_exists( 'WPFAQSU_Field_repeater' ) ) {
 
         echo '</div>';
 
-        echo '<div class="wpfaqsu-repeater-alert wpfaqsu-repeater-max">'. esc_html__( 'You cannot add more.', 'wpfaqsu' ) .'</div>';
-        echo '<div class="wpfaqsu-repeater-alert wpfaqsu-repeater-min">'. esc_html__( 'You cannot remove more.', 'wpfaqsu' ) .'</div>';
+        echo '<div class="wpfaqsu-repeater-alert wpfaqsu-repeater-max">'. esc_html__( 'You cannot add more.', 'faq-schema-ultimate' ) .'</div>';
+        echo '<div class="wpfaqsu-repeater-alert wpfaqsu-repeater-min">'. esc_html__( 'You cannot remove more.', 'faq-schema-ultimate' ) .'</div>';
         echo '<a href="#" class="button button-primary wpfaqsu-repeater-add">'. $args['button_title'] .'</a>';
 
         echo $this->field_after();

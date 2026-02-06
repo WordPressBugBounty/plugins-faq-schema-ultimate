@@ -223,7 +223,7 @@ if ( ! class_exists( 'WPFAQSU_Options' ) ) {
       $result = $this->set_options( true );
 
       if ( ! $result ) {
-        wp_send_json_error( array( 'error' => esc_html__( 'Error while saving the changes.', 'wpfaqsu' ) ) );
+        wp_send_json_error( array( 'error' => esc_html__( 'Error while saving the changes.', 'faq-schema-ultimate' ) ) );
       } else {
         wp_send_json_success( array( 'notice' => $this->notice, 'errors' => $this->errors ) );
       }
@@ -283,7 +283,7 @@ if ( ! class_exists( 'WPFAQSU_Options' ) ) {
           $import_data  = json_decode( wp_unslash( trim( $response[ 'wpfaqsu_import_data' ] ) ), true );
           $options      = ( is_array( $import_data ) && ! empty( $import_data ) ) ? $import_data : array();
           $importing    = true;
-          $this->notice = esc_html__( 'Settings successfully imported.', 'wpfaqsu' );
+          $this->notice = esc_html__( 'Settings successfully imported.', 'faq-schema-ultimate' );
 
         }
 
@@ -295,7 +295,7 @@ if ( ! class_exists( 'WPFAQSU_Options' ) ) {
             }
           }
 
-          $this->notice = esc_html__( 'Default settings restored.', 'wpfaqsu' );
+          $this->notice = esc_html__( 'Default settings restored.', 'faq-schema-ultimate' );
 
         } else if ( ! empty( $transient['reset_section'] ) && ! empty( $section_id ) ) {
 
@@ -311,7 +311,7 @@ if ( ! class_exists( 'WPFAQSU_Options' ) ) {
 
           $data = wp_parse_args( $data, $this->options );
 
-          $this->notice = esc_html__( 'Default settings restored.', 'wpfaqsu' );
+          $this->notice = esc_html__( 'Default settings restored.', 'faq-schema-ultimate' );
 
         } else {
 
@@ -382,7 +382,7 @@ if ( ! class_exists( 'WPFAQSU_Options' ) ) {
         do_action( "wpfaqsu_{$this->unique}_save_after", $data, $this );
 
         if ( empty( $this->notice ) ) {
-          $this->notice = esc_html__( 'Settings saved.', 'wpfaqsu' );
+          $this->notice = esc_html__( 'Settings saved.', 'faq-schema-ultimate' );
         }
 
         return true;
@@ -562,16 +562,16 @@ if ( ! class_exists( 'WPFAQSU_Options' ) ) {
 
             echo '<div class="wpfaqsu-form-result wpfaqsu-form-success '. esc_attr( $notice_class ) .'">'. $notice_text .'</div>';
 
-            echo ( $this->args['show_form_warning'] ) ? '<div class="wpfaqsu-form-result wpfaqsu-form-warning">'. esc_html__( 'You have unsaved changes, save your changes!', 'wpfaqsu' ) .'</div>' : '';
+            echo ( $this->args['show_form_warning'] ) ? '<div class="wpfaqsu-form-result wpfaqsu-form-warning">'. esc_html__( 'You have unsaved changes, save your changes!', 'faq-schema-ultimate' ) .'</div>' : '';
 
-            echo ( $has_nav && $this->args['show_all_options'] ) ? '<div class="wpfaqsu-expand-all" title="'. esc_html__( 'show all settings', 'wpfaqsu' ) .'"><i class="fas fa-outdent"></i></div>' : '';
+            echo ( $has_nav && $this->args['show_all_options'] ) ? '<div class="wpfaqsu-expand-all" title="'. esc_html__( 'show all settings', 'faq-schema-ultimate' ) .'"><i class="fas fa-outdent"></i></div>' : '';
 
-            echo ( $this->args['show_search'] ) ? '<div class="wpfaqsu-search"><input type="text" name="wpfaqsu-search" placeholder="'. esc_html__( 'Search...', 'wpfaqsu' ) .'" autocomplete="off" /></div>' : '';
+            echo ( $this->args['show_search'] ) ? '<div class="wpfaqsu-search"><input type="text" name="wpfaqsu-search" placeholder="'. esc_html__( 'Search...', 'faq-schema-ultimate' ) .'" autocomplete="off" /></div>' : '';
 
             echo '<div class="wpfaqsu-buttons">';
-            echo '<input type="submit" name="'. esc_attr( $this->unique ) .'[_nonce][save]" class="button button-primary wpfaqsu-top-save wpfaqsu-save'. esc_attr( $ajax_class ) .'" value="'. esc_html__( 'Save', 'wpfaqsu' ) .'" data-save="'. esc_html__( 'Saving...', 'wpfaqsu' ) .'">';
-            echo ( $this->args['show_reset_section'] ) ? '<input type="submit" name="wpfaqsu_transient[reset_section]" class="button button-secondary wpfaqsu-reset-section wpfaqsu-confirm" value="'. esc_html__( 'Reset Section', 'wpfaqsu' ) .'" data-confirm="'. esc_html__( 'Are you sure to reset this section options?', 'wpfaqsu' ) .'">' : '';
-            echo ( $this->args['show_reset_all'] ) ? '<input type="submit" name="wpfaqsu_transient[reset]" class="button wpfaqsu-warning-primary wpfaqsu-reset-all wpfaqsu-confirm" value="'. ( ( $this->args['show_reset_section'] ) ? esc_html__( 'Reset All', 'wpfaqsu' ) : esc_html__( 'Reset', 'wpfaqsu' ) ) .'" data-confirm="'. esc_html__( 'Are you sure you want to reset all settings to default values?', 'wpfaqsu' ) .'">' : '';
+            echo '<input type="submit" name="'. esc_attr( $this->unique ) .'[_nonce][save]" class="button button-primary wpfaqsu-top-save wpfaqsu-save'. esc_attr( $ajax_class ) .'" value="'. esc_html__( 'Save', 'faq-schema-ultimate' ) .'" data-save="'. esc_html__( 'Saving...', 'faq-schema-ultimate' ) .'">';
+            echo ( $this->args['show_reset_section'] ) ? '<input type="submit" name="wpfaqsu_transient[reset_section]" class="button button-secondary wpfaqsu-reset-section wpfaqsu-confirm" value="'. esc_html__( 'Reset Section', 'faq-schema-ultimate' ) .'" data-confirm="'. esc_html__( 'Are you sure to reset this section options?', 'faq-schema-ultimate' ) .'">' : '';
+            echo ( $this->args['show_reset_all'] ) ? '<input type="submit" name="wpfaqsu_transient[reset]" class="button wpfaqsu-warning-primary wpfaqsu-reset-all wpfaqsu-confirm" value="'. ( ( $this->args['show_reset_section'] ) ? esc_html__( 'Reset All', 'faq-schema-ultimate' ) : esc_html__( 'Reset', 'faq-schema-ultimate' ) ) .'" data-confirm="'. esc_html__( 'Are you sure you want to reset all settings to default values?', 'faq-schema-ultimate' ) .'">' : '';
             echo '</div>';
 
           echo '</div>';
@@ -669,7 +669,7 @@ if ( ! class_exists( 'WPFAQSU_Options' ) ) {
 
               } else {
 
-                echo '<div class="wpfaqsu-no-option">'. esc_html__( 'No data available.', 'wpfaqsu' ) .'</div>';
+                echo '<div class="wpfaqsu-no-option">'. esc_html__( 'No data available.', 'faq-schema-ultimate' ) .'</div>';
 
               }
 
@@ -692,9 +692,9 @@ if ( ! class_exists( 'WPFAQSU_Options' ) ) {
           echo '<div class="wpfaqsu-footer">';
 
           echo '<div class="wpfaqsu-buttons">';
-          echo '<input type="submit" name="wpfaqsu_transient[save]" class="button button-primary wpfaqsu-save'. esc_attr( $ajax_class ) .'" value="'. esc_html__( 'Save', 'wpfaqsu' ) .'" data-save="'. esc_html__( 'Saving...', 'wpfaqsu' ) .'">';
-          echo ( $this->args['show_reset_section'] ) ? '<input type="submit" name="wpfaqsu_transient[reset_section]" class="button button-secondary wpfaqsu-reset-section wpfaqsu-confirm" value="'. esc_html__( 'Reset Section', 'wpfaqsu' ) .'" data-confirm="'. esc_html__( 'Are you sure to reset this section options?', 'wpfaqsu' ) .'">' : '';
-          echo ( $this->args['show_reset_all'] ) ? '<input type="submit" name="wpfaqsu_transient[reset]" class="button wpfaqsu-warning-primary wpfaqsu-reset-all wpfaqsu-confirm" value="'. ( ( $this->args['show_reset_section'] ) ? esc_html__( 'Reset All', 'wpfaqsu' ) : esc_html__( 'Reset', 'wpfaqsu' ) ) .'" data-confirm="'. esc_html__( 'Are you sure you want to reset all settings to default values?', 'wpfaqsu' ) .'">' : '';
+          echo '<input type="submit" name="wpfaqsu_transient[save]" class="button button-primary wpfaqsu-save'. esc_attr( $ajax_class ) .'" value="'. esc_html__( 'Save', 'faq-schema-ultimate' ) .'" data-save="'. esc_html__( 'Saving...', 'faq-schema-ultimate' ) .'">';
+          echo ( $this->args['show_reset_section'] ) ? '<input type="submit" name="wpfaqsu_transient[reset_section]" class="button button-secondary wpfaqsu-reset-section wpfaqsu-confirm" value="'. esc_html__( 'Reset Section', 'faq-schema-ultimate' ) .'" data-confirm="'. esc_html__( 'Are you sure to reset this section options?', 'faq-schema-ultimate' ) .'">' : '';
+          echo ( $this->args['show_reset_all'] ) ? '<input type="submit" name="wpfaqsu_transient[reset]" class="button wpfaqsu-warning-primary wpfaqsu-reset-all wpfaqsu-confirm" value="'. ( ( $this->args['show_reset_section'] ) ? esc_html__( 'Reset All', 'faq-schema-ultimate' ) : esc_html__( 'Reset', 'faq-schema-ultimate' ) ) .'" data-confirm="'. esc_html__( 'Are you sure you want to reset all settings to default values?', 'faq-schema-ultimate' ) .'">' : '';
           echo '</div>';
 
           echo ( ! empty( $this->args['footer_text'] ) ) ? '<div class="wpfaqsu-copyright">'. $this->args['footer_text'] .'</div>' : '';

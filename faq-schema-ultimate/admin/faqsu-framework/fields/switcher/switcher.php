@@ -17,8 +17,8 @@ if ( ! class_exists( 'WPFAQSU_Field_switcher' ) ) {
     public function render() {
 
       $active     = ( ! empty( $this->value ) ) ? ' wpfaqsu--active' : '';
-      $text_on    = ( ! empty( $this->field['text_on'] ) ) ? $this->field['text_on'] : esc_html__( 'On', 'wpfaqsu' );
-      $text_off   = ( ! empty( $this->field['text_off'] ) ) ? $this->field['text_off'] : esc_html__( 'Off', 'wpfaqsu' );
+      $text_on    = ( ! empty( $this->field['text_on'] ) ) ? $this->field['text_on'] : esc_html__( 'On', 'faq-schema-ultimate' );
+      $text_off   = ( ! empty( $this->field['text_off'] ) ) ? $this->field['text_off'] : esc_html__( 'Off', 'faq-schema-ultimate' );
       $text_width = ( ! empty( $this->field['text_width'] ) ) ? ' style="width: '. esc_attr( $this->field['text_width'] ) .'px;"': '';
 
       echo $this->field_before();

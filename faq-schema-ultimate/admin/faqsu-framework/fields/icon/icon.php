@@ -17,8 +17,8 @@ if ( ! class_exists( 'WPFAQSU_Field_icon' ) ) {
     public function render() {
 
       $args = wp_parse_args( $this->field, array(
-        'button_title' => esc_html__( 'Add Icon', 'wpfaqsu' ),
-        'remove_title' => esc_html__( 'Remove Icon', 'wpfaqsu' ),
+        'button_title' => esc_html__( 'Add Icon', 'faq-schema-ultimate' ),
+        'remove_title' => esc_html__( 'Remove Icon', 'faq-schema-ultimate' ),
       ) );
 
       echo $this->field_before();
@@ -50,11 +50,11 @@ if ( ! class_exists( 'WPFAQSU_Field_icon' ) ) {
             <div class="wpfaqsu-modal-overlay"></div>
             <div class="wpfaqsu-modal-inner">
               <div class="wpfaqsu-modal-title">
-                <?php esc_html_e( 'Add Icon', 'wpfaqsu' ); ?>
+                <?php esc_html_e( 'Add Icon', 'faq-schema-ultimate' ); ?>
                 <div class="wpfaqsu-modal-close wpfaqsu-icon-close"></div>
               </div>
               <div class="wpfaqsu-modal-header">
-                <input type="text" placeholder="<?php esc_html_e( 'Search...', 'wpfaqsu' ); ?>" class="wpfaqsu-icon-search" />
+                <input type="text" placeholder="<?php esc_html_e( 'Search...', 'faq-schema-ultimate' ); ?>" class="wpfaqsu-icon-search" />
               </div>
               <div class="wpfaqsu-modal-content">
                 <div class="wpfaqsu-modal-loading"><div class="wpfaqsu-loading"></div></div>

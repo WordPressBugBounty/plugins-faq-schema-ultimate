@@ -22,8 +22,8 @@ if ( ! class_exists( 'WPFAQSU_Field_media' ) ) {
         'preview_width'  => '',
         'preview_height' => '',
         'library'        => array(),
-        'button_title'   => esc_html__( 'Upload', 'wpfaqsu' ),
-        'remove_title'   => esc_html__( 'Remove', 'wpfaqsu' ),
+        'button_title'   => esc_html__( 'Upload', 'faq-schema-ultimate' ),
+        'remove_title'   => esc_html__( 'Remove', 'faq-schema-ultimate' ),
         'preview_size'   => 'thumbnail',
       ) );
 
@@ -56,7 +56,7 @@ if ( ! class_exists( 'WPFAQSU_Field_media' ) ) {
       $preview_src = ( $args['preview_size'] !== 'thumbnail' ) ? $this->value['url'] : $this->value['thumbnail'];
       $hidden_url  = ( empty( $args['url'] ) ) ? ' hidden' : '';
       $hidden_auto = ( empty( $this->value['url'] ) ) ? ' hidden' : '';
-      $placeholder = ( empty( $this->field['placeholder'] ) ) ? ' placeholder="'.  esc_html__( 'Not selected', 'wpfaqsu' ) .'"' : '';
+      $placeholder = ( empty( $this->field['placeholder'] ) ) ? ' placeholder="'.  esc_html__( 'Not selected', 'faq-schema-ultimate' ) .'"' : '';
 
       echo $this->field_before();
 

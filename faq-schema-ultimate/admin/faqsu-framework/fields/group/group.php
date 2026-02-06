@@ -20,7 +20,7 @@ if ( ! class_exists( 'WPFAQSU_Field_group' ) ) {
         'max'                    => 0,
         'min'                    => 0,
         'fields'                 => array(),
-        'button_title'           => esc_html__( 'Add New', 'wpfaqsu' ),
+        'button_title'           => esc_html__( 'Add New', 'faq-schema-ultimate' ),
         'accordion_title_prefix' => '',
         'accordion_title_number' => false,
         'accordion_title_auto'   => true,
@@ -32,7 +32,7 @@ if ( ! class_exists( 'WPFAQSU_Field_group' ) ) {
 
       if ( preg_match( '/'. preg_quote( '['. $this->field['id'] .']' ) .'/', $this->unique ) ) {
 
-        echo '<div class="wpfaqsu-notice wpfaqsu-notice-danger">'. esc_html__( 'Error: Field ID conflict.', 'wpfaqsu' ) .'</div>';
+        echo '<div class="wpfaqsu-notice wpfaqsu-notice-danger">'. esc_html__( 'Error: Field ID conflict.', 'faq-schema-ultimate' ) .'</div>';
 
       } else {
 
@@ -43,7 +43,7 @@ if ( ! class_exists( 'WPFAQSU_Field_group' ) ) {
           echo '<div class="wpfaqsu-cloneable-helper">';
           echo '<i class="wpfaqsu-cloneable-sort fas fa-arrows-alt"></i>';
           echo '<i class="wpfaqsu-cloneable-clone far fa-clone"></i>';
-          echo '<i class="wpfaqsu-cloneable-remove wpfaqsu-confirm fas fa-times" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'wpfaqsu' ) .'"></i>';
+          echo '<i class="wpfaqsu-cloneable-remove wpfaqsu-confirm fas fa-times" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'faq-schema-ultimate' ) .'"></i>';
           echo '</div>';
 
           echo '<h4 class="wpfaqsu-cloneable-title">';
@@ -84,7 +84,7 @@ if ( ! class_exists( 'WPFAQSU_Field_group' ) ) {
               echo '<div class="wpfaqsu-cloneable-helper">';
               echo '<i class="wpfaqsu-cloneable-sort fas fa-arrows-alt"></i>';
               echo '<i class="wpfaqsu-cloneable-clone far fa-clone"></i>';
-              echo '<i class="wpfaqsu-cloneable-remove wpfaqsu-confirm fas fa-times" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'wpfaqsu' ) .'"></i>';
+              echo '<i class="wpfaqsu-cloneable-remove wpfaqsu-confirm fas fa-times" data-confirm="'. esc_html__( 'Are you sure to delete this item?', 'faq-schema-ultimate' ) .'"></i>';
               echo '</div>';
 
               echo '<h4 class="wpfaqsu-cloneable-title">';
@@ -118,8 +118,8 @@ if ( ! class_exists( 'WPFAQSU_Field_group' ) ) {
 
         echo '</div>';
 
-        echo '<div class="wpfaqsu-cloneable-alert wpfaqsu-cloneable-max">'. esc_html__( 'You cannot add more.', 'wpfaqsu' ) .'</div>';
-        echo '<div class="wpfaqsu-cloneable-alert wpfaqsu-cloneable-min">'. esc_html__( 'You cannot remove more.', 'wpfaqsu' ) .'</div>';
+        echo '<div class="wpfaqsu-cloneable-alert wpfaqsu-cloneable-max">'. esc_html__( 'You cannot add more.', 'faq-schema-ultimate' ) .'</div>';
+        echo '<div class="wpfaqsu-cloneable-alert wpfaqsu-cloneable-min">'. esc_html__( 'You cannot remove more.', 'faq-schema-ultimate' ) .'</div>';
         echo '<a href="#" class="button button-primary wpfaqsu-cloneable-add">'. $args['button_title'] .'</a>';
 
         echo $this->field_after();

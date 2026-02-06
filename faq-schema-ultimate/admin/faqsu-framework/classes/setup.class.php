@@ -460,7 +460,7 @@ if ( ! class_exists( 'WPFAQSU' ) ) {
 
     // Setup textdomain
     public static function textdomain() {
-      load_textdomain( 'wpfaqsu', self::$dir .'/languages/'. get_locale() .'.mo' );
+      load_textdomain( 'faq-schema-ultimate', self::$dir .'/languages/'. get_locale() .'.mo' );
     }
 
     // Set all of used fields
@@ -577,7 +577,7 @@ if ( ! class_exists( 'WPFAQSU' ) ) {
       }
 
       // Main style
-      wp_enqueue_style( 'wpfaqsu', self::include_plugin_url( 'assets/css/style'. $min .'.css' ), array(), self::$version, 'all' );
+      wp_enqueue_style( 'faq-schema-ultimate', self::include_plugin_url( 'assets/css/style'. $min .'.css' ), array(), self::$version, 'all' );
 
       // Main RTL styles
       if ( is_rtl() ) {
@@ -586,16 +586,16 @@ if ( ! class_exists( 'WPFAQSU' ) ) {
 
       // Main scripts
       wp_enqueue_script( 'wpfaqsu-plugins', self::include_plugin_url( 'assets/js/plugins'. $min .'.js' ), array(), self::$version, true );
-      wp_enqueue_script( 'wpfaqsu', self::include_plugin_url( 'assets/js/main'. $min .'.js' ), array( 'wpfaqsu-plugins' ), self::$version, true );
+      wp_enqueue_script( 'faq-schema-ultimate', self::include_plugin_url( 'assets/js/main'. $min .'.js' ), array( 'wpfaqsu-plugins' ), self::$version, true );
 
       // Main variables
-      wp_localize_script( 'wpfaqsu', 'wpfaqsu_vars', array(
+      wp_localize_script( 'faq-schema-ultimate', 'wpfaqsu_vars', array(
         'color_palette'     => apply_filters( 'wpfaqsu_color_palette', array() ),
         'i18n'              => array(
-          'confirm'         => esc_html__( 'Are you sure?', 'wpfaqsu' ),
-          'typing_text'     => esc_html__( 'Please enter %s or more characters', 'wpfaqsu' ),
-          'searching_text'  => esc_html__( 'Searching...', 'wpfaqsu' ),
-          'no_results_text' => esc_html__( 'No results found.', 'wpfaqsu' ),
+          'confirm'         => esc_html__( 'Are you sure?', 'faq-schema-ultimate' ),
+          'typing_text'     => esc_html__( 'Please enter %s or more characters', 'faq-schema-ultimate' ),
+          'searching_text'  => esc_html__( 'Searching...', 'faq-schema-ultimate' ),
+          'no_results_text' => esc_html__( 'No results found.', 'faq-schema-ultimate' ),
         ),
       ) );
 
@@ -696,7 +696,7 @@ if ( ! class_exists( 'WPFAQSU' ) ) {
         $field_type = $field['type'];
 
         $field            = array();
-        $field['content'] = esc_html__( 'Oops! Not allowed.', 'wpfaqsu' ) .' <strong>('. $field_type .')</strong>';
+        $field['content'] = esc_html__( 'Oops! Not allowed.', 'faq-schema-ultimate' ) .' <strong>('. $field_type .')</strong>';
         $field['type']    = 'notice';
         $field['style']   = 'danger';
 
@@ -768,11 +768,11 @@ if ( ! class_exists( 'WPFAQSU' ) ) {
           $instance = new $classname( $field, $value, $unique, $where, $parent );
           $instance->render();
         } else {
-          echo '<p>'. esc_html__( 'Field not found!', 'wpfaqsu' ) .'</p>';
+          echo '<p>'. esc_html__( 'Field not found!', 'faq-schema-ultimate' ) .'</p>';
         }
 
       } else {
-        echo '<p>'. esc_html__( 'Field not found!', 'wpfaqsu' ) .'</p>';
+        echo '<p>'. esc_html__( 'Field not found!', 'faq-schema-ultimate' ) .'</p>';
       }
 
       echo ( ! empty( $field['title'] ) || ! empty( $field['fancy_title'] ) ) ? '</div>' : '';
