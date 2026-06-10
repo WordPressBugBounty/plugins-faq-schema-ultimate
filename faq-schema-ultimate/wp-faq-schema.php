@@ -16,7 +16,7 @@
  * Plugin Name:       FAQ Schema - Accordion, Tab, Slider & Gutenberg Block
  * Plugin URI:        https://pluginic.com/plugins/faq-schema-ultimate/
  * Description:       Create responsive FAQs with accordion, tabs, and slider layouts. Includes FAQ Schema markup, Gutenberg blocks, and Elementor widgets for enhanced SEO.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            PLUGINIC
  * Author URI:        https://pluginic.com/
  * License:           GPL-2.0+
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'FAQ_SCHEMA_ULTIMATE_VERSION', '1.0.1' );
+define( 'FAQ_SCHEMA_ULTIMATE_VERSION', '1.0.2' );
 
 /**
  * The code that runs during plugin activation.
@@ -66,9 +66,35 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-faq-schema-ultimate.php';
 
 /**
  * Required Framework
+ * Load only if CSF not already loaded by another plugin.
  */
-require_once plugin_dir_path( __FILE__ ) . 'admin/faqsu-framework/classes/setup.class.php';
+if ( ! class_exists( 'CSF' ) ) {
+	require_once plugin_dir_path( __FILE__ ) . 'admin/faqsu-framework/classes/setup.class.php';
+}
 require_once plugin_dir_path( __FILE__ ) . 'admin/faqsu-framework/metabox-options.php';
+
+/**
+ * Enqueue features CSS and JS on frontend.
+ */
+function faqsu_enqueue_features_assets() {
+	if ( is_admin() ) {
+		return;
+	}
+	wp_enqueue_style(
+		'faqsu-features',
+		plugin_dir_url( __FILE__ ) . 'public/css/faq-schema-ultimate-features.css',
+		array(),
+		FAQ_SCHEMA_ULTIMATE_VERSION
+	);
+	wp_enqueue_script(
+		'faqsu-features',
+		plugin_dir_url( __FILE__ ) . 'public/js/faq-schema-ultimate-features.js',
+		array(),
+		FAQ_SCHEMA_ULTIMATE_VERSION,
+		true
+	);
+}
+add_action( 'wp_enqueue_scripts', 'faqsu_enqueue_features_assets' );
 
 /**
  * Begins execution of the plugin.

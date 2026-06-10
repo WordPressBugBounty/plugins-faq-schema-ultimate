@@ -4,7 +4,7 @@ Donate link: https://pluginic.com/
 Tags: faq, faq schema, accordion, gutenberg block, elementor
 Requires at least: 5.2
 Tested up to: 6.9
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -330,5 +330,12 @@ Visit our [Support Forum](https://pluginic.com/support/) for assistance.
 = 1.0.1 =
 Plugin name updated to comply with WordPress.org guidelines. All functionality remains the same.
 
-= 1.0.0 =
-Initial release of FAQ Schema plugin.
+= 1.0.2 =
+* New: Reading Progress Tracker with localStorage memory
+* New: Smart Search with synonyms and keyword highlighting
+* New: Voice Search via Web Speech API (Chrome, Edge, Safari)
+* New: QR Code generation for each FAQ
+* New: PDF Export with branded layout
+* Fix: Prevented CSF framework conflict with other plugins
+* Update: Improved compatibility with multi-plugin environments
+* Update: Tested with WordPress 6.9
