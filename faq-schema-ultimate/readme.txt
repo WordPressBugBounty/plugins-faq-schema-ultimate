@@ -331,11 +331,14 @@ Visit our [Support Forum](https://pluginic.com/support/) for assistance.
 Plugin name updated to comply with WordPress.org guidelines. All functionality remains the same.
 
 = 1.0.2 =
-* New: Reading Progress Tracker with localStorage memory
-* New: Smart Search with synonyms and keyword highlighting
-* New: Voice Search via Web Speech API (Chrome, Edge, Safari)
-* New: QR Code generation for each FAQ
-* New: PDF Export with branded layout
+* New: Reading Progress Tracker - localStorage-based tracking of read FAQs
+* New: Smart Search with synonyms map and live keyword highlighting
+* New: Voice Search via Web Speech API (Chrome, Edge, Safari, Opera)
+* New: QR Code generation for each FAQ with shareable direct link
+* New: PDF Export with branded popup window layout
+* New: URL hash auto-expand for direct FAQ sharing
 * Fix: Prevented CSF framework conflict with other plugins
 * Update: Improved compatibility with multi-plugin environments
 * Update: Tested with WordPress 6.9
+
+
